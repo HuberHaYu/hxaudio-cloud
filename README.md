@@ -13,7 +13,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |
-| 小米 15 Pro 浑厚人声 | 手机外放 | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
+| 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
 <!-- presets:end -->
 
 ## 使用

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:47:05Z",
+  "generated_at": "2026-09-24T14:48:27Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -678,7 +678,13 @@
       "device_kinds": [
         "SPEAKER"
       ],
-      "target_devices": [],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 15 Pro",
+          "aliases": []
+        }
+      ],
       "featured": false,
       "revision": 1,
       "created": "2026-09-24",
