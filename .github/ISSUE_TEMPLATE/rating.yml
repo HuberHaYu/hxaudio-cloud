@@ -1,0 +1,31 @@
+# 此文件由 scripts/hxcloud.py build 自动生成，手改会被覆盖。
+name: ⭐ 给预设评分
+description: 为云端预设打 1–5 星。每个 GitHub 账号对同一预设只计一票，再次提交会覆盖上一票。
+title: "[评分] "
+labels: ["rating"]
+body:
+  - type: markdown
+    attributes:
+      value: 提交后机器人会自动记录评分并关闭此 issue，1–2 分钟内同步到云端目录。
+  - type: dropdown
+    id: preset
+    attributes:
+      label: 预设
+      options:
+        - "deep-bass-bluetooth · 深沉低频"
+        - "studio-reference · 录音室参考"
+        - "vocal-clarity-speaker · 人声清晰"
+    validations:
+      required: true
+  - type: dropdown
+    id: score
+    attributes:
+      label: 评分
+      options:
+        - "5 ★★★★★"
+        - "4 ★★★★"
+        - "3 ★★★"
+        - "2 ★★"
+        - "1 ★"
+    validations:
+      required: true

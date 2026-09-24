@@ -1,0 +1,45 @@
+name: 评分（Issue 表单）
+
+# 任何 GitHub 用户都能通过 “⭐ 给预设评分” 表单打分：每个账号对每个预设一票，重投覆盖。
+# 不需要任何服务器，现在就能用，也是测试评分链路最简单的方式。
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  rate:
+    if: startsWith(github.event.issue.title, '[评分]') || contains(github.event.issue.labels.*.name, 'rating')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: 记录评分
+        id: rate
+        env:
+          # issue 正文是不可信输入：只通过环境变量交给脚本解析，绝不拼进 shell。
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          HXCLOUD_VOTER: gh:${{ github.event.issue.user.id }}
+          HXCLOUD_RESULT: ${{ runner.temp }}/rating-result.md
+        run: |
+          set +e
+          bash scripts/ci_commit.sh "rating: issue #${{ github.event.issue.number }}" \
+            python3 scripts/hxcloud.py rate --from-issue
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          # 2 = 表单内容无效（未知预设等），照常回复关闭，不算工作流失败
+          [ "$code" = 0 ] || [ "$code" = 2 ]
+      - name: 回复并关闭 issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          RESULT: ${{ runner.temp }}/rating-result.md
+          CODE: ${{ steps.rate.outputs.code }}
+        run: |
+          [ -s "$RESULT" ] || echo "评分处理失败，维护者会查看 Actions 日志。" > "$RESULT"
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RESULT"
+          if [ "$CODE" = "0" ]; then reason=completed; else reason="not planned"; fi
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --reason "$reason"

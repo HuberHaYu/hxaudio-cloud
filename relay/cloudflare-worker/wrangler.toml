@@ -1,0 +1,13 @@
+name = "hxaudio-rating-relay"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+# 改成你的仓库
+GITHUB_REPO = "你的用户名/hxaudio-cloud"
+
+# 可选：开启限流。先运行 `npx wrangler kv namespace create RATING_KV`，
+# 把输出的 id 填进来并取消下面三行的注释。
+# [[kv_namespaces]]
+# binding = "RATING_KV"
+# id = "填入 KV 命名空间 id"

@@ -1,0 +1,39 @@
+name: 评分（App 接口）
+
+# 预留给 App 的评分入口。App 不直接持有 GitHub 令牌，而是请求中转服务
+# （relay/cloudflare-worker），由中转服务校验后调用 repository_dispatch 触发这里。
+# 在 Actions 页面手动运行（workflow_dispatch）可以在没有中转服务时测试同一条链路。
+on:
+  repository_dispatch:
+    types: [submit-rating]
+  workflow_dispatch:
+    inputs:
+      preset_id:
+        description: 预设 ID（例如 studio-reference）
+        required: true
+        type: string
+      score:
+        description: 评分
+        required: true
+        type: choice
+        options: ["5", "4", "3", "2", "1"]
+
+permissions:
+  contents: write
+
+jobs:
+  rate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: 记录评分
+        env:
+          HXCLOUD_VIA: ${{ github.event_name == 'repository_dispatch' && 'app' || 'manual' }}
+          HXCLOUD_PAYLOAD: ${{ github.event_name == 'repository_dispatch' && toJSON(github.event.client_payload) || toJSON(github.event.inputs) }}
+          HXCLOUD_VOTER: manual:${{ github.actor_id }}
+        run: |
+          set +e
+          bash scripts/ci_commit.sh "rating: via $HXCLOUD_VIA" python3 scripts/hxcloud.py rate --from-payload
+          code=$?
+          if [ "$code" = 2 ]; then echo "::warning::评分请求无效，已忽略"; exit 0; fi
+          exit $code

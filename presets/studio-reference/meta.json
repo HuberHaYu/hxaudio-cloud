@@ -1,0 +1,17 @@
+{
+  "title": "录音室参考",
+  "subtitle": "耳机通用 · 中性耐听",
+  "description": "以中性为目标的轻量校正：补一点耳机普遍欠缺的超低频，收掉 300 Hz 附近的浑浊和 7 kHz 的齿音，高频留一点空气感。改动都在 ±2.5 dB 以内，适合当作其他调音的起点。",
+  "author": "HXAudio 官方",
+  "tags": [
+    "中性",
+    "监听",
+    "耳机"
+  ],
+  "device_kinds": [
+    "WIRED_ANALOG",
+    "WIRED_USB",
+    "BLUETOOTH"
+  ],
+  "featured": true
+}

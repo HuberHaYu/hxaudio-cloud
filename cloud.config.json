@@ -1,0 +1,10 @@
+{
+  "$comment": "云端目录的全局配置。改完推送即可，Actions 会重新生成 api/v1/manifest.json。",
+  "name": "HXAudio Pro 云端预设",
+  "notice": "",
+  "min_app_version_code": 400000001,
+  "rating": {
+    "submit_endpoint": "",
+    "prior_weight": 5
+  }
+}

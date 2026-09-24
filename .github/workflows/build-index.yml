@@ -1,0 +1,50 @@
+name: 构建目录
+
+# presets/ 或配置有改动时：校验全部预设 → 重新生成 api/v1/* 与评分表单 → 自动提交。
+# 别人提交的 PR 只做校验，不写仓库。
+on:
+  push:
+    branches: [main]
+    paths:
+      - "presets/**"
+      - "ratings/**"
+      - "cloud.config.json"
+      - "scripts/**"
+      - ".github/workflows/build-index.yml"
+  pull_request:
+    paths:
+      - "presets/**"
+      - "cloud.config.json"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 scripts/hxcloud.py validate
+
+  build:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: 刷新本次推送改动过的预设文件的 CDN 缓存
+        if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
+        run: |
+          bash scripts/purge_cdn.sh "$GITHUB_REF_NAME" $(git diff --name-only "$BEFORE" "$AFTER" -- presets)
+      - name: 校验并重建 api/v1
+        run: |
+          bash scripts/ci_commit.sh "chore: 重建云端目录" python3 scripts/hxcloud.py build
