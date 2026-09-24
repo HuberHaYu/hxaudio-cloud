@@ -19,7 +19,15 @@ main() {
     git reset --quiet --hard FETCH_HEAD
     "$@"
     bash scripts/sign_manifest.sh
-    git add -A api ratings .github/ISSUE_TEMPLATE README.md
+    # 只暂存存在或仍被跟踪的路径：预设全部删除、还没有任何评分时 ratings/ 整个不存在，
+    # 把它交给 git add 会报 “pathspec did not match” 并让整次构建失败。
+    local path paths=()
+    for path in api ratings .github/ISSUE_TEMPLATE README.md; do
+      if [ -e "$path" ] || [ -n "$(git ls-files -- "$path")" ]; then
+        paths+=("$path")
+      fi
+    done
+    git add -A -- "${paths[@]}"
     if git diff --cached --quiet; then
       echo "没有需要提交的变化。"
       return 0
