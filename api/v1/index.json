@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T08:39:36Z",
+  "generated_at": "2026-09-24T13:18:22Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -248,6 +248,103 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "xiaomi-bt-pocket-spk",
+      "title": "小米随身音箱",
+      "subtitle": "小米随身音箱，低频优化",
+      "description": "小米随身音箱，低频优化，来自小米三单元小方砖",
+      "author": "Huber_HaYu",
+      "tags": [
+        "Huber",
+        "随身音箱",
+        "蓝牙",
+        "重低音"
+      ],
+      "device_kinds": [
+        "OTHER"
+      ],
+      "target_devices": [],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4",
+        "sha256": "6e8abb7fc8c20f8b8c50925e00c7a6cdc06cd6feeee940d565c19b2f1385b6af",
+        "bytes": 2721,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "bass_boost_db": 3.0,
+        "input_gain_db": 0.0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          2.96,
+          4.3,
+          2.5,
+          0.5,
+          0.0,
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.34,
+          0.69,
+          1.24,
+          1.95,
+          2.69,
+          3.27,
+          3.5,
+          3.29,
+          2.72,
+          1.98,
+          1.26,
+          0.71,
+          0.35,
+          0.15,
+          0.06,
+          0.02,
+          0.01,
+          0.0,
+          0.0,
+          0.01,
+          0.02,
+          0.04,
+          0.1,
+          0.19,
+          0.31,
+          0.42,
+          0.49,
+          0.49,
+          0.41,
+          0.3,
+          0.18
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     }
