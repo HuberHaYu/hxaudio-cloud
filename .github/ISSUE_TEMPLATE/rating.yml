@@ -13,7 +13,6 @@ body:
       label: 预设
       options:
         - "studio-reference · 录音室参考"
-        - "test · 预设测试"
         - "vocal-clarity-speaker · 人声清晰"
     validations:
       required: true
