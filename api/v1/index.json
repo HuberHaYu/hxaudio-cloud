@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:30:03Z",
+  "generated_at": "2026-09-24T14:41:42Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -558,6 +558,103 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "xiaomi15pro-spk-hxj",
+      "title": "小米 15 Pro 浑厚人声",
+      "subtitle": "由 hxj 投稿，适用于小米15 Pro外放，人声",
+      "description": "由 hxj 投稿，适用于小米15 Pro外放，人声",
+      "author": "hxj",
+      "tags": [
+        "小米",
+        "外放",
+        "人声",
+        "重低音"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4",
+        "sha256": "06ea40779b418b9dad4b3846d134f3b95377e7bddeee036f7c60b8e8f80580c1",
+        "bytes": 4314,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 15,
+        "bass_boost_db": 6.0,
+        "input_gain_db": 10.0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.0,
+          1.5,
+          1.0,
+          1.5,
+          0.5,
+          -4.0,
+          -3.0,
+          -2.5,
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          -0.04,
+          -0.2,
+          -0.62,
+          -1.2,
+          -1.47,
+          -1.04,
+          -0.06,
+          1.27,
+          3.0,
+          4.79,
+          5.68,
+          5.13,
+          3.67,
+          2.15,
+          0.89,
+          -0.23,
+          -1.34,
+          -2.41,
+          -3.31,
+          -3.97,
+          -4.41,
+          -4.65,
+          -4.64,
+          -4.3,
+          -3.62,
+          -2.76,
+          -1.9,
+          -1.19,
+          -0.68,
+          -0.35,
+          -0.16
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     }
