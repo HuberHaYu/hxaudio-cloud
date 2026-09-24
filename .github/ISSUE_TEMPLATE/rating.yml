@@ -15,6 +15,7 @@ body:
         - "redmi-buds6-pro · Redmi Buds6 Pro"
         - "xiaomi-14-spk · 小米14（Xiaomi 14）"
         - "xiaomi-bt-pocket-spk · 小米随身音箱"
+        - "xiaomi15-se-spk · 小米15/15Pro"
     validations:
       required: true
   - type: dropdown

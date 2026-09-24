@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T13:18:22Z",
+  "generated_at": "2026-09-24T14:21:57Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -333,6 +333,115 @@
           0.41,
           0.3,
           0.18
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "xiaomi15-se-spk",
+      "title": "小米15/15Pro",
+      "subtitle": "小米15/15Pro，全频段优化",
+      "description": "小米15/15Pro，全频段优化",
+      "author": "Huber_HaYu",
+      "tags": [
+        "Huber",
+        "小米",
+        "外放",
+        "重低音",
+        "1014B+1115D"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 15",
+          "aliases": []
+        },
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 15 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4",
+        "sha256": "3921c2b3c62819a7a1556f55c2dee00bb224136ec3e973d116145a4b9ba0b317",
+        "bytes": 5189,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 21,
+        "bass_boost_db": null,
+        "input_gain_db": -0.2,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          -1.0,
+          3.0,
+          4.5,
+          5.0,
+          -1.0,
+          -0.5,
+          -1.5,
+          -1.5,
+          0.75,
+          1.5,
+          1.0,
+          0.5
+        ],
+        "post_eq_db": [
+          2.59,
+          4.04,
+          5.89,
+          8.01,
+          10.15,
+          11.97,
+          13.09,
+          13.25,
+          12.28,
+          10.21,
+          7.32,
+          4.21,
+          1.57,
+          -0.13,
+          -0.94,
+          -1.24,
+          -1.38,
+          -1.52,
+          -1.65,
+          -1.74,
+          -1.72,
+          -1.47,
+          -0.92,
+          -0.07,
+          0.95,
+          1.9,
+          2.6,
+          2.95,
+          3.0,
+          2.81,
+          2.45
         ]
       },
       "rating": {
