@@ -2,7 +2,7 @@
   "format": "HXAudioPro4",
   "version": 2,
   "encrypted": false,
-  "created_at": 1790238363050,
+  "created_at": 1790238990835,
   "audio": {
     "pre_eq_gains_db": [
       0.0,
@@ -58,8 +58,14 @@
       {
         "id": "8a95c92d-7522-44f2-a475-de015ca2eded",
         "frequency_hz": 6500.0,
-        "gain_db": -0.5,
+        "gain_db": -1.0,
         "q": 0.9
+      },
+      {
+        "id": "751956c6-d80c-4842-a263-3e01679cd4e5",
+        "frequency_hz": 8000.0,
+        "gain_db": 0.0,
+        "q": 1.0
       },
       {
         "id": "12f33962-80f1-465f-a857-4db3494ae5ac",
@@ -86,7 +92,7 @@
     },
     "input_gain": {
       "balance_percent": 0.0,
-      "total_gain_db": 1.5,
+      "total_gain_db": -2.0,
       "use_dynamics_processing_gain": true
     },
     "main_limiter": {
