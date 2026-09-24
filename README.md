@@ -8,6 +8,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 预设 | 适用设备 | 说明 | 文件 |
 | --- | --- | --- | --- |
 | 录音室参考 | 3.5mm 有线耳机、USB 耳机、蓝牙耳机 | 耳机通用 · 中性耐听 | [studio-reference.hx4](presets/studio-reference/studio-reference.hx4) |
+| 预设测试 | 手机外放、3.5mm 有线耳机、USB 耳机、蓝牙耳机、其他设备 | TestTest | [test.hx4](presets/test/test.hx4) |
 | 人声清晰 | 手机外放 | 手机外放 · 对白与播客 | [vocal-clarity-speaker.hx4](presets/vocal-clarity-speaker/vocal-clarity-speaker.hx4) |
 <!-- presets:end -->
 
