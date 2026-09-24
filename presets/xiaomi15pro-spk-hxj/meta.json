@@ -12,6 +12,12 @@
   "device_kinds": [
     "SPEAKER"
   ],
-  "target_devices": [],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Pro",
+      "aliases": []
+    }
+  ],
   "featured": false
 }
