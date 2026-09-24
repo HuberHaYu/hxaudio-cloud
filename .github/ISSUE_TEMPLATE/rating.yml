@@ -12,7 +12,7 @@ body:
     attributes:
       label: 预设
       options:
-        - "（暂无可评分的预设）"
+        - "xiaomi-14-spk · 小米14（Xiaomi 14）"
     validations:
       required: true
   - type: dropdown

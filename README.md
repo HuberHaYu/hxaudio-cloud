@@ -5,7 +5,9 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 ## 预设
 
 <!-- presets:start -->
-暂无预设。
+| 预设 | 适用设备 | 说明 | 文件 |
+| --- | --- | --- | --- |
+| 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 <!-- presets:end -->
 
 ## 使用
