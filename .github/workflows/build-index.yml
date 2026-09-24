@@ -28,7 +28,15 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: 检出仓库
+        # 不使用 actions/checkout：仓库只允许本地 action（Settings → Actions → local only）。
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git init -q .
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q origin "$GITHUB_SHA"
+          git checkout -q FETCH_HEAD
       - run: python3 scripts/hxcloud.py validate
 
   build:
@@ -37,9 +45,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+      - name: 检出仓库
+        # 不使用 actions/checkout：仓库只允许本地 action（Settings → Actions → local only）。
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git init -q .
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q origin "$GITHUB_SHA"
+          git checkout -q FETCH_HEAD
       - name: 刷新本次推送改动过的预设文件的 CDN 缓存
         if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
         env:

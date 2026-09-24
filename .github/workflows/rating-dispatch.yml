@@ -25,7 +25,15 @@ jobs:
   rate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: 检出仓库
+        # 不使用 actions/checkout：仓库只允许本地 action（Settings → Actions → local only）。
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git init -q .
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q origin "$GITHUB_SHA"
+          git checkout -q FETCH_HEAD
       - name: 记录评分
         env:
           HXCLOUD_VIA: ${{ github.event_name == 'repository_dispatch' && 'app' || 'manual' }}

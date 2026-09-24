@@ -41,7 +41,7 @@ macOS 访达默认隐藏 `.github`、`.gitattributes` 等以点开头的文件�
 进入仓库 **Settings**：
 
 1. **Actions → General**
-   - Actions permissions：保持 “Allow all actions and reusable workflows”
+   - Actions permissions：任意一档都可以，工作流不依赖任何外部 action；最严格的 “Allow HuberHaYu actions and reusable workflows” 也能正常运行
    - Workflow permissions：默认只读即可，三个工作流都显式声明了自己需要的写权限。
      如果之后 Actions 日志里 `git push` 报 403，再把这里改成 **Read and write permissions**
    - Approval for running fork pull request workflows：选 **Require approval for all external contributors**，
