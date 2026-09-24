@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T05:44:33Z",
+  "generated_at": "2026-09-24T06:14:37Z",
   "name": "HXAudio Pro 云端预设",
   "notice": "",
   "min_app_version_code": 400000001,
@@ -20,7 +20,7 @@
     "global_mean": 4.364,
     "prior_weight": 5,
     "submit_endpoint": null,
-    "github_client_id": null,
+    "github_client_id": "Iv23liUcbHth1Mq21VY2",
     "issue_template": "rating.yml"
   },
   "mirrors": [
