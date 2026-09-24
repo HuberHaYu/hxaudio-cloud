@@ -1,0 +1,24 @@
+{
+  "title": "Redmi K90 Pro Max",
+  "subtitle": "由 chaoer2330 投稿，适用于K90 Pro Max的外放",
+  "description": "由 chaoer2330 投稿，适用于K90 Pro Max的外放",
+  "author": "chaoer2330",
+  "tags": [
+    "外放",
+    "BOSE",
+    "对称双扬声器",
+    "1115F+1620",
+    "低音炮单元"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Redmi K90 Pro Max",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
