@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:50:37Z",
+  "generated_at": "2026-09-24T14:56:31Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -763,6 +763,109 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "xiaomi15pro-ttzkyz",
+      "title": "小米 15 Pro杜比全景哈曼卡顿音效",
+      "subtitle": "由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升",
+      "description": "由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升",
+      "author": "ttzkyz",
+      "tags": [
+        "虚拟环绕",
+        "小米",
+        "外放",
+        "Harman曲线"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 15 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/xiaomi15pro-ttzkyz/xiaomi15pro-ttzkyz.hx4",
+        "sha256": "ddd3b41e1d0b2f802c6bf34d4a4f8740b49874aca7d8b2764ae61dc05ccacb7e",
+        "bytes": 3008,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 6,
+        "bass_boost_db": 5.0,
+        "input_gain_db": 5.0,
+        "limiter": true,
+        "virtual_surround_percent": 50,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          4.0,
+          4.0,
+          5.0,
+          3.0,
+          4.0,
+          4.0,
+          5.0,
+          5.0,
+          3.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "post_eq_db": [
+          0.4,
+          0.6,
+          0.84,
+          1.08,
+          1.29,
+          1.45,
+          1.5,
+          1.47,
+          1.38,
+          1.3,
+          1.28,
+          1.3,
+          1.22,
+          0.99,
+          0.68,
+          0.46,
+          0.42,
+          0.56,
+          0.84,
+          1.2,
+          1.62,
+          2.05,
+          2.48,
+          2.93,
+          3.34,
+          3.62,
+          3.7,
+          3.52,
+          3.12,
+          2.56,
+          1.95
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     }

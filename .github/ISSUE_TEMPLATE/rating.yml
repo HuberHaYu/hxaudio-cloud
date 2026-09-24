@@ -19,6 +19,7 @@ body:
         - "xiaomi-bt-pocket-spk · 小米随身音箱"
         - "xiaomi15-se-spk · 小米15/15Pro"
         - "xiaomi15pro-spk-hxj · 小米 15 Pro 浑厚人声"
+        - "xiaomi15pro-ttzkyz · 小米 15 Pro杜比全景哈曼卡顿音效"
     validations:
       required: true
   - type: dropdown
