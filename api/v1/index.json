@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T07:21:41Z",
+  "generated_at": "2026-09-24T07:36:34Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -50,99 +50,5 @@
       20000.0
     ]
   },
-  "presets": [
-    {
-      "id": "xiaomi-14-spk",
-      "title": "小米14（Xiaomi 14）",
-      "subtitle": "小米14外放配置",
-      "description": "小米14外放配置",
-      "author": "Huber_HaYu",
-      "tags": [
-        "HXAudio",
-        "Official"
-      ],
-      "device_kinds": [],
-      "target_devices": [],
-      "featured": false,
-      "revision": 1,
-      "created": "2026-09-24",
-      "updated": "2026-09-24",
-      "file": {
-        "path": "presets/xiaomi-14-spk/xiaomi-14-spk.hx4",
-        "sha256": "435eae11a17424de0b11d9cee554ba6b64654120b40501a2f9ef405a22f69eae",
-        "bytes": 5094,
-        "hx4_version": 2
-      },
-      "features": {
-        "post_eq_points": 19,
-        "bass_boost_db": null,
-        "input_gain_db": -0.2,
-        "limiter": false,
-        "virtual_surround_percent": null,
-        "volume_compensation": false,
-        "eq_pulse": false
-      },
-      "preview": {
-        "pre_eq_db": [
-          2.0,
-          6.0,
-          5.0,
-          3.5,
-          -1.0,
-          -0.5,
-          -1.5,
-          -2.0,
-          0.75,
-          1.69,
-          1.0,
-          0.5
-        ],
-        "post_eq_db": [
-          2.36,
-          3.6,
-          5.11,
-          6.77,
-          8.4,
-          9.74,
-          10.56,
-          10.7,
-          10.1,
-          8.82,
-          7.07,
-          5.11,
-          3.2,
-          1.58,
-          0.34,
-          -0.51,
-          -1.07,
-          -1.42,
-          -1.66,
-          -1.84,
-          -1.99,
-          -2.08,
-          -2.03,
-          -1.78,
-          -1.27,
-          -0.51,
-          0.39,
-          1.24,
-          1.89,
-          2.2,
-          2.16
-        ]
-      },
-      "rating": {
-        "count": 0,
-        "average": null,
-        "weighted": 3.5,
-        "histogram": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      }
-    }
-  ]
+  "presets": []
 }
