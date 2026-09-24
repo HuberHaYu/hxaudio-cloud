@@ -12,6 +12,7 @@ body:
     attributes:
       label: 预设
       options:
+        - "redmi-buds6-pro · Redmi Buds6 Pro"
         - "xiaomi-14-spk · 小米14（Xiaomi 14）"
     validations:
       required: true

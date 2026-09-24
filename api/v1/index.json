@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T07:56:56Z",
+  "generated_at": "2026-09-24T08:26:19Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -51,6 +51,104 @@
     ]
   },
   "presets": [
+    {
+      "id": "redmi-buds6-pro",
+      "title": "Redmi Buds6 Pro",
+      "subtitle": "Redmi Buds6 Pro耳机高频细节调教",
+      "description": "Redmi Buds6 Pro耳机高频细节调教",
+      "author": "Huber_HaYu",
+      "tags": [
+        "Huber",
+        "红米",
+        "蓝牙",
+        "耳机",
+        "HiFi"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/redmi-buds6-pro/redmi-buds6-pro.hx4",
+        "sha256": "7b4427d005787242cd9e585fdb38b65f56d5d9e5c1d05e173c3f89adce62be6f",
+        "bytes": 3590,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 10,
+        "bass_boost_db": null,
+        "input_gain_db": 1.5,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          1.29,
+          1.46,
+          1.5,
+          1.39,
+          1.17,
+          0.89,
+          0.61,
+          0.37,
+          0.15,
+          -0.05,
+          -0.25,
+          -0.42,
+          -0.49,
+          -0.44,
+          -0.31,
+          -0.17,
+          -0.07,
+          -0.0,
+          0.09,
+          0.32,
+          0.79,
+          1.48,
+          2.13,
+          2.46,
+          2.51,
+          2.61,
+          2.99,
+          3.54,
+          3.95,
+          3.96,
+          3.53
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
     {
       "id": "xiaomi-14-spk",
       "title": "小米14（Xiaomi 14）",
