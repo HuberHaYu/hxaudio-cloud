@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:42:37Z",
+  "generated_at": "2026-09-24T14:47:05Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -51,6 +51,108 @@
     ]
   },
   "presets": [
+    {
+      "id": "k60pro-spk-papershort",
+      "title": "Redmi K60 Pro 流行音乐",
+      "subtitle": "适用于Redmi K60 Pro外放，流行音乐",
+      "description": "适用于Redmi K60 Pro外放，流行音乐",
+      "author": "Paper Short",
+      "tags": [
+        "外放",
+        "流行音乐",
+        "饱满低频"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Redmi K60 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4",
+        "sha256": "7ea4348a9150eccaced35f187e045e28d3cecffe40698145f7c5886b1b022752",
+        "bytes": 4308,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 15,
+        "bass_boost_db": 3.0,
+        "input_gain_db": 0.0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          -1.5,
+          -1.0,
+          -0.5,
+          1.05,
+          1.0,
+          0.0,
+          0.0,
+          -1.5,
+          0.0,
+          0.5,
+          0.5,
+          0.0
+        ],
+        "post_eq_db": [
+          -1.75,
+          -2.5,
+          -3.25,
+          -3.82,
+          -4.06,
+          -3.88,
+          -3.25,
+          -2.27,
+          -1.05,
+          0.25,
+          1.41,
+          2.25,
+          2.62,
+          2.53,
+          2.11,
+          1.55,
+          1.03,
+          0.64,
+          0.34,
+          -0.05,
+          -0.67,
+          -1.43,
+          -2.01,
+          -2.07,
+          -1.51,
+          -0.58,
+          0.4,
+          1.16,
+          1.59,
+          1.66,
+          1.46
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
     {
       "id": "k90promax-spk-chaoer2330",
       "title": "Redmi K90 Pro Max",
