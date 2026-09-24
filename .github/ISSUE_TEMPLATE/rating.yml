@@ -12,6 +12,7 @@ body:
     attributes:
       label: 预设
       options:
+        - "k90promax-spk-chaoer2330 · Redmi K90 Pro Max"
         - "redmi-buds6-pro · Redmi Buds6 Pro"
         - "xiaomi-14-spk · 小米14（Xiaomi 14）"
         - "xiaomi-bt-pocket-spk · 小米随身音箱"

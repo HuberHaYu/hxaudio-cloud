@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:23:58Z",
+  "generated_at": "2026-09-24T14:28:38Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -51,6 +51,110 @@
     ]
   },
   "presets": [
+    {
+      "id": "k90promax-spk-chaoer2330",
+      "title": "Redmi K90 Pro Max",
+      "subtitle": "由 chaoer2330 投稿，适用于K90 Pro Max的外放",
+      "description": "由 chaoer2330 投稿，适用于K90 Pro Max的外放",
+      "author": "chaoer2330",
+      "tags": [
+        "外放",
+        "BOSE",
+        "对称双扬声器",
+        "1115F+1620",
+        "低音炮单元"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Redmi K90 Pro Max",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-24",
+      "updated": "2026-09-24",
+      "file": {
+        "path": "presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4",
+        "sha256": "c6b5105f49a84ff5c3951f1c0afef61368632e348c7f1dbcf9b75b0e681ff3ea",
+        "bytes": 2867,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 5,
+        "bass_boost_db": 8.0,
+        "input_gain_db": 2.0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "post_eq_db": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.03,
+          -0.14,
+          -0.42,
+          -0.82,
+          -1.08,
+          -1.03,
+          -0.77,
+          -0.23,
+          0.77,
+          1.99,
+          3.03,
+          3.72,
+          4.06,
+          4.03,
+          3.65,
+          2.99,
+          2.22,
+          1.5,
+          0.93,
+          0.53,
+          0.27,
+          0.13,
+          0.05,
+          0.02
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 5.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
     {
       "id": "redmi-buds6-pro",
       "title": "Redmi Buds6 Pro",
