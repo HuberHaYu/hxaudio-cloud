@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T07:55:09Z",
+  "generated_at": "2026-09-24T07:56:56Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -139,15 +139,15 @@
         ]
       },
       "rating": {
-        "count": 0,
-        "average": null,
-        "weighted": 3.5,
+        "count": 1,
+        "average": 5.0,
+        "weighted": 5.0,
         "histogram": [
           0,
           0,
           0,
           0,
-          0
+          1
         ]
       }
     }
