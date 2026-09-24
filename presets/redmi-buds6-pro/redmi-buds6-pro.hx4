@@ -2,7 +2,7 @@
   "format": "HXAudioPro4",
   "version": 2,
   "encrypted": false,
-  "created_at": 1790239087445,
+  "created_at": 1790239164050,
   "audio": {
     "pre_eq_gains_db": [
       0.0,
@@ -54,6 +54,12 @@
         "frequency_hz": 3614.78,
         "gain_db": 2.0,
         "q": 1.2
+      },
+      {
+        "id": "9c938013-a03a-4bbe-b20b-d43359b9822d",
+        "frequency_hz": 4500.0,
+        "gain_db": 2.5,
+        "q": 1.0
       },
       {
         "id": "8a95c92d-7522-44f2-a475-de015ca2eded",
