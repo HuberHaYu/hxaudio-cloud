@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T08:38:19Z",
+  "generated_at": "2026-09-24T08:39:36Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -69,17 +69,17 @@
       ],
       "target_devices": [],
       "featured": false,
-      "revision": 3,
+      "revision": 4,
       "created": "2026-09-24",
       "updated": "2026-09-24",
       "file": {
         "path": "presets/redmi-buds6-pro/redmi-buds6-pro.hx4",
-        "sha256": "fed0389b2e2350d6f8957947171f1f1d01c08146c906efef2fc926a32cb59b27",
-        "bytes": 3735,
+        "sha256": "122957228628b721b414778bbf2de1626b1079fd9ea5d09a97bcca68653834c5",
+        "bytes": 3879,
         "hx4_version": 2
       },
       "features": {
-        "post_eq_points": 11,
+        "post_eq_points": 12,
         "bass_boost_db": null,
         "input_gain_db": -2.0,
         "limiter": false,
@@ -119,21 +119,21 @@
           -0.44,
           -0.31,
           -0.17,
-          -0.07,
-          -0.0,
-          0.1,
-          0.35,
-          0.9,
-          1.78,
-          2.86,
-          3.97,
-          5.12,
-          6.38,
-          7.58,
-          8.31,
-          8.24,
-          7.36,
-          5.94
+          -0.06,
+          0.03,
+          0.22,
+          0.67,
+          1.61,
+          3.1,
+          4.84,
+          6.41,
+          7.56,
+          8.38,
+          8.93,
+          9.05,
+          8.57,
+          7.48,
+          5.98
         ]
       },
       "rating": {
