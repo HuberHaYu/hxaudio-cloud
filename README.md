@@ -7,8 +7,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 <!-- presets:start -->
 | 预设 | 适用设备 | 说明 | 文件 |
 | --- | --- | --- | --- |
-| 录音室参考 | 3.5mm 有线耳机、USB 耳机、蓝牙耳机 | 耳机通用 · 中性耐听 | [studio-reference.hx4](presets/studio-reference/studio-reference.hx4) |
-| 人声清晰 | 手机外放 | 手机外放 · 对白与播客 | [vocal-clarity-speaker.hx4](presets/vocal-clarity-speaker/vocal-clarity-speaker.hx4) |
+| 小米14（Xiaomi 14） | 通用 | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 <!-- presets:end -->
 
 ## 使用

@@ -12,8 +12,7 @@ body:
     attributes:
       label: 预设
       options:
-        - "studio-reference · 录音室参考"
-        - "vocal-clarity-speaker · 人声清晰"
+        - "xiaomi-14-spk · 小米14（Xiaomi 14）"
     validations:
       required: true
   - type: dropdown
