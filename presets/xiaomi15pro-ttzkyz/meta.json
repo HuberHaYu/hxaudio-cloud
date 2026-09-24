@@ -1,0 +1,23 @@
+{
+  "title": "小米 15 Pro杜比全景哈曼卡顿音效",
+  "subtitle": "由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升",
+  "description": "由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升",
+  "author": "ttzkyz",
+  "tags": [
+    "虚拟环绕",
+    "小米",
+    "外放",
+    "Harman曲线"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Pro",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
