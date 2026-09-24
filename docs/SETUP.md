@@ -69,7 +69,7 @@ macOS 访达默认隐藏 `.github`、`.gitattributes` 等以点开头的文件�
 
 ## 5. 日常维护
 
-- 新增/更新预设：见 README「添加或更新预设」，推送后自动校验、重建、刷新 CDN
+- 新增/更新预设：见 docs/MAINTAINING.md，推送后自动校验、重建、刷新 CDN
 - 发公告：改 `cloud.config.json` 的 `notice` 并推送
 - 正式上线前清除测试评分：`python3 scripts/hxcloud.py purge-seed`，然后提交推送
 - 本地修改前先 `git pull`——评分会不断产生新提交

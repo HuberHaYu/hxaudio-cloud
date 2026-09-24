@@ -11,7 +11,7 @@ HXAudio Pro 云端预设仓库工具（零依赖，Python 3.9+）。
   python3 scripts/hxcloud.py purge-seed               删除内置的测试评分
 
 GitHub Actions 调用的也只是这几个命令，本地跑出来的结果与云端完全一致。
-人工维护的只有 presets/ 与 cloud.config.json；api/ 和 ratings/ 由工具写入，不要手改。
+人工维护的只有 presets/ 与 cloud.config.json；api/、ratings/ 以及 README 中的预设列表由工具写入，不要手改。
 """
 from __future__ import annotations
 
@@ -33,12 +33,18 @@ INDEX_PATH = API_DIR / "index.json"
 MANIFEST_PATH = API_DIR / "manifest.json"
 CONFIG_PATH = ROOT / "cloud.config.json"
 ISSUE_FORM_PATH = ROOT / ".github" / "ISSUE_TEMPLATE" / "rating.yml"
+README_PATH = ROOT / "README.md"
+README_START, README_END = "<!-- presets:start -->", "<!-- presets:end -->"
 
 API_SCHEMA_VERSION = 1
 PRESET_ID = re.compile(r"^[a-z0-9][a-z0-9-]{1,46}[a-z0-9]$")
 VOTER = re.compile(r"^(app|gh|manual|seed):[A-Za-z0-9_.-]{1,128}$")
 VOTE_KEY = re.compile(r"^[0-9a-f]{16}$")
 DEVICE_KINDS = ("SPEAKER", "WIRED_ANALOG", "WIRED_USB", "BLUETOOTH", "OTHER")
+DEVICE_KIND_LABELS = {
+    "SPEAKER": "手机外放", "WIRED_ANALOG": "3.5mm 有线耳机", "WIRED_USB": "USB 耳机",
+    "BLUETOOTH": "蓝牙耳机", "OTHER": "其他设备",
+}
 SCORE_MIN, SCORE_MAX = 1, 5
 MAX_HX4_BYTES = 64 * 1024
 META_KEYS = {"title", "subtitle", "description", "author", "tags", "device_kinds", "featured"}
@@ -563,6 +569,25 @@ def render_issue_form(entries: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_readme(entries: list[dict]) -> str | None:
+    """重写 README 中 presets:start/end 标记之间的预设列表；没有标记时不动 README。"""
+    if not README_PATH.exists():
+        return None
+    text = README_PATH.read_text(encoding="utf-8")
+    start, end = text.find(README_START), text.find(README_END)
+    if start < 0 or end < start:
+        return None
+    cell = lambda s: s.replace("|", "\\|").replace("\n", " ")
+    rows = ["| 预设 | 适用设备 | 说明 | 文件 |", "| --- | --- | --- | --- |"]
+    for e in sorted(entries, key=lambda e: not e["featured"]):
+        kinds = "、".join(DEVICE_KIND_LABELS[k] for k in e["device_kinds"]) or "通用"
+        note = e["subtitle"] or e["description"].split("。")[0]
+        path = e["file"]["path"]
+        rows.append(f"| {cell(e['title'])} | {kinds} | {cell(note)} | [{path.rsplit('/', 1)[-1]}]({path}) |")
+    body = "\n".join(rows) if entries else "暂无预设。"
+    return f"{text[:start]}{README_START}\n{body}\n{text[end:]}"
+
+
 def build(check_only: bool = False, quiet: bool = False) -> int:
     report = Report()
     config = load_config(report)
@@ -629,6 +654,9 @@ def build(check_only: bool = False, quiet: bool = False) -> int:
         MANIFEST_PATH: dump_json(manifest),
         ISSUE_FORM_PATH: render_issue_form(entries),
     }
+    readme = render_readme(entries)
+    if readme is not None:
+        outputs[README_PATH] = readme
     stale = [path for path, text in outputs.items()
              if not path.exists() or path.read_text(encoding="utf-8") != text]
     if check_only:

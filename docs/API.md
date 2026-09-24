@@ -8,9 +8,9 @@
 App 内置以下基础地址，按顺序尝试，记住上次成功的那个优先使用。数据里的所有 `path` 都相对于基础地址。
 
 ```
-https://cdn.jsdelivr.net/gh/<用户名>/hxaudio-cloud@main/
-https://fastly.jsdelivr.net/gh/<用户名>/hxaudio-cloud@main/
-https://raw.githubusercontent.com/<用户名>/hxaudio-cloud/main/
+https://cdn.jsdelivr.net/gh/HuberHaYu/hxaudio-cloud@main/
+https://fastly.jsdelivr.net/gh/HuberHaYu/hxaudio-cloud@main/
+https://raw.githubusercontent.com/HuberHaYu/hxaudio-cloud/main/
 ```
 
 - 国内网络下 `raw.githubusercontent.com` 经常不可达，所以 jsDelivr 排在前面。

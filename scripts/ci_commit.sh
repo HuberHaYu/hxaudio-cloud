@@ -18,7 +18,7 @@ main() {
     git fetch --quiet origin "$branch"
     git reset --quiet --hard FETCH_HEAD
     "$@"
-    git add -A api ratings .github/ISSUE_TEMPLATE
+    git add -A api ratings .github/ISSUE_TEMPLATE README.md
     if git diff --cached --quiet; then
       echo "没有需要提交的变化。"
       return 0
