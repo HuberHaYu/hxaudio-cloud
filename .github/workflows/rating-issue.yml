@@ -23,6 +23,7 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           HXCLOUD_VOTER: gh:${{ github.event.issue.user.id }}
           HXCLOUD_RESULT: ${{ runner.temp }}/rating-result.md
+          HXCLOUD_SIGNING_KEY: ${{ secrets.HXCLOUD_SIGNING_KEY }}
         run: |
           set +e
           bash scripts/ci_commit.sh "rating: issue #${{ github.event.issue.number }}" \

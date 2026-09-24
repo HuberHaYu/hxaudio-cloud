@@ -18,6 +18,7 @@ main() {
     git fetch --quiet origin "$branch"
     git reset --quiet --hard FETCH_HEAD
     "$@"
+    bash scripts/sign_manifest.sh
     git add -A api ratings .github/ISSUE_TEMPLATE README.md
     if git diff --cached --quiet; then
       echo "没有需要提交的变化。"

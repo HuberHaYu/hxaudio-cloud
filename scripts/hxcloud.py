@@ -40,6 +40,7 @@ API_SCHEMA_VERSION = 1
 PRESET_ID = re.compile(r"^[a-z0-9][a-z0-9-]{1,46}[a-z0-9]$")
 VOTER = re.compile(r"^(app|gh|manual|seed):[A-Za-z0-9_.-]{1,128}$")
 VOTE_KEY = re.compile(r"^[0-9a-f]{16}$")
+MIRROR_ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,31}$")
 DEVICE_KINDS = ("SPEAKER", "WIRED_ANALOG", "WIRED_USB", "BLUETOOTH", "OTHER")
 DEVICE_KIND_LABELS = {
     "SPEAKER": "手机外放", "WIRED_ANALOG": "3.5mm 有线耳机", "WIRED_USB": "USB 耳机",
@@ -522,7 +523,38 @@ def load_config(report: Report) -> dict:
         "min_app_version_code": min_code,
         "submit_endpoint": endpoint or None,
         "prior_weight": prior,
+        "mirrors": check_mirrors(config.get("mirrors", []), report),
     }
+
+
+def check_mirrors(mirrors, report: Report) -> list[dict]:
+    """App 的下载线路。随签名后的 manifest 下发，App 下次同步起即按新列表选路，无需发版。"""
+    where = "cloud.config.json"
+    if not isinstance(mirrors, list):
+        report.error(where, "mirrors 必须是数组")
+        return []
+    out, seen = [], set()
+    for index, mirror in enumerate(mirrors):
+        path = f"mirrors[{index}]"
+        if not isinstance(mirror, dict):
+            report.error(where, f"{path} 必须是对象")
+            continue
+        mirror_id, kind, url = mirror.get("id"), mirror.get("kind"), mirror.get("url")
+        enabled = mirror.get("enabled", True)
+        if not isinstance(mirror_id, str) or not MIRROR_ID.match(mirror_id) or mirror_id in seen:
+            report.error(where, f"{path}.id 必须唯一，且只含小写字母、数字、连字符")
+            continue
+        seen.add(mirror_id)
+        if kind not in ("raw", "cdn"):
+            report.error(where, f"{path}.kind 只能是 raw（直连 GitHub，内容最新）或 cdn（有缓存）")
+        if not isinstance(url, str) or not url.startswith("https://") or "{path}" not in url:
+            report.error(where, f"{path}.url 必须是 https:// 地址且包含 {{path}}")
+        elif set(re.findall(r"\{(\w+)\}", url)) - {"owner", "repo", "branch", "path"}:
+            report.error(where, f"{path}.url 只能使用 {{owner}} {{repo}} {{branch}} {{path}} 占位符")
+        if not isinstance(enabled, bool):
+            report.error(where, f"{path}.enabled 必须是 true/false")
+        out.append({"id": mirror_id, "kind": kind, "url": url, "enabled": enabled})
+    return out
 
 
 def with_stable_timestamp(body: dict, path: Path, stamp: str) -> dict:
@@ -647,6 +679,7 @@ def build(check_only: bool = False, quiet: bool = False) -> int:
             "submit_endpoint": config["submit_endpoint"],
             "issue_template": ISSUE_FORM_PATH.name,
         },
+        "mirrors": config["mirrors"],
     }, MANIFEST_PATH, stamp)
 
     outputs = {

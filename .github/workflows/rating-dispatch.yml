@@ -31,6 +31,7 @@ jobs:
           HXCLOUD_VIA: ${{ github.event_name == 'repository_dispatch' && 'app' || 'manual' }}
           HXCLOUD_PAYLOAD: ${{ github.event_name == 'repository_dispatch' && toJSON(github.event.client_payload) || toJSON(github.event.inputs) }}
           HXCLOUD_VOTER: manual:${{ github.actor_id }}
+          HXCLOUD_SIGNING_KEY: ${{ secrets.HXCLOUD_SIGNING_KEY }}
         run: |
           set +e
           bash scripts/ci_commit.sh "rating: via $HXCLOUD_VIA" python3 scripts/hxcloud.py rate --from-payload

@@ -1,10 +1,62 @@
 {
-  "$comment": "云端目录的全局配置。改完推送即可，Actions 会重新生成 api/v1/manifest.json。",
+  "$comment": "云端目录的全局配置。改完推送即可，Actions 会重新生成并签名 api/v1/manifest.json。mirrors 是 App 的下载线路：顺序即初始优先级，App 会按每台手机的实际速度自动调整；kind 为 raw 的线路直连 GitHub（内容最新），cdn 有缓存。停用某条线路把 enabled 改为 false。",
   "name": "HXAudio Pro 云端预设",
   "notice": "",
   "min_app_version_code": 400000001,
   "rating": {
     "submit_endpoint": "",
     "prior_weight": 5
-  }
+  },
+  "mirrors": [
+    {
+      "id": "gh-proxy",
+      "kind": "raw",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+    },
+    {
+      "id": "jsdmirror",
+      "kind": "cdn",
+      "url": "https://cdn.jsdmirror.com/gh/{owner}/{repo}@{branch}/{path}"
+    },
+    {
+      "id": "ghproxy-net",
+      "kind": "raw",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+    },
+    {
+      "id": "jsd-onmicrosoft",
+      "kind": "cdn",
+      "url": "https://jsd.onmicrosoft.cn/gh/{owner}/{repo}@{branch}/{path}"
+    },
+    {
+      "id": "jsd-fastly",
+      "kind": "cdn",
+      "url": "https://fastly.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+    },
+    {
+      "id": "ghfast",
+      "kind": "raw",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+    },
+    {
+      "id": "jsd-cdn",
+      "kind": "cdn",
+      "url": "https://cdn.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+    },
+    {
+      "id": "github-raw",
+      "kind": "raw",
+      "url": "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+    },
+    {
+      "id": "jsd-gcore",
+      "kind": "cdn",
+      "url": "https://gcore.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+    },
+    {
+      "id": "jsd-testingcf",
+      "kind": "cdn",
+      "url": "https://testingcf.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+    }
+  ]
 }

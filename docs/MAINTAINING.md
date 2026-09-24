@@ -8,10 +8,12 @@
 | --- | --- | --- |
 | `presets/<id>/meta.json` | 人工维护 | 标题、说明、标签、适用设备 |
 | `presets/<id>/<id>.hx4` | 人工维护 | 预设本体，由 App 导出 |
-| `cloud.config.json` | 人工维护 | 目录名称、公告、评分接口地址 |
+| `cloud.config.json` | 人工维护 | 目录名称、公告、评分接口地址、下载线路 |
 | `ratings/<id>.json` | 自动写入 | 每个预设的匿名投票记录 |
 | `api/v1/manifest.json` | 自动生成 | 目录入口：版本、公告、评分配置 |
 | `api/v1/index.json` | 自动生成 | 预设列表、曲线预览、评分汇总 |
+| `api/v1/manifest.sig` | 自动生成 | manifest 的签名，由 Actions 使用仓库 Secret 生成 |
+| `keys/manifest-signing-public.pem` | 固定 | 验签公钥，与 App 内置的一致 |
 | `README.md` 预设列表 | 自动生成 | `presets:start` 与 `presets:end` 标记之间的表格 |
 | `.github/ISSUE_TEMPLATE/rating.yml` | 自动生成 | 评分表单，选项随预设同步 |
 | `scripts/` | 工具 | `hxcloud.py`（校验、生成、评分）与 CI 辅助脚本 |
@@ -77,6 +79,19 @@ App 保存过多个设备的调音时，导出文件会包含 `devices` 数组�
 ```bash
 python3 scripts/hxcloud.py purge-seed && git add -A && git commit -m "清除测试评分" && git push
 ```
+
+## 签名
+
+GitHub Actions 每次生成 manifest 后都会自动签名（`scripts/sign_manifest.sh`），添加预设、修改配置、收到评分都不需要任何额外操作。
+
+- 私钥保存在仓库 Secret `HXCLOUD_SIGNING_KEY`；本地备份在仓库目录之外，不应提交到任何仓库
+- 公钥在 `keys/manifest-signing-public.pem`，与 App 内置的公钥是同一把
+- 「构建目录」报错“没有签名私钥”时，说明 Secret 丢失：在 Settings → Secrets and variables → Actions 中用本地备份重新创建即可
+- 更换密钥需要同时发布内置新公钥的 App，否则旧版 App 会拒绝新签名的数据
+
+## 下载线路
+
+`cloud.config.json` 的 `mirrors` 决定 App 使用哪些线路。某条线路失效时，把它的 `enabled` 改为 `false` 并推送；新增线路追加一项即可。App 在下一次成功同步后生效，不需要发布新版本。
 
 ## 公告
 

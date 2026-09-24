@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # 让 jsDelivr 立即丢弃指定文件的分支缓存（否则最长会缓存 12 小时）。
-# 用法：bash scripts/purge_cdn.sh <分支> [文件路径...]   api/v1/*.json 总会被刷新。
+# 用法：bash scripts/purge_cdn.sh <分支> [文件路径...]   manifest、签名与 index 总会被刷新。
 set -uo pipefail
 branch="$1"; shift
 repo="${GITHUB_REPOSITORY:?需要 GITHUB_REPOSITORY}"
-for path in api/v1/manifest.json api/v1/index.json "$@"; do
+for path in api/v1/manifest.json api/v1/manifest.sig api/v1/index.json "$@"; do
   echo "$path"
 done | sort -u | while read -r path; do
   [ -n "$path" ] || continue

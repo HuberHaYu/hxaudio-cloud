@@ -3,48 +3,59 @@
 仓库只提供数据：**读**全部是静态 GET，**写**（评分）走一个预留的 POST 接口。
 所有 UI 都在 App 的「云端」页面实现，本文只定义数据格式和调用方式。
 
-## 1. 基础地址
+## 1. 线路
 
-App 内置以下基础地址，按顺序尝试，记住上次成功的那个优先使用。数据里的所有 `path` 都相对于基础地址。
+仓库通过多条线路对外提供，线路列表写在 `cloud.config.json` 的 `mirrors` 里，随签名后的 manifest 下发；App 内置同一份列表作为首次启动和兜底用。每条线路是一个 URL 模板：
 
-```
-https://cdn.jsdelivr.net/gh/HuberHaYu/hxaudio-cloud@main/
-https://fastly.jsdelivr.net/gh/HuberHaYu/hxaudio-cloud@main/
-https://raw.githubusercontent.com/HuberHaYu/hxaudio-cloud/main/
+```json
+{ "id": "gh-proxy", "kind": "raw", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}" }
 ```
 
-- 国内网络下 `raw.githubusercontent.com` 经常不可达，所以 jsDelivr 排在前面。
-- jsDelivr 对分支最多缓存 12 小时；仓库每次变更后 Actions 会主动刷新缓存，通常 1–2 分钟内可见。
-- 以后如果接自有域名或反向代理，只需要在这个列表最前面加一项。
+- `{owner}` `{repo}` `{branch}` 固定为 `HuberHaYu` `hxaudio-cloud` `main`，`{path}` 为文件在仓库中的路径
+- `kind: raw` 直连 GitHub 原始文件，内容最新；`kind: cdn` 带缓存，可能滞后，但更快
+- `enabled: false` 表示停用 App 内置的同名线路
+- 初始顺序依据 ITDOG 全国 261 个节点（三大运营商及家庭宽带）的实测成功率。App 按每台设备的实际成功率与耗时动态调整，并在上一条线路迟迟没有响应时并行尝试下一条
 
-## 2. 调用流程
+2026-09 实测结果（成功节点 / 261）：gh-proxy.com 255、cdn.jsdmirror.com 259、ghproxy.net 249、jsd.onmicrosoft.cn 261、fastly.jsdelivr.net 238、ghfast.top 175、cdn.jsdelivr.net 189、raw.githubusercontent.com 154、gcore.jsdelivr.net 135、testingcf.jsdelivr.net 123。
+
+## 2. 签名与完整性
+
+第三方线路可以改写内容，因此 App 只信任验签通过的数据：
+
+- `api/v1/manifest.sig` 是 `api/v1/manifest.json` 原始字节的 ECDSA P-256 / SHA-256 签名（Base64 编码的 DER）
+- 公钥：`keys/manifest-signing-public.pem`，同时内置在 App 中
+- manifest 记录 index.json 的 SHA-256，index.json 记录每个 .hx4 的 SHA-256，一个签名覆盖整个目录
+- manifest 与签名必须来自同一条线路；验签失败即视为该线路不可用，换下一条
+- `generated_at` 早于本地已缓存版本的 manifest 一律拒绝，防止旧数据回放
+
+签名由 GitHub Actions 在每次生成 manifest 后自动完成，私钥只保存在仓库 Secret `HXCLOUD_SIGNING_KEY` 中。
+
+## 3. 调用流程
 
 ```
-① GET api/v1/manifest.json                     ~1 KB，每次进入「云端」页刷新
-     ├─ schema_version > 1        → 提示升级 App，不继续解析
+① GET api/v1/manifest.json + api/v1/manifest.sig（同一条线路，优先 raw 线路）
+     ├─ 验签失败 / 比本地缓存旧   → 换线路
+     ├─ schema_version > 1        → 提示升级 App
      ├─ min_app_version_code > 本机 versionCode → 提示升级 App
      └─ index.sha256 与本地缓存相同 → 直接用缓存的 index，跳过 ②
-② GET api/v1/index.json                        列表页需要的全部数据都在这里
-     └─ 校验 sha256 == manifest.index.sha256；不一致说明 CDN 正处在更新间隙，
-        换下一个镜像；都不一致就照常使用，但不写缓存
-③ 用户点「应用」时 GET <preset.file.path>
-     ├─ 校验 bytes 与 sha256，不一致就换镜像
+② GET api/v1/index.json
+     └─ SHA-256 必须等于 manifest.index.sha256，不一致（CDN 缓存滞后）就换线路
+③ 用户应用预设时 GET <preset.file.path>
+     ├─ bytes 与 SHA-256 必须和 index 一致，不一致就换线路
      ├─ Hx4ProfileStore.decode(text, title)
      └─ AudioRouteMonitor.applyImported(context, loaded)
-        （云端预设保证不含 devices，不要调用 DeviceProfileStore.merge）
+        （云端预设保证不含 devices，不调用 DeviceProfileStore.merge）
 ④ 用户评分时 POST manifest.rating.submit_endpoint（为 null 时只展示评分、不开放提交）
 ```
 
-`.hx4` 建议按 `(id, revision)` 缓存在本地：`revision` 变大就在列表上标记「有更新」。
-
 所有响应都是 UTF-8 JSON。**新增字段随时可能出现，App 必须忽略不认识的字段**；只有破坏性变更才会提升 `schema_version`。
 
-## 3. `api/v1/manifest.json`
+## 3.1 `api/v1/manifest.json`
 
 ```json
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T15:21:26Z",
+  "generated_at": "2026-09-24T02:53:23Z",
   "name": "HXAudio Pro 云端预设",
   "notice": "",
   "min_app_version_code": 400000001,
@@ -55,7 +66,8 @@ https://raw.githubusercontent.com/HuberHaYu/hxaudio-cloud/main/
     "total_votes": 18, "global_mean": 4.278, "prior_weight": 5,
     "submit_endpoint": null,
     "issue_template": "rating.yml"
-  }
+  },
+  "mirrors": [ { "id": "gh-proxy", "kind": "raw", "url": "…", "enabled": true } ]
 }
 ```
 
@@ -64,8 +76,9 @@ https://raw.githubusercontent.com/HuberHaYu/hxaudio-cloud/main/
 | `notice` | 维护者公告（`cloud.config.json` 里配置），非空时在「云端」页顶部显示 |
 | `min_app_version_code` | 低于此 versionCode 的 App 不应使用本目录 |
 | `hx4_versions` | 目录中可能出现的 .hx4 版本 |
-| `index.sha256` | index.json 原始字节的 SHA-256，用于判断是否需要重新下载 |
+| `index.sha256` | index.json 原始字节的 SHA-256 |
 | `rating.submit_endpoint` | 评分提交的完整 URL；`null` 表示暂未开放 App 内评分 |
+| `mirrors` | 下载线路，见第 1 节 |
 
 ## 4. `api/v1/index.json`
 
