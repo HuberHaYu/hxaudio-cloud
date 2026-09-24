@@ -1,0 +1,20 @@
+{
+  "title": "小米14（Xiaomi 14）",
+  "subtitle": "小米14外放配置",
+  "description": "适用于小米14的外放配置，全频段优化",
+  "author": "Huber_HaYu",
+  "tags": [
+    "小米；重低音；Huber"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
