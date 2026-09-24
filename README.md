@@ -7,13 +7,13 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 <!-- presets:start -->
 | 预设 | 适用设备 | 说明 | 文件 |
 | --- | --- | --- | --- |
+| 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
 | Redmi K60 Pro 流行音乐 | 手机外放（Redmi K60 Pro） | 适用于Redmi K60 Pro外放，流行音乐 | [k60pro-spk-papershort.hx4](presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4) |
 | Redmi K90 Pro Max | 手机外放（Redmi K90 Pro Max） | 由 chaoer2330 投稿，适用于K90 Pro Max的外放 | [k90promax-spk-chaoer2330.hx4](presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4) |
 | Redmi Buds6 Pro | 蓝牙耳机 | Redmi Buds6 Pro耳机高频细节调教 | [redmi-buds6-pro.hx4](presets/redmi-buds6-pro/redmi-buds6-pro.hx4) |
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |
-| 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
 <!-- presets:end -->
 
 ## 使用

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T14:48:27Z",
+  "generated_at": "2026-09-24T14:50:37Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -685,7 +685,7 @@
           "aliases": []
         }
       ],
-      "featured": false,
+      "featured": true,
       "revision": 1,
       "created": "2026-09-24",
       "updated": "2026-09-24",
