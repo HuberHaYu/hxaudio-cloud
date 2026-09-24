@@ -48,7 +48,7 @@ DEVICE_KIND_LABELS = {
 }
 SCORE_MIN, SCORE_MAX = 1, 5
 MAX_HX4_BYTES = 64 * 1024
-META_KEYS = {"title", "subtitle", "description", "author", "tags", "device_kinds", "featured"}
+META_KEYS = {"title", "subtitle", "description", "author", "tags", "device_kinds", "target_devices", "featured"}
 
 # —— 以下常量与 App 源码一致（com.lab.hxaudio.audio.*Definition / Hx4ProfileStore）——
 HX4_FORMAT = "HXAudioPro4"
@@ -382,13 +382,45 @@ def check_meta(meta, report: Report, where: str) -> dict | None:
     if not isinstance(featured, bool):
         report.error(where, "featured 必须是 true/false")
         featured = False
+    targets = check_target_devices(meta.get("target_devices", []), report, where)
     for unknown in sorted(set(meta) - META_KEYS - {"$comment"}):
         report.warn(where, f"未知字段 {unknown} 会被忽略")
     out.update(
         tags=[t.strip() for t in tags],
         device_kinds=[k for k in DEVICE_KINDS if k in kinds],
+        target_devices=targets,
         featured=featured,
     )
+    return out
+
+
+def check_target_devices(targets, report: Report, where: str) -> list[dict]:
+    """适配机型：App 用它判断「适合当前设备」。外放填手机型号，蓝牙 / USB 填耳机产品名。"""
+    if not isinstance(targets, list):
+        report.error(where, "target_devices 必须是数组")
+        return []
+    if len(targets) > 20:
+        report.error(where, "target_devices 最多 20 个")
+    out = []
+    for index, target in enumerate(targets[:20]):
+        path = f"target_devices[{index}]"
+        if not isinstance(target, dict):
+            report.error(where, f"{path} 必须是对象")
+            continue
+        kind, name, aliases = target.get("kind"), target.get("name"), target.get("aliases", [])
+        if kind not in DEVICE_KINDS:
+            report.error(where, f"{path}.kind 只能取 {', '.join(DEVICE_KINDS)}")
+            continue
+        if kind == "WIRED_ANALOG":
+            report.warn(where, f"{path}：3.5mm 耳机无法被系统识别型号，这一项只会显示、不会参与匹配")
+        if not isinstance(name, str) or not 1 <= len(name.strip()) <= 40:
+            report.error(where, f"{path}.name 必须是 1–40 个字符")
+            continue
+        if not isinstance(aliases, list) or len(aliases) > 10 or \
+                not all(isinstance(a, str) and 2 <= len(a.strip()) <= 40 for a in aliases):
+            report.error(where, f"{path}.aliases 最多 10 个，每个 2–40 个字符")
+            aliases = []
+        out.append({"kind": kind, "name": name.strip(), "aliases": [a.strip() for a in aliases]})
     return out
 
 
@@ -509,6 +541,9 @@ def load_config(report: Report) -> dict:
     endpoint = rating.get("submit_endpoint", "") or ""
     if endpoint and not re.match(r"^https://[^\s]+$", endpoint):
         report.error("cloud.config.json", "rating.submit_endpoint 必须为空或 https:// 地址")
+    client_id = rating.get("github_client_id", "") or ""
+    if client_id and not re.match(r"^[A-Za-z0-9._-]{8,64}$", client_id):
+        report.error("cloud.config.json", "rating.github_client_id 格式不正确（应为 GitHub App 的 Client ID）")
     prior = rating.get("prior_weight", 5)
     if not is_number(prior) or prior < 0:
         report.error("cloud.config.json", "rating.prior_weight 必须是非负数")
@@ -522,6 +557,7 @@ def load_config(report: Report) -> dict:
         "notice": str(config.get("notice", "")),
         "min_app_version_code": min_code,
         "submit_endpoint": endpoint or None,
+        "github_client_id": client_id or None,
         "prior_weight": prior,
         "mirrors": check_mirrors(config.get("mirrors", []), report),
     }
@@ -613,6 +649,9 @@ def render_readme(entries: list[dict]) -> str | None:
     rows = ["| 预设 | 适用设备 | 说明 | 文件 |", "| --- | --- | --- | --- |"]
     for e in sorted(entries, key=lambda e: not e["featured"]):
         kinds = "、".join(DEVICE_KIND_LABELS[k] for k in e["device_kinds"]) or "通用"
+        models = "、".join(t["name"] for t in e["target_devices"])
+        if models:
+            kinds = f"{kinds}（{models}）"
         note = e["subtitle"] or e["description"].split("。")[0]
         path = e["file"]["path"]
         rows.append(f"| {cell(e['title'])} | {kinds} | {cell(note)} | [{path.rsplit('/', 1)[-1]}]({path}) |")
@@ -677,6 +716,7 @@ def build(check_only: bool = False, quiet: bool = False) -> int:
             "global_mean": global_mean,
             "prior_weight": config["prior_weight"],
             "submit_endpoint": config["submit_endpoint"],
+            "github_client_id": config["github_client_id"],
             "issue_template": ISSUE_FORM_PATH.name,
         },
         "mirrors": config["mirrors"],
@@ -762,6 +802,11 @@ def cmd_add(args) -> int:
             "author": args.author,
             "tags": [t.strip() for t in (args.tags or "").split(",") if t.strip()],
             "device_kinds": [k.strip().upper() for k in (args.kinds or "").split(",") if k.strip()],
+            "target_devices": [
+                {"kind": kind.strip().upper(), "name": names.split(",")[0].strip(),
+                 "aliases": [a.strip() for a in names.split(",")[1:] if a.strip()]}
+                for kind, _, names in (m.partition(":") for m in args.model)
+            ],
             "featured": args.featured,
         }
         meta_path.write_text(dump_json(meta), encoding="utf-8")
@@ -897,6 +942,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--tags", help="逗号分隔")
     p.add_argument("--kinds", help=f"逗号分隔：{','.join(DEVICE_KINDS)}")
     p.add_argument("--featured", action="store_true")
+    p.add_argument("--model", action="append", default=[], metavar="KIND:名称[,别名…]",
+                   help="适配机型，可重复，例如 --model BLUETOOTH:WH-1000XM5 或 --model SPEAKER:Xiaomi 15,24129PN74C")
     p.set_defaults(func=cmd_add)
 
     p = sub.add_parser("rate", help="记录一票（同一投票人重复投票会覆盖）")

@@ -33,20 +33,25 @@
 ## 3. 调用流程
 
 ```
-① GET api/v1/manifest.json + api/v1/manifest.sig（同一条线路，优先 raw 线路）
+⓪ GET <代理>/https://github.com/HuberHaYu/hxaudio-cloud.git/info/refs?service=git-upload-pack
+     └─ git 的分支信息，任何线路都不缓存；从中读出 main 当前的提交 SHA
+        与本地缓存的提交相同 → 没有更新，结束
+① GET api/v1/manifest.json + api/v1/manifest.sig（按上一步的提交 SHA 固定地址，同一条线路）
      ├─ 验签失败 / 比本地缓存旧   → 换线路
      ├─ schema_version > 1        → 提示升级 App
      ├─ min_app_version_code > 本机 versionCode → 提示升级 App
      └─ index.sha256 与本地缓存相同 → 直接用缓存的 index，跳过 ②
-② GET api/v1/index.json
-     └─ SHA-256 必须等于 manifest.index.sha256，不一致（CDN 缓存滞后）就换线路
-③ 用户应用预设时 GET <preset.file.path>
-     ├─ bytes 与 SHA-256 必须和 index 一致，不一致就换线路
+② GET api/v1/index.json（同一提交）
+     └─ SHA-256 必须等于 manifest.index.sha256
+③ 用户应用预设时 GET <preset.file.path>（同一提交）
+     ├─ bytes 与 SHA-256 必须和 index 一致
      ├─ Hx4ProfileStore.decode(text, title)
      └─ AudioRouteMonitor.applyImported(context, loaded)
         （云端预设保证不含 devices，不调用 DeviceProfileStore.merge）
-④ 用户评分时 POST manifest.rating.submit_endpoint（为 null 时只展示评分、不开放提交）
+④ 用户评分：登录 GitHub 后以其账号提交评分 issue，见第 5 节
 ```
+
+按分支读取的地址（`main`）会被 GitHub 原始文件 CDN 缓存 5 分钟（加查询参数也无效），部分 jsDelivr 镜像会缓存数小时；按提交 SHA 读取的地址每次提交都是新的，任何线路都拿不到旧内容。所有线路都查询不到提交时，才退回按分支读取，并优先使用 raw 线路。App 打开云端页时检查一次，停留期间每 45 秒检查一次。
 
 所有响应都是 UTF-8 JSON。**新增字段随时可能出现，App 必须忽略不认识的字段**；只有破坏性变更才会提升 `schema_version`。
 
@@ -64,7 +69,7 @@
   "rating": {
     "min": 1, "max": 5,
     "total_votes": 18, "global_mean": 4.278, "prior_weight": 5,
-    "submit_endpoint": null,
+    "github_client_id": null,
     "issue_template": "rating.yml"
   },
   "mirrors": [ { "id": "gh-proxy", "kind": "raw", "url": "…", "enabled": true } ]
@@ -77,7 +82,7 @@
 | `min_app_version_code` | 低于此 versionCode 的 App 不应使用本目录 |
 | `hx4_versions` | 目录中可能出现的 .hx4 版本 |
 | `index.sha256` | index.json 原始字节的 SHA-256 |
-| `rating.submit_endpoint` | 评分提交的完整 URL；`null` 表示暂未开放 App 内评分 |
+| `rating.github_client_id` | App 内 GitHub 登录所用 GitHub App 的 Client ID；`null` 表示暂未开放 App 内评分 |
 | `mirrors` | 下载线路，见第 1 节 |
 
 ## 4. `api/v1/index.json`
@@ -98,7 +103,8 @@
 | `id` | string | 永久不变的主键，`[a-z0-9-]`，3–48 位 |
 | `title` / `subtitle` / `description` / `author` | string | 展示文本，`subtitle`、`description` 可能为空串 |
 | `tags` | string[] | 0–8 个 |
-| `device_kinds` | string[] | 取值与 `AudioOutputRoute.Kind` 同名：`SPEAKER` `WIRED_ANALOG` `WIRED_USB` `BLUETOOTH` `OTHER`；**空数组表示通用**。可用当前输出设备的 Kind 做推荐或筛选 |
+| `device_kinds` | string[] | 取值与 `AudioOutputRoute.Kind` 同名：`SPEAKER` `WIRED_ANALOG` `WIRED_USB` `BLUETOOTH` `OTHER`；**空数组表示通用** |
+| `target_devices` | object[] | 适配机型 `{kind, name, aliases}`。App 的「适合当前设备」只认型号匹配：外放比对手机市场名与型号代码，蓝牙 / USB 比对系统报告的产品名（忽略大小写、空格和符号；4 个字符以上的名称允许被包含）。3.5mm 耳机无法识别型号，不参与匹配 |
 | `featured` | bool | 维护者精选 |
 | `revision` | int | 从 1 开始，.hx4 内容每变一次 +1 |
 | `created` / `updated` | `YYYY-MM-DD` | 首次上架 / 最近一次内容变化（UTC） |
@@ -122,34 +128,24 @@
 `preview` 让列表页不用下载 .hx4 就能画缩略曲线；它只含两段 EQ，不含低频增强、响度补偿和虚拟环绕。
 建议排序：`featured` 优先，其次 `rating.weighted` 降序。
 
-## 5. 评分提交（预留接口）
+## 5. 评分提交
 
-`manifest.rating.submit_endpoint` 非空时启用，由 `relay/cloudflare-worker` 实现。
+评分需要登录 GitHub，每个 GitHub 账号对同一预设只计一票，再次评分覆盖上一票。不需要任何自建服务器：
+
+1. **登录**：GitHub 的设备授权流程（不需要 client secret）。App 请求 `POST https://github.com/login/device/code`（`client_id` 取自 `manifest.rating.github_client_id`），把验证码复制到剪贴板并拉起 `https://github.com/login/device`（有 GitHub App 时由其打开，否则用浏览器）；用户粘贴验证码授权后，App 轮询 `POST https://github.com/login/oauth/access_token` 取得令牌。
+2. **权限**：令牌属于一个只有「Issues 读写」权限、且只安装在本仓库上的 GitHub App，因此只能在本仓库提交 issue，无法访问用户的其他仓库。令牌只发往 github.com 与 api.github.com，不经过任何第三方加速线路，在手机上用 Android Keystore 加密保存。
+3. **提交**：`POST https://api.github.com/repos/HuberHaYu/hxaudio-cloud/issues`，格式与 Issue 表单相同：
 
 ```
-POST <submit_endpoint>
-Content-Type: application/json
+title: [评分] <预设标题>
+body:
+### 预设
 
-{
-  "preset_id": "studio-reference",
-  "score": 5,
-  "install_id": "550e8400-e29b-41d4-a716-446655440000",
-  "app_version": "4-Kuber"
-}
+<预设 ID> · <预设标题>
+
+### 评分
+
+<1–5> ★★★★★
 ```
 
-| 字段 | 说明 |
-| --- | --- |
-| `score` | 整数 1–5 |
-| `install_id` | 首次评分时生成一个随机 UUID 并永久保存在本机（SharedPreferences），`[A-Za-z0-9_-]{16,128}`。中转服务会用 HMAC 匿名化，公开仓库里无法反推设备 |
-| `app_version` | versionName，最多 32 字符，仅用于排查问题 |
-
-| 状态码 | body | App 处理 |
-| --- | --- | --- |
-| 202 | `{"ok":true,"status":"queued"}` | 已受理，约 1–2 分钟后反映到 index.json |
-| 400 | `bad_json` / `invalid_preset` / `invalid_score` / `invalid_install_id` | 客户端 bug，不重试 |
-| 404 | `unknown_preset` | 预设已下架，刷新目录 |
-| 429 | `rate_limited`，附 `retry_after` 秒 | 同一设备 60 秒内重复评同一预设，或同一 IP 每小时超过 30 次 |
-| 5xx | `upstream_failed` / `catalog_unavailable` / `relay_misconfigured` | 稍后重试 |
-
-语义：同一 `install_id` 对同一预设只计一票，再次提交覆盖上一次。评分是异步生效的，App 应在本地记住「我的评分」并立即显示，不必等 index 刷新。
+4. **记票**：仓库的「评分（Issue 表单）」工作流解析 issue、以 `gh:<用户 ID>` 记票、回复并关闭 issue，随后重建并签名目录。App 的定时检查会在约一分钟内拿到新的汇总。

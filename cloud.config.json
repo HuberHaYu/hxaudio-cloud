@@ -5,6 +5,7 @@
   "min_app_version_code": 400000001,
   "rating": {
     "submit_endpoint": "",
+    "github_client_id": "",
     "prior_weight": 5
   },
   "mirrors": [

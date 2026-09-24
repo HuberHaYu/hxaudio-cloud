@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | `presets/<id>/meta.json` | 人工维护 | 标题、说明、标签、适用设备 |
 | `presets/<id>/<id>.hx4` | 人工维护 | 预设本体，由 App 导出 |
-| `cloud.config.json` | 人工维护 | 目录名称、公告、评分接口地址、下载线路 |
+| `cloud.config.json` | 人工维护 | 目录名称、公告、GitHub 登录 Client ID、下载线路 |
 | `ratings/<id>.json` | 自动写入 | 每个预设的匿名投票记录 |
 | `api/v1/manifest.json` | 自动生成 | 目录入口：版本、公告、评分配置 |
 | `api/v1/index.json` | 自动生成 | 预设列表、曲线预览、评分汇总 |
@@ -18,7 +18,6 @@
 | `.github/ISSUE_TEMPLATE/rating.yml` | 自动生成 | 评分表单，选项随预设同步 |
 | `scripts/` | 工具 | `hxcloud.py`（校验、生成、评分）与 CI 辅助脚本 |
 | `.github/workflows/` | 自动化 | 构建目录、处理评分 |
-| `relay/cloudflare-worker/` | 可选服务 | App 内评分的中转服务 |
 
 ## 添加或更新预设
 
@@ -62,19 +61,47 @@ App 保存过多个设备的调音时，导出文件会包含 `devices` 数组�
 | `description` | 否 | 不超过 600 个字符 |
 | `tags` | 否 | 最多 8 个，每个不超过 12 个字符 |
 | `device_kinds` | 否 | `SPEAKER` `WIRED_ANALOG` `WIRED_USB` `BLUETOOTH` `OTHER`；为空表示通用 |
+| `target_devices` | 否 | 适配机型，最多 20 个：`{"kind": "BLUETOOTH", "name": "WH-1000XM5", "aliases": ["WH1000XM5"]}` |
 | `featured` | 否 | 为 `true` 时列为精选 |
+
+### 适配机型
+
+App 里的「适合当前设备」只列出标注了当前型号的预设：
+
+- 手机外放：`kind` 为 `SPEAKER`，`name` 填手机市场名（如 `Xiaomi 15`），型号代码（如 `24129PN74C`）放进 `aliases`
+- 蓝牙 / USB 耳机：`name` 填系统报告的产品名（如 `WH-1000XM5`）；4 个字符以上的名称也能匹配用户改过名的蓝牙耳机
+- 3.5mm 耳机无法识别型号，不参与匹配
+- 投稿邮件里会自动附带投稿人手机识别到的型号与输出设备名
+
+可以在 HXCloud 中编辑，或命令行 `add` 时使用 `--model BLUETOOTH:WH-1000XM5,WH1000XM5`（可重复）。
 
 ## 评分
 
 | 入口 | 触发方式 | 投票人标识 |
 | --- | --- | --- |
+| App | 云端页登录 GitHub 后在预设详情中评分 | GitHub 账号 |
 | Issue 表单 | Issues →「⭐ 给预设评分」 | GitHub 账号 |
 | 手动测试 | Actions →「评分（App 接口）」→ Run workflow | 触发者账号 |
-| App | `cloud.config.json` 中配置 `rating.submit_endpoint` 后开放 | 设备安装标识（经 HMAC 匿名化） |
 
-每位投票人对同一预设只保留最后一票。App 内评分需要先部署 `relay/cloudflare-worker`，步骤见该目录下的 README。
+每个账号对同一预设只保留最后一票。
 
-仓库初始包含 18 条测试评分（`via: seed`），正式发布前应清除：
+### 开放 App 内评分（一次性设置）
+
+App 通过一个 GitHub App 登录，它只有在本仓库提交 issue 的权限：
+
+1. GitHub → Settings → Developer settings → GitHub Apps → **New GitHub App**
+   - GitHub App name：任取一个未被占用的名字，例如 `HXAudio Pro Cloud`（授权页会显示它）
+   - Homepage URL：`https://github.com/HuberHaYu/hxaudio-cloud`
+   - Callback URL 留空；**不勾选** Expire user authorization tokens；**勾选 Enable Device Flow**
+   - Webhook：取消勾选 Active
+   - Permissions → Repository permissions → **Issues：Read and write**（其余保持 No access）
+   - Where can this GitHub App be installed：**Any account**（其他用户才能授权登录）
+2. 创建后，在应用页面左侧 **Install App** → 安装到 `HuberHaYu` → Only select repositories → `hxaudio-cloud`
+3. 复制应用页面上的 **Client ID**（形如 `Iv23li…`，不是 App ID，也不需要 Client secret），在 HXCloud 的「目录设置」中填入并保存；或写入 `cloud.config.json` 的 `rating.github_client_id` 后推送
+
+保存后 Actions 会把它写入签名后的 manifest，App 同步后即出现 GitHub 登录与评分。
+
+仓库初始包含测试评分（`via: seed`），正式发布前应清除：
 
 ```bash
 python3 scripts/hxcloud.py purge-seed && git add -A && git commit -m "清除测试评分" && git push

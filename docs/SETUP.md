@@ -74,8 +74,6 @@ macOS 访达默认隐藏 `.github`、`.gitattributes` 等以点开头的文件�
 - 正式上线前清除测试评分：`python3 scripts/hxcloud.py purge-seed`，然后提交推送
 - 本地修改前先 `git pull`——评分会不断产生新提交
 
-## 6. 第二阶段：App 内评分
+## 6. App 内评分
 
-App 不能内置 GitHub 令牌，所以需要一个中转服务。部署步骤见 `relay/cloudflare-worker/README.md`，
-部署后把地址填进 `cloud.config.json` 的 `rating.submit_endpoint` 并推送，
-manifest 更新后 App 就会开放评分提交。在这之前 App 可以只展示评分。
+App 通过 GitHub 登录评分，只需在 GitHub 上创建一个权限极小的 GitHub App，步骤见 `docs/MAINTAINING.md`「开放 App 内评分」。
