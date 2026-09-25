@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T19:14:11Z",
+  "generated_at": "2026-09-25T19:14:52Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -662,8 +662,7 @@
       "description": "（使用时务必开启系统的”杜比全景声“）通过铁三角专业麦克风与真实的听音感受，结合 小米 14 的默认外放频响情况，通过超细致的高低频曲线进行全方位听感提升",
       "author": "Huber_HaYu",
       "tags": [
-        "Huber",
-        "Lab实验室",
+        "HuberLab实验室",
         "小米",
         "HiRes",
         "杜比全景声"
