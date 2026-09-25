@@ -1,0 +1,21 @@
+{
+  "title": "小米 10 Ultra - 外放特调",
+  "subtitle": "针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题",
+  "description": "针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题",
+  "author": "Huber_HaYu",
+  "tags": [
+    "小米",
+    "低端扬声器调教"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Mi 10 Ultra",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
