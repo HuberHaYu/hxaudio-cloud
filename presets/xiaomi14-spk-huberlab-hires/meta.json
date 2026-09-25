@@ -1,0 +1,29 @@
+{
+  "title": "小米14外放特调 - HX官方曲线优化",
+  "subtitle": "特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向",
+  "description": "（使用时务必开启系统的”杜比全景声“）通过铁三角专业麦克风与真实的听音感受，结合 小米 14 的默认外放频响情况，通过超细致的高低频曲线进行全方位听感提升",
+  "author": "Huber_HaYu",
+  "tags": [
+    "Huber",
+    "Lab实验室",
+    "小米",
+    "HiRes",
+    "杜比全景声"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14 Pro",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
