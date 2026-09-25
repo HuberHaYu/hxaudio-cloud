@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T04:37:02Z",
+  "generated_at": "2026-09-25T18:26:58Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -242,6 +242,107 @@
           0.13,
           0.05,
           0.02
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.429,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "mi10ultra-spk-huber",
+      "title": "小米 10 Ultra - 外放特调",
+      "subtitle": "针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题",
+      "description": "针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题",
+      "author": "Huber_HaYu",
+      "tags": [
+        "小米",
+        "低端扬声器调教"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Mi 10 Ultra",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-25",
+      "updated": "2026-09-25",
+      "file": {
+        "path": "presets/mi10ultra-spk-huber/mi10ultra-spk-huber.hx4",
+        "sha256": "a915c105d3d85b82570f4357148f7861f4201d6e106146380e64d800e1b5963e",
+        "bytes": 3069,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 7,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          5.33,
+          7.38,
+          4.73,
+          -0.26,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.0,
+          0.02,
+          0.3,
+          1.74,
+          4.37,
+          4.8,
+          2.65,
+          1.68,
+          2.49,
+          3.78,
+          4.6,
+          4.55,
+          3.87,
+          3.18,
+          2.86,
+          2.75,
+          2.49,
+          1.96,
+          1.31,
+          0.81,
+          0.01,
+          -2.29,
+          -0.79,
+          -2.29,
+          -1.03,
+          2.62,
+          4.84,
+          5.04,
+          4.26,
+          3.13,
+          2.0
         ]
       },
       "rating": {
