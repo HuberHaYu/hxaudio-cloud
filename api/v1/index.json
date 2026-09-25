@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T19:13:30Z",
+  "generated_at": "2026-09-25T19:14:11Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -143,7 +143,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.429,
+        "weighted": 4.5,
         "histogram": [
           0,
           0,
@@ -247,7 +247,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.429,
+        "weighted": 4.5,
         "histogram": [
           0,
           0,
@@ -348,7 +348,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.429,
+        "weighted": 4.5,
         "histogram": [
           0,
           0,
@@ -446,7 +446,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.524,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
@@ -548,7 +548,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.524,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
@@ -645,7 +645,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.429,
+        "weighted": 4.5,
         "histogram": [
           0,
           0,
@@ -752,15 +752,15 @@
         ]
       },
       "rating": {
-        "count": 0,
-        "average": null,
-        "weighted": 4.429,
+        "count": 1,
+        "average": 5.0,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
           0,
           0,
-          0
+          1
         ]
       }
     },
@@ -863,7 +863,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 4.191,
+        "weighted": 4.25,
         "histogram": [
           0,
           0,
@@ -966,7 +966,7 @@
       "rating": {
         "count": 3,
         "average": 4.33,
-        "weighted": 4.393,
+        "weighted": 4.438,
         "histogram": [
           0,
           0,
@@ -1069,7 +1069,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.524,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
