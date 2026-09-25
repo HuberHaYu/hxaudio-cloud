@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T18:26:58Z",
+  "generated_at": "2026-09-25T19:13:30Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -640,6 +640,115 @@
           0.41,
           0.3,
           0.18
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.429,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "xiaomi14-spk-huberlab-hires",
+      "title": "小米14外放特调 - HX官方曲线优化",
+      "subtitle": "特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向",
+      "description": "（使用时务必开启系统的”杜比全景声“）通过铁三角专业麦克风与真实的听音感受，结合 小米 14 的默认外放频响情况，通过超细致的高低频曲线进行全方位听感提升",
+      "author": "Huber_HaYu",
+      "tags": [
+        "Huber",
+        "Lab实验室",
+        "小米",
+        "HiRes",
+        "杜比全景声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 14",
+          "aliases": []
+        },
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 14 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": true,
+      "revision": 1,
+      "created": "2026-09-25",
+      "updated": "2026-09-25",
+      "file": {
+        "path": "presets/xiaomi14-spk-huberlab-hires/xiaomi14-spk-huberlab-hires.hx4",
+        "sha256": "4ad43cdcdf688d81d3caab070902e85587977f28cb248f87d293cb6372da9328",
+        "bytes": 5434,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 23,
+        "bass_boost_db": 0.8,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.02,
+          0.34,
+          3.01,
+          7.99,
+          8.06,
+          9.07,
+          13.36,
+          14.17,
+          12.07,
+          13.41,
+          9.08,
+          2.86,
+          0.85,
+          1.71,
+          1.41,
+          0.71,
+          0.41,
+          -0.47,
+          1.72,
+          -6.3,
+          -2.75,
+          2.84,
+          2.7,
+          0.16,
+          8.24,
+          8.05,
+          7.93,
+          3.18
         ]
       },
       "rating": {
