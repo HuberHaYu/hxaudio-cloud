@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T00:13:30Z",
+  "generated_at": "2026-09-25T00:13:33Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -143,7 +143,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.6,
+        "weighted": 4.2,
         "histogram": [
           0,
           0,
@@ -247,7 +247,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.6,
+        "weighted": 4.2,
         "histogram": [
           0,
           0,
@@ -345,7 +345,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.667,
+        "weighted": 4.333,
         "histogram": [
           0,
           0,
@@ -447,7 +447,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.667,
+        "weighted": 4.333,
         "histogram": [
           0,
           0,
@@ -544,7 +544,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.6,
+        "weighted": 4.2,
         "histogram": [
           0,
           0,
@@ -653,7 +653,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 4.333,
+        "weighted": 4.0,
         "histogram": [
           0,
           0,
@@ -756,7 +756,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.667,
+        "weighted": 4.333,
         "histogram": [
           0,
           0,
@@ -858,14 +858,14 @@
       },
       "rating": {
         "count": 1,
-        "average": 5.0,
-        "weighted": 4.667,
+        "average": 3.0,
+        "weighted": 4.0,
         "histogram": [
           0,
           0,
+          1,
           0,
-          0,
-          1
+          0
         ]
       }
     }
