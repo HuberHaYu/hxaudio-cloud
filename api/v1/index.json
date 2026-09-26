@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T19:21:26Z",
+  "generated_at": "2026-09-26T07:48:22Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -51,6 +51,105 @@
     ]
   },
   "presets": [
+    {
+      "id": "dync-bass-hxofficial",
+      "title": "HX通用调音 - 动态低频补偿",
+      "subtitle": "通过小型扬声器曲线设计的低频补偿，低音量低频饱满，高音量不破音",
+      "description": "通过小型扬声器曲线设计的低频补偿，低音量低频饱满，高音量不破音。曲线设计来自 HXAudio 实验室，利用铁三角专业麦克风监听制作。",
+      "author": "Huber_HaYu",
+      "tags": [
+        "通用",
+        "外放",
+        "HuberLab实验室",
+        "低频补偿",
+        "等响补偿"
+      ],
+      "device_kinds": [
+        "SPEAKER",
+        "OTHER"
+      ],
+      "target_devices": [],
+      "featured": true,
+      "revision": 1,
+      "created": "2026-09-26",
+      "updated": "2026-09-26",
+      "file": {
+        "path": "presets/dync-bass-hxofficial/dync-bass-hxofficial.hx4",
+        "sha256": "3c025b2d8066962dc0a5f17a0b7b1a6d8b7568d2bfc0f177d48a5a7fdf81be72",
+        "bytes": 3800,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 12,
+        "bass_boost_db": null,
+        "input_gain_db": 2.9,
+        "limiter": true,
+        "virtual_surround_percent": 38,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.71,
+          1.32,
+          2.17,
+          2.09,
+          -2.57,
+          -1.43,
+          4.62,
+          6.8,
+          10.17,
+          11.84,
+          13.3,
+          10.62,
+          10.15,
+          3.19,
+          -0.42,
+          -1.37,
+          -2.07,
+          -2.47,
+          -2.38,
+          -1.88,
+          -1.31,
+          -1.44,
+          -2.42,
+          -2.18,
+          -0.2,
+          -3.96,
+          -1.61,
+          1.94,
+          1.65,
+          1.19,
+          0.72
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.5,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
     {
       "id": "k60pro-spk-papershort",
       "title": "Redmi K60 Pro 流行音乐",
