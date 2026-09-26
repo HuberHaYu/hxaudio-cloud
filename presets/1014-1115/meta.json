@@ -1,0 +1,94 @@
+{
+  "title": "1014 / 1115喇叭单元调教",
+  "subtitle": "结合喇叭特性进行极限调教，适合绝大多数此类喇叭的设备",
+  "description": "通过铁三角麦克风监听得来，以硬件极限表现为严格要求，大幅提升此类喇叭的调音极限，并注入等响补偿",
+  "author": "Huber_HaYu",
+  "tags": [
+    "HuberLab实验室",
+    "1014单元",
+    "1115单元",
+    "外放",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14 Ultra",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Ultra",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "iQOO 15 Ultra",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "vivo iQOO 13",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "iQOO 13",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "realme GT 8 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 17",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 17 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 17 Max",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 17 Pro Max",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 17 Ultra",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
