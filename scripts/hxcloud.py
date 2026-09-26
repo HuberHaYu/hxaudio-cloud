@@ -193,33 +193,50 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
     r = AudioReader(report, where)
     pre = r.floats(audio, "audio", "pre_eq_gains_db", len(PRE_EQ_HZ), 12.0)
 
-    points: list[tuple[float, float, float]] = []
-    raw_points = audio.get("post_eq_points")
-    if not isinstance(raw_points, list):
-        report.error(where, "audio.post_eq_points 必须是数组")
-        raw_points = []
-    seen_ids = set()
-    for index, point in enumerate(raw_points):
-        path = f"audio.post_eq_points[{index}]"
-        if not isinstance(point, dict):
-            report.error(where, f"{path} 必须是对象")
-            continue
-        point_id = point.get("id")
-        if not isinstance(point_id, str) or not point_id.strip():
-            report.warn(where, f"{path}.id 为空，App 导入时会随机生成")
-        elif point_id in seen_ids:
-            report.warn(where, f"{path}.id 重复：{point_id}")
+    def read_points(raw_points, label: str) -> list[tuple[float, float, float]]:
+        points: list[tuple[float, float, float]] = []
+        if not isinstance(raw_points, list):
+            report.error(where, f"{label} 必须是数组")
+            raw_points = []
+        seen_ids = set()
+        for index, point in enumerate(raw_points):
+            path = f"{label}[{index}]"
+            if not isinstance(point, dict):
+                report.error(where, f"{path} 必须是对象")
+                continue
+            point_id = point.get("id")
+            if not isinstance(point_id, str) or not point_id.strip():
+                report.warn(where, f"{path}.id 为空，App 导入时会随机生成")
+            elif point_id in seen_ids:
+                report.warn(where, f"{path}.id 重复：{point_id}")
+            else:
+                seen_ids.add(point_id)
+            points.append((
+                r.num(point, path, "frequency_hz", 20.0, 20000.0, default=1000.0),
+                r.num(point, path, "gain_db", -15.0, 15.0),
+                r.num(point, path, "q", 0.2, 12.0, default=1.0),
+            ))
+        if [p[0] for p in points] != sorted(p[0] for p in points):
+            report.warn(where, f"{label} 未按频率升序排列（App 导入时会自动排序）")
+        if len(points) > 24:
+            report.warn(where, f"{label} 有 {len(points)} 个控制点，建议不超过 24 个")
+        return points
+
+    points = read_points(audio.get("post_eq_points"), "audio.post_eq_points")
+
+    # 频响 Pro（可选）：左右声道各自的曲线，叠加在上面的立体声曲线之上。旧版 App 只读
+    # post_eq_points，把它作用在两个声道上，也就是 Pro 关闭时的效果。
+    pro_on = False
+    left_points: list[tuple[float, float, float]] = []
+    right_points: list[tuple[float, float, float]] = []
+    channels = audio.get("post_eq_channels")
+    if channels is not None:
+        if not isinstance(channels, dict):
+            report.error(where, "audio.post_eq_channels 必须是对象")
         else:
-            seen_ids.add(point_id)
-        points.append((
-            r.num(point, path, "frequency_hz", 20.0, 20000.0, default=1000.0),
-            r.num(point, path, "gain_db", -15.0, 15.0),
-            r.num(point, path, "q", 0.2, 12.0, default=1.0),
-        ))
-    if [p[0] for p in points] != sorted(p[0] for p in points):
-        report.warn(where, "post_eq_points 未按频率升序排列（App 导入时会自动排序）")
-    if len(points) > 24:
-        report.warn(where, f"PostEQ 有 {len(points)} 个控制点，建议不超过 24 个")
+            pro_on = r.boolean(channels, "post_eq_channels", "pro_enabled", required=False)
+            left_points = read_points(channels.get("left_points", []), "audio.post_eq_channels.left_points")
+            right_points = read_points(channels.get("right_points", []), "audio.post_eq_channels.right_points")
 
     bass = r.obj(audio, "bass_boost")
     bass_on = r.boolean(bass, "bass_boost", "enabled")
@@ -262,12 +279,20 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
     comp_audible = comp_on and any(v != 0 for v in low + mid + high)
 
     post = [sample_post_eq(points, hz) for hz in POST_EQ_HZ]
+    # 每个声道实际得到的 PostEQ：立体声曲线加上它自己的 Pro 曲线（与 App 的 responseAt 一致）。
+    channel_posts = [post]
+    if pro_on:
+        channel_posts = [
+            [max(-15.0, min(15.0, post[i] + sample_post_eq(extra, hz))) for i, hz in enumerate(POST_EQ_HZ)]
+            for extra in (left_points, right_points)
+        ]
 
     # 粗略的峰值增益估计，只用来提醒可能削波；不代表 DynamicsProcessing 的精确响应。
     # 响度补偿只计 100% 音量那个节点：低音量时信号本身已被衰减，补偿不会顶到满幅。
     peak = max(
-        pre_eq_at(pre, hz) + post[i] + total_db
+        pre_eq_at(pre, hz) + channel_post[i] + total_db
         + (bass_db if bass_on and BASS_BOOST_RANGE_HZ[0] <= hz <= BASS_BOOST_RANGE_HZ[1] else 0.0)
+        for channel_post in channel_posts
         for i, hz in enumerate(POST_EQ_HZ)
     )
     if comp_audible:
@@ -277,9 +302,17 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
     elif peak > 12.0:
         report.warn(where, f"估计峰值增益约 +{peak:.1f} dB，建议降低 input_gain.total_gain_db")
 
+    preview = {
+        "pre_eq_db": [round(v, 2) for v in pre],
+        "post_eq_db": [round(v, 2) for v in post],
+    }
+    if pro_on:
+        preview["post_eq_left_db"] = [round(v, 2) for v in channel_posts[0]]
+        preview["post_eq_right_db"] = [round(v, 2) for v in channel_posts[1]]
     return {
         "features": {
             "post_eq_points": len(points),
+            "post_eq_pro": pro_on,
             "bass_boost_db": round(bass_db, 2) if bass_on else None,
             "input_gain_db": round(total_db, 2),
             "limiter": limiter_on,
@@ -287,10 +320,7 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
             "volume_compensation": comp_audible,
             "eq_pulse": pulse_audible,
         },
-        "preview": {
-            "pre_eq_db": [round(v, 2) for v in pre],
-            "post_eq_db": [round(v, 2) for v in post],
-        },
+        "preview": preview,
     }
 
 

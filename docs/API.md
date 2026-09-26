@@ -118,8 +118,10 @@
 | `features.virtual_surround_percent` | int \| null | 虚拟环绕宽度，关闭为 null |
 | `features.volume_compensation` | bool | 响度补偿是否实际生效 |
 | `features.eq_pulse` | bool | 是否带 EQ Pulse 冲激曲线 |
+| `features.post_eq_pro` | bool | 是否开启频响 Pro（左右声道各有一条曲线）。旧目录没有这个字段，按 false 处理 |
 | `preview.pre_eq_db` | number[12] | 对应 `frequencies.pre_eq_hz` |
 | `preview.post_eq_db` | number[31] | 对应 `frequencies.post_eq_hz`，与 `PostEqDefinition.sample(points)` 一致（误差 ≤ 0.005 dB） |
+| `preview.post_eq_left_db` / `preview.post_eq_right_db` | number[31] | **可选**，只在频响 Pro 开启时出现：左 / 右声道实际得到的 PostEQ（立体声曲线加上该声道自己的曲线，限制在 ±15 dB），频点同 `post_eq_db`。不认识它们的旧版 App 会忽略，继续画 `post_eq_db` |
 | `rating.count` | int | 票数 |
 | `rating.average` | number \| null | 算术平均，两位小数；0 票时为 null |
 | `rating.weighted` | number | 贝叶斯平均 `(C·m + Σ分数) / (C + n)`，C = `prior_weight`，m = `global_mean`，**排序请用它** |
