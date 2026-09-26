@@ -7,6 +7,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 <!-- presets:start -->
 | 预设 | 适用设备 | 说明 | 文件 |
 | --- | --- | --- | --- |
+| 1014 / 1115喇叭单元调教 | 手机外放（Xiaomi 14、Xiaomi 14 Pro、Xiaomi 14 Ultra、Xiaomi 15、Xiaomi 15 Pro、Xiaomi 15 Ultra、iQOO 15 Ultra、vivo iQOO 13、iQOO 13、realme GT 8 Pro、Xiaomi 17、Xiaomi 17 Pro、Xiaomi 17 Max、Xiaomi 17 Pro Max、Xiaomi 17 Ultra） | 结合喇叭特性进行极限调教，适合绝大多数此类喇叭的设备 | [1014-1115.hx4](presets/1014-1115/1014-1115.hx4) |
 | HX通用调音 - 动态低频补偿 | 手机外放、其他设备 | 通过小型扬声器曲线设计的低频补偿，低音量低频饱满，高音量不破音 | [dync-bass-hxofficial.hx4](presets/dync-bass-hxofficial/dync-bass-hxofficial.hx4) |
 | 小米14 - HX官方曲线优化 | 手机外放（Xiaomi 14、Xiaomi 14 Pro） | 特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向 | [xiaomi14-spk-huberlab-hires.hx4](presets/xiaomi14-spk-huberlab-hires/xiaomi14-spk-huberlab-hires.hx4) |
 | 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
