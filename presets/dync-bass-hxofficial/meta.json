@@ -1,0 +1,19 @@
+{
+  "title": "HX通用调音 - 动态低频补偿",
+  "subtitle": "通过小型扬声器曲线设计的低频补偿，低音量低频饱满，高音量不破音",
+  "description": "通过小型扬声器曲线设计的低频补偿，低音量低频饱满，高音量不破音。曲线设计来自 HXAudio 实验室，利用铁三角专业麦克风监听制作。",
+  "author": "Huber_HaYu",
+  "tags": [
+    "通用",
+    "外放",
+    "HuberLab实验室",
+    "低频补偿",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER",
+    "OTHER"
+  ],
+  "target_devices": [],
+  "featured": true
+}
