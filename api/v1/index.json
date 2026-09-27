@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T12:53:35Z",
+  "generated_at": "2026-09-27T12:53:39Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -282,7 +282,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.762,
+        "weighted": 4.702,
         "histogram": [
           0,
           0,
@@ -382,7 +382,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.723,
+        "weighted": 4.652,
         "histogram": [
           0,
           0,
@@ -485,7 +485,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.667,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
@@ -589,14 +589,14 @@
       },
       "rating": {
         "count": 1,
-        "average": 5.0,
-        "weighted": 4.723,
+        "average": 4.0,
+        "weighted": 4.486,
         "histogram": [
           0,
           0,
           0,
-          0,
-          1
+          1,
+          0
         ]
       }
     },
@@ -692,7 +692,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.667,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
@@ -791,7 +791,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.723,
+        "weighted": 4.652,
         "histogram": [
           0,
           0,
@@ -894,7 +894,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.723,
+        "weighted": 4.652,
         "histogram": [
           0,
           0,
@@ -992,7 +992,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.667,
+        "weighted": 4.583,
         "histogram": [
           0,
           0,
@@ -1101,7 +1101,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.723,
+        "weighted": 4.652,
         "histogram": [
           0,
           0,
@@ -1211,7 +1211,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 4.389,
+        "weighted": 4.319,
         "histogram": [
           0,
           0,
@@ -1315,7 +1315,7 @@
       "rating": {
         "count": 3,
         "average": 4.33,
-        "weighted": 4.542,
+        "weighted": 4.489,
         "histogram": [
           0,
           0,
@@ -1419,7 +1419,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.723,
+        "weighted": 4.652,
         "histogram": [
           0,
           0,
