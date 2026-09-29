@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T14:10:50Z",
+  "generated_at": "2026-09-29T14:13:50Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -916,6 +916,175 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "redmi-k100promax-os4-deepfish",
+      "title": "Redmi K100ProMax 澎湃低音",
+      "subtitle": "由深海胖头鱼上传，适用于Redmi K100ProMax 外放，澎湃低音",
+      "description": "由深海胖头鱼上传，适用于Redmi K100ProMax 外放，澎湃低音",
+      "author": "深海胖头鱼",
+      "tags": [
+        "2.1三扬声器",
+        "BOSE",
+        "重低音"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "REDMI K100 Pro Max",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-29",
+      "updated": "2026-09-29",
+      "file": {
+        "path": "presets/redmi-k100promax-os4-deepfish/redmi-k100promax-os4-deepfish.hx4",
+        "sha256": "8eb84f79ab34ac667339658bf62ff1078236a4a1823d2c527fe56cb0b48b959d",
+        "bytes": 5310,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 14,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": 100,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.09,
+          -0.12,
+          0.21,
+          2.2,
+          3.44,
+          4.92,
+          6.37,
+          4.58
+        ],
+        "post_eq_db": [
+          6.62,
+          7.31,
+          7.9,
+          8.47,
+          9.02,
+          9.52,
+          10.02,
+          10.35,
+          9.8,
+          7.28,
+          3.16,
+          0.19,
+          -0.86,
+          -0.27,
+          0.05,
+          0.08,
+          0.15,
+          0.21,
+          -0.07,
+          -1.01,
+          -2.41,
+          -3.79,
+          -4.58,
+          -4.42,
+          -3.39,
+          -1.9,
+          -0.31,
+          1.21,
+          2.5,
+          3.26,
+          3.24
+        ],
+        "post_eq_left_db": [
+          6.62,
+          7.31,
+          7.9,
+          8.47,
+          9.02,
+          9.52,
+          10.02,
+          10.35,
+          9.8,
+          7.28,
+          3.16,
+          0.19,
+          -0.86,
+          -0.27,
+          0.05,
+          0.08,
+          0.15,
+          0.21,
+          -0.07,
+          -1.01,
+          -2.41,
+          -3.79,
+          -4.58,
+          -4.42,
+          -3.39,
+          -1.9,
+          -0.31,
+          1.21,
+          2.5,
+          3.26,
+          3.24
+        ],
+        "post_eq_right_db": [
+          6.62,
+          7.31,
+          7.9,
+          8.47,
+          9.02,
+          9.52,
+          10.02,
+          10.35,
+          9.8,
+          7.28,
+          3.16,
+          0.19,
+          -0.86,
+          -0.27,
+          0.05,
+          0.08,
+          0.15,
+          0.21,
+          -0.07,
+          -1.01,
+          -2.41,
+          -3.79,
+          -4.58,
+          -4.42,
+          -3.39,
+          -1.9,
+          -0.31,
+          1.21,
+          2.5,
+          3.26,
+          3.24
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.667,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
