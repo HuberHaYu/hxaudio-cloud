@@ -16,6 +16,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米 10 Ultra - 外放特调 | 手机外放（Mi 10 Ultra） | 针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题 | [mi10ultra-spk-huber.hx4](presets/mi10ultra-spk-huber/mi10ultra-spk-huber.hx4) |
 | OPPO Enco Air4 Pro三星经典调音 | 蓝牙耳机（Oppo Enco X3、Oppo 4 Free、Oppo Air 4 Pro、Oppo Enco Air4 Pro） | 来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声 | [oppo-enco-air4-pro.hx4](presets/oppo-enco-air4-pro/oppo-enco-air4-pro.hx4) |
 | Redmi Buds6 Pro | 蓝牙耳机 | Redmi Buds6 Pro耳机高频细节调教 | [redmi-buds6-pro.hx4](presets/redmi-buds6-pro/redmi-buds6-pro.hx4) |
+| Redmi K90 - V形调音 | 手机外放（REDMI K90） | 由yingjiang240619上传，适用于Redmi K90外放的V形调音 | [redmik90-yingjiang240619.hx4](presets/redmik90-yingjiang240619/redmik90-yingjiang240619.hx4) |
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |

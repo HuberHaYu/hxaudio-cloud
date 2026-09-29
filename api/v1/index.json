@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T14:04:14Z",
+  "generated_at": "2026-09-29T14:10:50Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -916,6 +916,109 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "redmik90-yingjiang240619",
+      "title": "Redmi K90 - V形调音",
+      "subtitle": "由yingjiang240619上传，适用于Redmi K90外放的V形调音",
+      "description": "由yingjiang240619上传，适用于Redmi K90外放的V形调音",
+      "author": "yingjiang240619",
+      "tags": [
+        "BOSE",
+        "V形",
+        "对称双扬声器"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "REDMI K90",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-29",
+      "updated": "2026-09-29",
+      "file": {
+        "path": "presets/redmik90-yingjiang240619/redmik90-yingjiang240619.hx4",
+        "sha256": "5dd2074ba8d3d91307ea9ae92450e247f4c1dadeb9835365dfe461996f1cdeaa",
+        "bytes": 3365,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 9,
+        "post_eq_pro": false,
+        "bass_boost_db": 4.6,
+        "input_gain_db": 6.4,
+        "limiter": false,
+        "virtual_surround_percent": 100,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          3.54,
+          4.5,
+          3.79,
+          2.23,
+          -0.22,
+          3.22,
+          7.61,
+          10.47,
+          11.55,
+          10.65,
+          8.12,
+          2.02
+        ],
+        "post_eq_db": [
+          1.42,
+          2.02,
+          2.74,
+          3.58,
+          4.42,
+          5.03,
+          5.18,
+          4.79,
+          3.98,
+          2.94,
+          1.85,
+          0.87,
+          0.14,
+          -0.32,
+          -0.55,
+          -0.62,
+          -0.56,
+          -0.3,
+          0.3,
+          1.34,
+          2.72,
+          4.15,
+          5.48,
+          6.87,
+          8.31,
+          9.37,
+          9.87,
+          9.79,
+          9.01,
+          7.63,
+          5.94
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.667,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
