@@ -1,0 +1,22 @@
+{
+  "title": "Redmi K100ProMax 澎湃低音",
+  "subtitle": "由深海胖头鱼上传，适用于Redmi K100ProMax 外放，澎湃低音",
+  "description": "由深海胖头鱼上传，适用于Redmi K100ProMax 外放，澎湃低音",
+  "author": "深海胖头鱼",
+  "tags": [
+    "2.1三扬声器",
+    "BOSE",
+    "重低音"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "REDMI K100 Pro Max",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

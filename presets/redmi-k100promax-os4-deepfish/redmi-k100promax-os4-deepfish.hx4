@@ -1,0 +1,281 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1790691215715,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.09,
+      -0.12,
+      0.21,
+      2.2,
+      3.44,
+      4.92,
+      6.37,
+      4.58
+    ],
+    "post_eq_points": [
+      {
+        "id": "default-80",
+        "frequency_hz": 20.0,
+        "gain_db": 5.5,
+        "q": 0.75
+      },
+      {
+        "id": "103c6a02-46ea-4595-8772-5717bb394602",
+        "frequency_hz": 69.94,
+        "gain_db": 7.5,
+        "q": 0.8
+      },
+      {
+        "id": "ba5bd9ba-db82-46a0-ba8a-c5d75df90d96",
+        "frequency_hz": 139.76,
+        "gain_db": 5.0,
+        "q": 1.25
+      },
+      {
+        "id": "fac86ffa-c190-486d-9a65-e4d6278216de",
+        "frequency_hz": 184.27,
+        "gain_db": -0.5,
+        "q": 4.5
+      },
+      {
+        "id": "default-320",
+        "frequency_hz": 241.97,
+        "gain_db": -0.5,
+        "q": 2.25
+      },
+      {
+        "id": "6642bbf1-5fe9-4400-9e39-106bcdc0ae4e",
+        "frequency_hz": 245.78,
+        "gain_db": -2.0,
+        "q": 1.9
+      },
+      {
+        "id": "8c4c36be-804f-4746-ac80-514516f6721f",
+        "frequency_hz": 324.73,
+        "gain_db": -0.5,
+        "q": 3.25
+      },
+      {
+        "id": "default-1200",
+        "frequency_hz": 705.42,
+        "gain_db": 0.0,
+        "q": 1.0
+      },
+      {
+        "id": "77722264-e988-42d6-aa2d-08331a108413",
+        "frequency_hz": 1247.48,
+        "gain_db": 0.5,
+        "q": 1.7
+      },
+      {
+        "id": "0df9e064-505c-4bec-81ed-0e541f6cb32e",
+        "frequency_hz": 3194.6,
+        "gain_db": -2.0,
+        "q": 1.1
+      },
+      {
+        "id": "4d826706-fac4-458a-bd69-ebdb0b7c9c5f",
+        "frequency_hz": 3748.63,
+        "gain_db": -3.0,
+        "q": 0.95
+      },
+      {
+        "id": "default-6500",
+        "frequency_hz": 12826.7,
+        "gain_db": 0.5,
+        "q": 0.4
+      },
+      {
+        "id": "10336438-2e32-436b-8d4f-483d811383c3",
+        "frequency_hz": 16016.68,
+        "gain_db": 1.5,
+        "q": 1.25
+      },
+      {
+        "id": "347c6572-a7ec-4162-b1b6-4ce687e05189",
+        "frequency_hz": 20000.0,
+        "gain_db": 1.5,
+        "q": 1.0
+      }
+    ],
+    "post_eq_channels": {
+      "pro_enabled": true,
+      "left_points": [
+        {
+          "id": "left-default-80",
+          "frequency_hz": 80.0,
+          "gain_db": 0.0,
+          "q": 0.75
+        },
+        {
+          "id": "left-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "left-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "left-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": 0.0,
+          "q": 0.9
+        }
+      ],
+      "right_points": [
+        {
+          "id": "right-default-80",
+          "frequency_hz": 80.0,
+          "gain_db": 0.0,
+          "q": 0.75
+        },
+        {
+          "id": "right-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "right-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "right-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": 0.0,
+          "q": 0.9
+        }
+      ]
+    },
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 8.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.0,
+      "use_dynamics_processing_gain": true
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -1.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": true,
+      "width_percent": 100
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": true,
+      "node_step_percent": 10,
+      "low_db": [
+        7.0,
+        7.0,
+        7.0,
+        6.5,
+        5.5,
+        4.0,
+        2.5,
+        1.0,
+        -1.0,
+        -1.5,
+        -2.0
+      ],
+      "mid_db": [
+        -1.5,
+        -1.5,
+        -1.5,
+        -1.5,
+        -1.5,
+        -1.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        5.0,
+        4.5,
+        4.0,
+        3.5,
+        2.5,
+        1.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
