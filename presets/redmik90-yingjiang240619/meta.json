@@ -1,0 +1,22 @@
+{
+  "title": "Redmi K90 - V形调音",
+  "subtitle": "由yingjiang240619上传，适用于Redmi K90外放的V形调音",
+  "description": "由yingjiang240619上传，适用于Redmi K90外放的V形调音",
+  "author": "yingjiang240619",
+  "tags": [
+    "BOSE",
+    "V形",
+    "对称双扬声器"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "REDMI K90",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

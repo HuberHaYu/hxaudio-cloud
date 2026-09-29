@@ -1,0 +1,196 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1790691034471,
+  "audio": {
+    "pre_eq_gains_db": [
+      3.54,
+      4.5,
+      3.79,
+      2.23,
+      -0.22,
+      3.22,
+      7.61,
+      10.47,
+      11.55,
+      10.65,
+      8.12,
+      2.02
+    ],
+    "post_eq_points": [
+      {
+        "id": "default-80",
+        "frequency_hz": 37.68,
+        "gain_db": 2.0,
+        "q": 0.75
+      },
+      {
+        "id": "c4410c1b-0d94-4fea-9d98-7aa66728a58f",
+        "frequency_hz": 76.57,
+        "gain_db": 3.5,
+        "q": 1.0
+      },
+      {
+        "id": "default-320",
+        "frequency_hz": 150.59,
+        "gain_db": 1.5,
+        "q": 1.1
+      },
+      {
+        "id": "413acfff-dd69-4741-82e5-e19f4907a435",
+        "frequency_hz": 486.34,
+        "gain_db": -0.5,
+        "q": 1.0
+      },
+      {
+        "id": "default-1200",
+        "frequency_hz": 1200.0,
+        "gain_db": -0.5,
+        "q": 1.0
+      },
+      {
+        "id": "f57b590a-8b69-484b-a9a9-4e6bd0f5e2e3",
+        "frequency_hz": 3180.86,
+        "gain_db": 4.5,
+        "q": 1.0
+      },
+      {
+        "id": "a13bf652-8a32-4aae-a078-5dfae28e3b0f",
+        "frequency_hz": 5869.0,
+        "gain_db": 4.5,
+        "q": 1.45
+      },
+      {
+        "id": "default-6500",
+        "frequency_hz": 9685.71,
+        "gain_db": 4.0,
+        "q": 1.45
+      },
+      {
+        "id": "43a1fb75-9059-45c2-95e4-e06eeb04abc9",
+        "frequency_hz": 15899.1,
+        "gain_db": 6.0,
+        "q": 1.0
+      }
+    ],
+    "bass_boost": {
+      "enabled": true,
+      "gain_db": 4.6
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 6.4,
+      "use_dynamics_processing_gain": false
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": 0.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": true,
+      "width_percent": 100
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": false,
+      "node_step_percent": 10,
+      "low_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
