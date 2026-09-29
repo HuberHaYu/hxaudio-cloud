@@ -1,0 +1,37 @@
+{
+  "title": "OPPO Enco Air4 Pro三星经典调音",
+  "subtitle": "来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声",
+  "description": "来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声",
+  "author": "凉城Starfall",
+  "tags": [
+    "耳机",
+    "三星",
+    "频响优化"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "Oppo Enco X3",
+      "aliases": []
+    },
+    {
+      "kind": "BLUETOOTH",
+      "name": "Oppo 4 Free",
+      "aliases": []
+    },
+    {
+      "kind": "BLUETOOTH",
+      "name": "Oppo Air 4 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "BLUETOOTH",
+      "name": "Oppo Enco Air4 Pro",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

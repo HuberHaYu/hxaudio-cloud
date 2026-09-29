@@ -1,0 +1,904 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1790690638336,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "post_eq_points": [
+      {
+        "id": "eq001",
+        "frequency_hz": 20.0,
+        "gain_db": -10.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq002",
+        "frequency_hz": 21.0,
+        "gain_db": -10.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq003",
+        "frequency_hz": 22.0,
+        "gain_db": -10.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq004",
+        "frequency_hz": 23.0,
+        "gain_db": -10.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq005",
+        "frequency_hz": 24.0,
+        "gain_db": -10.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq006",
+        "frequency_hz": 26.0,
+        "gain_db": -10.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq007",
+        "frequency_hz": 27.0,
+        "gain_db": -10.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq008",
+        "frequency_hz": 29.0,
+        "gain_db": -10.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq009",
+        "frequency_hz": 30.0,
+        "gain_db": -10.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq010",
+        "frequency_hz": 32.0,
+        "gain_db": -10.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq011",
+        "frequency_hz": 34.0,
+        "gain_db": -10.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq012",
+        "frequency_hz": 36.0,
+        "gain_db": -11.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq013",
+        "frequency_hz": 38.0,
+        "gain_db": -11.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq014",
+        "frequency_hz": 40.0,
+        "gain_db": -11.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq015",
+        "frequency_hz": 43.0,
+        "gain_db": -11.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq016",
+        "frequency_hz": 45.0,
+        "gain_db": -11.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq017",
+        "frequency_hz": 48.0,
+        "gain_db": -11.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq018",
+        "frequency_hz": 50.0,
+        "gain_db": -11.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq019",
+        "frequency_hz": 53.0,
+        "gain_db": -11.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq020",
+        "frequency_hz": 56.0,
+        "gain_db": -11.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq021",
+        "frequency_hz": 59.0,
+        "gain_db": -11.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq022",
+        "frequency_hz": 63.0,
+        "gain_db": -11.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq023",
+        "frequency_hz": 66.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq024",
+        "frequency_hz": 70.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq025",
+        "frequency_hz": 74.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq026",
+        "frequency_hz": 78.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq027",
+        "frequency_hz": 83.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq028",
+        "frequency_hz": 87.0,
+        "gain_db": -12.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq029",
+        "frequency_hz": 92.0,
+        "gain_db": -11.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq030",
+        "frequency_hz": 97.0,
+        "gain_db": -11.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq031",
+        "frequency_hz": 103.0,
+        "gain_db": -11.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq032",
+        "frequency_hz": 109.0,
+        "gain_db": -11.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq033",
+        "frequency_hz": 115.0,
+        "gain_db": -11.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq034",
+        "frequency_hz": 121.0,
+        "gain_db": -11.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq035",
+        "frequency_hz": 128.0,
+        "gain_db": -11.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq036",
+        "frequency_hz": 136.0,
+        "gain_db": -11.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq037",
+        "frequency_hz": 143.0,
+        "gain_db": -11.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq038",
+        "frequency_hz": 151.0,
+        "gain_db": -11.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq039",
+        "frequency_hz": 160.0,
+        "gain_db": -11.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq040",
+        "frequency_hz": 169.0,
+        "gain_db": -11.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq041",
+        "frequency_hz": 178.0,
+        "gain_db": -10.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq042",
+        "frequency_hz": 188.0,
+        "gain_db": -10.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq043",
+        "frequency_hz": 199.0,
+        "gain_db": -10.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq044",
+        "frequency_hz": 210.0,
+        "gain_db": -10.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq045",
+        "frequency_hz": 222.0,
+        "gain_db": -10.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq046",
+        "frequency_hz": 235.0,
+        "gain_db": -10.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq047",
+        "frequency_hz": 248.0,
+        "gain_db": -10.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq048",
+        "frequency_hz": 262.0,
+        "gain_db": -10.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq049",
+        "frequency_hz": 277.0,
+        "gain_db": -10.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq050",
+        "frequency_hz": 292.0,
+        "gain_db": -10.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq051",
+        "frequency_hz": 309.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq052",
+        "frequency_hz": 326.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq053",
+        "frequency_hz": 345.0,
+        "gain_db": -9.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq054",
+        "frequency_hz": 364.0,
+        "gain_db": -9.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq055",
+        "frequency_hz": 385.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq056",
+        "frequency_hz": 406.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq057",
+        "frequency_hz": 429.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq058",
+        "frequency_hz": 453.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq059",
+        "frequency_hz": 479.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq060",
+        "frequency_hz": 506.0,
+        "gain_db": -9.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq061",
+        "frequency_hz": 534.0,
+        "gain_db": -9.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq062",
+        "frequency_hz": 565.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq063",
+        "frequency_hz": 596.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq064",
+        "frequency_hz": 630.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq065",
+        "frequency_hz": 665.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq066",
+        "frequency_hz": 703.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq067",
+        "frequency_hz": 743.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq068",
+        "frequency_hz": 784.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq069",
+        "frequency_hz": 829.0,
+        "gain_db": -9.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq070",
+        "frequency_hz": 875.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq071",
+        "frequency_hz": 924.0,
+        "gain_db": -9.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq072",
+        "frequency_hz": 977.0,
+        "gain_db": -9.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq073",
+        "frequency_hz": 1032.0,
+        "gain_db": -9.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq074",
+        "frequency_hz": 1090.0,
+        "gain_db": -9.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq075",
+        "frequency_hz": 1151.0,
+        "gain_db": -9.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq076",
+        "frequency_hz": 1216.0,
+        "gain_db": -9.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq077",
+        "frequency_hz": 1284.0,
+        "gain_db": -9.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq078",
+        "frequency_hz": 1357.0,
+        "gain_db": -9.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq079",
+        "frequency_hz": 1433.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq080",
+        "frequency_hz": 1514.0,
+        "gain_db": -10.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq081",
+        "frequency_hz": 1599.0,
+        "gain_db": -10.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq082",
+        "frequency_hz": 1689.0,
+        "gain_db": -10.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq083",
+        "frequency_hz": 1784.0,
+        "gain_db": -11.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq084",
+        "frequency_hz": 1885.0,
+        "gain_db": -11.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq085",
+        "frequency_hz": 1991.0,
+        "gain_db": -11.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq086",
+        "frequency_hz": 2103.0,
+        "gain_db": -11.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq087",
+        "frequency_hz": 2221.0,
+        "gain_db": -11.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq088",
+        "frequency_hz": 2347.0,
+        "gain_db": -11.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq089",
+        "frequency_hz": 2479.0,
+        "gain_db": -11.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq090",
+        "frequency_hz": 2618.0,
+        "gain_db": -11.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq091",
+        "frequency_hz": 2766.0,
+        "gain_db": -10.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq092",
+        "frequency_hz": 2921.0,
+        "gain_db": -10.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq093",
+        "frequency_hz": 3086.0,
+        "gain_db": -11.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq094",
+        "frequency_hz": 3260.0,
+        "gain_db": -12.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq095",
+        "frequency_hz": 3443.0,
+        "gain_db": -12.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq096",
+        "frequency_hz": 3637.0,
+        "gain_db": -13.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq097",
+        "frequency_hz": 3842.0,
+        "gain_db": -13.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq098",
+        "frequency_hz": 4058.0,
+        "gain_db": -14.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq099",
+        "frequency_hz": 4287.0,
+        "gain_db": -14.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq100",
+        "frequency_hz": 4528.0,
+        "gain_db": -14.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq101",
+        "frequency_hz": 4783.0,
+        "gain_db": -14.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq102",
+        "frequency_hz": 5052.0,
+        "gain_db": -13.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq103",
+        "frequency_hz": 5337.0,
+        "gain_db": -13.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq104",
+        "frequency_hz": 5637.0,
+        "gain_db": -13.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq105",
+        "frequency_hz": 5955.0,
+        "gain_db": -12.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq106",
+        "frequency_hz": 6290.0,
+        "gain_db": -12.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq107",
+        "frequency_hz": 6644.0,
+        "gain_db": -11.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq108",
+        "frequency_hz": 7018.0,
+        "gain_db": -11.0,
+        "q": 1.41
+      },
+      {
+        "id": "eq109",
+        "frequency_hz": 7414.0,
+        "gain_db": -10.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq110",
+        "frequency_hz": 7831.0,
+        "gain_db": -10.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq111",
+        "frequency_hz": 8272.0,
+        "gain_db": -10.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq112",
+        "frequency_hz": 8738.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq113",
+        "frequency_hz": 9230.0,
+        "gain_db": -9.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq114",
+        "frequency_hz": 9749.0,
+        "gain_db": -8.7,
+        "q": 1.41
+      },
+      {
+        "id": "eq115",
+        "frequency_hz": 10298.0,
+        "gain_db": -7.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq116",
+        "frequency_hz": 10878.0,
+        "gain_db": -6.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq117",
+        "frequency_hz": 11490.0,
+        "gain_db": -6.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq118",
+        "frequency_hz": 12137.0,
+        "gain_db": -7.1,
+        "q": 1.41
+      },
+      {
+        "id": "eq119",
+        "frequency_hz": 12821.0,
+        "gain_db": -8.6,
+        "q": 1.41
+      },
+      {
+        "id": "eq120",
+        "frequency_hz": 13543.0,
+        "gain_db": -9.8,
+        "q": 1.41
+      },
+      {
+        "id": "eq121",
+        "frequency_hz": 14305.0,
+        "gain_db": -10.5,
+        "q": 1.41
+      },
+      {
+        "id": "eq122",
+        "frequency_hz": 15110.0,
+        "gain_db": -9.9,
+        "q": 1.41
+      },
+      {
+        "id": "eq123",
+        "frequency_hz": 15961.0,
+        "gain_db": -9.2,
+        "q": 1.41
+      },
+      {
+        "id": "eq124",
+        "frequency_hz": 16860.0,
+        "gain_db": -8.3,
+        "q": 1.41
+      },
+      {
+        "id": "eq125",
+        "frequency_hz": 17809.0,
+        "gain_db": -7.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq126",
+        "frequency_hz": 18812.0,
+        "gain_db": -6.4,
+        "q": 1.41
+      },
+      {
+        "id": "eq127",
+        "frequency_hz": 19871.0,
+        "gain_db": -5.0,
+        "q": 1.41
+      }
+    ],
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 6.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.0,
+      "use_dynamics_processing_gain": false
+    },
+    "main_limiter": {
+      "enabled": true,
+      "link_group": 0,
+      "attack_time_ms": 3.0,
+      "release_time_ms": 80.0,
+      "ratio": 4.0,
+      "threshold_db": -2.5,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 55
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": true,
+      "node_step_percent": 10,
+      "low_db": [
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0,
+        0.5,
+        0.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        4.5,
+        4.0,
+        3.5,
+        3.0,
+        2.5,
+        2.0,
+        1.5,
+        1.0,
+        0.5,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
