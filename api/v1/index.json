@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T12:53:41Z",
+  "generated_at": "2026-09-29T14:04:14Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -687,6 +687,124 @@
           4.26,
           3.13,
           2.0
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.667,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oppo-enco-air4-pro",
+      "title": "OPPO Enco Air4 Pro三星经典调音",
+      "subtitle": "来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声",
+      "description": "来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声",
+      "author": "凉城Starfall",
+      "tags": [
+        "耳机",
+        "三星",
+        "频响优化"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "Oppo Enco X3",
+          "aliases": []
+        },
+        {
+          "kind": "BLUETOOTH",
+          "name": "Oppo 4 Free",
+          "aliases": []
+        },
+        {
+          "kind": "BLUETOOTH",
+          "name": "Oppo Air 4 Pro",
+          "aliases": []
+        },
+        {
+          "kind": "BLUETOOTH",
+          "name": "Oppo Enco Air4 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-09-29",
+      "updated": "2026-09-29",
+      "file": {
+        "path": "presets/oppo-enco-air4-pro/oppo-enco-air4-pro.hx4",
+        "sha256": "279eee35a2e8b9b0657a118ce46d6e66e46a9f918e8858a2fa03dec4ac95d266",
+        "bytes": 16745,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 127,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0,
+          -15.0
         ]
       },
       "rating": {
