@@ -58,6 +58,11 @@ POST_EQ_HZ = tuple(
     math.exp(math.log(20.0) + (math.log(20000.0) - math.log(20.0)) * i / 30) for i in range(31)
 )
 VOLUME_NODES = 11
+VOLUME_NODE_PERCENTS = tuple(i * 10 for i in range(VOLUME_NODES))
+# 平滑音量曲线的连接方式（volume_compensation.curve.interpolation），与 App 的 VolumeCurve 一致。
+VOLUME_CURVE_SHAPE = "monotone_cubic"
+# 曲线与旁边每 10% 一个的取值相差多少以内仍算同一条曲线（取值写入时保留两位小数）。
+VOLUME_CURVE_AGREEMENT_DB = 0.02
 BASS_BOOST_RANGE_HZ = (60.0, 165.0)
 
 
@@ -276,7 +281,10 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
     low = r.floats(comp, "volume_compensation", "low_db", VOLUME_NODES, 12.0, required=False)
     mid = r.floats(comp, "volume_compensation", "mid_db", VOLUME_NODES, 12.0, required=False)
     high = r.floats(comp, "volume_compensation", "high_db", VOLUME_NODES, 12.0, required=False)
-    comp_audible = comp_on and any(v != 0 for v in low + mid + high)
+    # 平滑音量曲线（可选）见 check_volume_curve。峰值估计仍用 100% 那个取值：App 写文件时让
+    # 这些取值与曲线一致，曲线在 100% 处就是它。
+    effective = check_volume_curve(comp, {"low": low, "mid": mid, "high": high}, report, where)
+    comp_audible = comp_on and any(v != 0 for values in effective.values() for v in values)
 
     post = [sample_post_eq(points, hz) for hz in POST_EQ_HZ]
     # 每个声道实际得到的 PostEQ：立体声曲线加上它自己的 Pro 曲线（与 App 的 responseAt 一致）。
@@ -322,6 +330,113 @@ def check_audio(audio: dict, report: Report, where: str) -> dict:
         },
         "preview": preview,
     }
+
+
+def check_volume_curve(comp, legacy: dict[str, list[float]], report: Report, where: str) -> dict[str, list[float]]:
+    """校验可选的 volume_compensation.curve，返回每个频段实际生效的补偿值（只用来判断有没有补偿）。
+
+    新版 App 让每个频段在任意音量上设控制点，用单调三次插值连成平滑曲线，存在 curve 里；同时照旧
+    写每 10% 一个的 low_db/mid_db/high_db（从曲线取样），不认识 curve 的旧版 App 和工具只读这些。
+    两者不一致说明有不认识曲线的工具改过取值，App 这时以取值为准，这里按同一规则判断。
+    """
+    effective = dict(legacy)
+    if not isinstance(comp, dict) or "curve" not in comp:
+        return effective
+    path = "audio.volume_compensation.curve"
+    curve = comp["curve"]
+    if not isinstance(curve, dict):
+        report.error(where, f"{path} 必须是对象")
+        return effective
+    shape = curve.get("interpolation")
+    if shape != VOLUME_CURVE_SHAPE:
+        report.warn(where, f"{path}.interpolation = {shape!r}，App 只认识 {VOLUME_CURVE_SHAPE}，"
+                           "会忽略这条曲线，改用 low_db/mid_db/high_db")
+        return effective
+    for band in ("low", "mid", "high"):
+        raw = curve.get(band)
+        if raw is None:
+            continue  # 没有这个频段的曲线：App 用它的取值
+        if not isinstance(raw, list):
+            report.error(where, f"{path}.{band} 必须是数组")
+            continue
+        points: dict[int, float] = {}
+        for index, item in enumerate(raw):
+            item_path = f"{path}.{band}[{index}]"
+            if not isinstance(item, dict):
+                report.error(where, f"{item_path} 必须是对象")
+                continue
+            percent = item.get("volume_percent")
+            gain = item.get("gain_db")
+            if isinstance(percent, bool) or not isinstance(percent, int) or not 0 <= percent <= 100:
+                report.error(where, f"{item_path}.volume_percent 必须是 0–100 的整数")
+                continue
+            if not is_number(gain) or abs(gain) > 12.0:
+                report.error(where, f"{item_path}.gain_db 必须是 ±12 以内的数字")
+                continue
+            if percent in points:
+                report.warn(where, f"{item_path}.volume_percent = {percent} 重复，App 取最后一个")
+            points[percent] = float(gain)
+        ordered = sorted(points.items())
+        key = f"{band}_db"
+        if comp.get(key) is not None and any(
+            abs(monotone_cubic(ordered, percent) - legacy[band][i]) > VOLUME_CURVE_AGREEMENT_DB
+            for i, percent in enumerate(VOLUME_NODE_PERCENTS)
+        ):
+            report.warn(where, f"{path}.{band} 与 {key} 不一致（多半是不认识曲线的工具改过 {key}），"
+                               f"App 会以 {key} 为准")
+            continue
+        effective[band] = [gain for _, gain in ordered]
+    return effective
+
+
+def _sign(value: float) -> int:
+    return (value > 0) - (value < 0)
+
+
+def monotone_cubic(points: list[tuple[int, float]], x: float) -> float:
+    """App 中 VolumeCurve.valueAt 的等价实现：Fritsch–Carlson 单调三次插值（同 MATLAB pchip），
+    经过每个点、不越过相邻两点，首尾之外保持水平；没有点时为 0。"""
+    n = len(points)
+    if n == 0:
+        return 0.0
+    xs = [float(p) for p, _ in points]
+    ys = [g for _, g in points]
+    x = max(0.0, min(100.0, x))
+    if n == 1 or x <= xs[0]:
+        return ys[0]
+    if x >= xs[-1]:
+        return ys[-1]
+    h = [xs[i + 1] - xs[i] for i in range(n - 1)]
+    delta = [(ys[i + 1] - ys[i]) / h[i] for i in range(n - 1)]
+    if n == 2:
+        slopes = [delta[0], delta[0]]
+    else:
+        slopes = [0.0] * n
+        for k in range(1, n - 1):
+            if _sign(delta[k - 1]) * _sign(delta[k]) <= 0:
+                slopes[k] = 0.0
+            else:
+                w1 = 2 * h[k] + h[k - 1]
+                w2 = h[k] + 2 * h[k - 1]
+                slopes[k] = (w1 + w2) / (w1 / delta[k - 1] + w2 / delta[k])
+        slopes[0] = _pchip_end(h[0], h[1], delta[0], delta[1])
+        slopes[-1] = _pchip_end(h[-1], h[-2], delta[-1], delta[-2])
+    k = 0
+    while xs[k + 1] < x:
+        k += 1
+    t = (x - xs[k]) / h[k]
+    value = ((2 * t ** 3 - 3 * t ** 2 + 1) * ys[k] + (t ** 3 - 2 * t ** 2 + t) * h[k] * slopes[k]
+             + (-2 * t ** 3 + 3 * t ** 2) * ys[k + 1] + (t ** 3 - t ** 2) * h[k] * slopes[k + 1])
+    return max(-12.0, min(12.0, value))
+
+
+def _pchip_end(h0: float, h1: float, delta0: float, delta1: float) -> float:
+    slope = ((2 * h0 + h1) * delta0 - h0 * delta1) / (h0 + h1)
+    if _sign(slope) != _sign(delta0):
+        return 0.0
+    if _sign(delta0) != _sign(delta1) and abs(slope) > abs(3 * delta0):
+        return 3 * delta0
+    return slope
 
 
 def sample_post_eq(points: list[tuple[float, float, float]], hz: float) -> float:
