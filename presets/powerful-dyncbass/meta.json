@@ -1,0 +1,43 @@
+{
+  "title": "专业模式 - 超强动态低频",
+  "subtitle": "使用时务必激活“专业音频”，具体适配机型可见详情",
+  "description": "利用专业音频权限，结合Akima IIR算法，充分发挥扬声器的低频动态，低频深沉浑厚不破音",
+  "author": "Huber_HaYu",
+  "tags": [
+    "HX全景声",
+    "外放",
+    "超强低频",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 14 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Pro",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 15 Ultra",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
