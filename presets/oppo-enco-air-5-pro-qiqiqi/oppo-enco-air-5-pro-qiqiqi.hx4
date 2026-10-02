@@ -1,0 +1,227 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1790954717580,
+  "audio": {
+    "pre_eq_gains_db": [
+      2.98,
+      3.02,
+      2.98,
+      5.03,
+      2.95,
+      5.97,
+      3.99,
+      6.0,
+      1.03,
+      3.53,
+      6.03,
+      3.98
+    ],
+    "post_eq_points": [
+      {
+        "id": "default-80",
+        "frequency_hz": 60.8,
+        "gain_db": 2.0,
+        "q": 0.75
+      },
+      {
+        "id": "default-320",
+        "frequency_hz": 227.78,
+        "gain_db": 3.5,
+        "q": 1.1
+      },
+      {
+        "id": "default-1200",
+        "frequency_hz": 1044.07,
+        "gain_db": 4.5,
+        "q": 1.0
+      },
+      {
+        "id": "aae92df6-c6ae-476c-92d5-128dcbe40929",
+        "frequency_hz": 8054.79,
+        "gain_db": 4.0,
+        "q": 1.0
+      },
+      {
+        "id": "a2f3ac20-37aa-4c04-81cf-54d026d95600",
+        "frequency_hz": 11992.78,
+        "gain_db": 6.0,
+        "q": 1.0
+      }
+    ],
+    "post_eq_channels": {
+      "pro_enabled": true,
+      "left_points": [
+        {
+          "id": "left-default-80",
+          "frequency_hz": 80.0,
+          "gain_db": 0.0,
+          "q": 0.75
+        },
+        {
+          "id": "left-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "left-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "left-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": 0.0,
+          "q": 0.9
+        }
+      ],
+      "right_points": [
+        {
+          "id": "right-default-80",
+          "frequency_hz": 80.0,
+          "gain_db": 0.0,
+          "q": 0.75
+        },
+        {
+          "id": "right-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "right-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "right-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": 0.0,
+          "q": 0.9
+        }
+      ]
+    },
+    "bass_boost": {
+      "enabled": true,
+      "gain_db": 5.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 3.0,
+      "use_dynamics_processing_gain": true
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -1.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": true,
+      "width_percent": 50
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": false,
+      "node_step_percent": 10,
+      "low_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
