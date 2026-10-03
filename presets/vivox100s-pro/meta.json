@@ -1,0 +1,21 @@
+{
+  "title": "Vivo X100s Pro 三频段均衡",
+  "subtitle": "理论适用于vivo X100全系设备（扬声器规格一致）",
+  "description": "三频较均衡，偏向低音，大音量下完全可用",
+  "author": "未知",
+  "tags": [
+    "均衡",
+    "外放"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Vivo X100s Pro",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

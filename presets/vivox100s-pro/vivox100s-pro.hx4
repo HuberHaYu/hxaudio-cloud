@@ -1,0 +1,307 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1791029544538,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "post_eq_points": [
+      {
+        "id": "25bb19f9-c1c1-48b8-81bc-017dca724af2",
+        "frequency_hz": 56.03,
+        "gain_db": 10.0,
+        "q": 3.0
+      },
+      {
+        "id": "8ad2f24f-1b64-4083-bde4-565b0aeb5671",
+        "frequency_hz": 80.0,
+        "gain_db": 5.5,
+        "q": 0.75
+      },
+      {
+        "id": "ff2844bb-7026-44ba-8dc7-774d84c1238d",
+        "frequency_hz": 141.96,
+        "gain_db": 7.0,
+        "q": 2.4
+      },
+      {
+        "id": "14ca6781-006f-42ee-bf00-905d3662b594",
+        "frequency_hz": 218.16,
+        "gain_db": 4.0,
+        "q": 8.05
+      },
+      {
+        "id": "49c99c30-1837-4419-8ee2-2612d66ffa3e",
+        "frequency_hz": 228.44,
+        "gain_db": 8.0,
+        "q": 1.75
+      },
+      {
+        "id": "a2a99ccf-1da5-4b37-8d6e-2d7e8a529813",
+        "frequency_hz": 329.46,
+        "gain_db": 5.5,
+        "q": 3.9
+      },
+      {
+        "id": "a042a221-e76b-4eb9-9a94-a142b354c1ef",
+        "frequency_hz": 1081.27,
+        "gain_db": -2.5,
+        "q": 1.0
+      },
+      {
+        "id": "c777d74a-333f-4ae9-9441-6ab9ffbeb09a",
+        "frequency_hz": 3666.52,
+        "gain_db": -3.0,
+        "q": 2.05
+      },
+      {
+        "id": "3640d07c-eabb-4297-abee-c7fbd6ab665c",
+        "frequency_hz": 6500.0,
+        "gain_db": -6.0,
+        "q": 0.9
+      },
+      {
+        "id": "1be06dff-dd07-496b-9ba5-61fb830ea361",
+        "frequency_hz": 6607.9,
+        "gain_db": -6.5,
+        "q": 6.8
+      },
+      {
+        "id": "669fcc57-8725-4761-aa4d-c0a2a0f3fe93",
+        "frequency_hz": 7491.65,
+        "gain_db": -4.5,
+        "q": 6.0
+      },
+      {
+        "id": "681f155f-6b9a-401d-9ee5-ea9160466ecd",
+        "frequency_hz": 8865.43,
+        "gain_db": 2.0,
+        "q": 0.9
+      }
+    ],
+    "bass_boost": {
+      "enabled": true,
+      "gain_db": 3.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 1.0,
+      "use_dynamics_processing_gain": false
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -1.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": true,
+      "width_percent": 38
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": true,
+      "node_step_percent": 10,
+      "low_db": [
+        8.0,
+        8.0,
+        6.0,
+        4.0,
+        2.0,
+        0.0,
+        -1.0,
+        -3.0,
+        -4.0,
+        -5.0,
+        -9.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.5,
+        -2.0
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -1.0,
+        -3.0
+      ],
+      "curve": {
+        "interpolation": "monotone_cubic",
+        "low": [
+          {
+            "volume_percent": 0,
+            "gain_db": 8.0
+          },
+          {
+            "volume_percent": 10,
+            "gain_db": 8.0
+          },
+          {
+            "volume_percent": 20,
+            "gain_db": 6.0
+          },
+          {
+            "volume_percent": 40,
+            "gain_db": 2.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 60,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": -3.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": -4.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -5.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -9.0
+          }
+        ],
+        "mid": [
+          {
+            "volume_percent": 30,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 40,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -1.5
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -2.0
+          }
+        ],
+        "high": [
+          {
+            "volume_percent": 60,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": 1.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -3.0
+          }
+        ]
+      }
+    }
+  }
+}
