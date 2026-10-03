@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T16:50:08Z",
+  "generated_at": "2026-10-03T12:12:37Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -1525,6 +1525,108 @@
           9.01,
           7.63,
           5.94
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.667,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "vivox100s-pro",
+      "title": "Vivo X100s Pro 三频段均衡",
+      "subtitle": "理论适用于vivo X100全系设备（扬声器规格一致）",
+      "description": "三频较均衡，偏向低音，大音量下完全可用",
+      "author": "未知",
+      "tags": [
+        "均衡",
+        "外放"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Vivo X100s Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-03",
+      "updated": "2026-10-03",
+      "file": {
+        "path": "presets/vivox100s-pro/vivox100s-pro.hx4",
+        "sha256": "d649ba85b81d2b1f9a69fd810b66250c133b921b1096a2fbb4f543807e45d041",
+        "bytes": 5867,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 12,
+        "post_eq_pro": false,
+        "bass_boost_db": 3.0,
+        "input_gain_db": 1.0,
+        "limiter": false,
+        "virtual_surround_percent": 38,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.71,
+          1.32,
+          2.24,
+          4.68,
+          12.53,
+          12.98,
+          6.91,
+          7.26,
+          11.46,
+          13.14,
+          13.71,
+          10.66,
+          10.15,
+          3.19,
+          -0.42,
+          -1.37,
+          -2.08,
+          -2.49,
+          -2.48,
+          -2.16,
+          -2.02,
+          -2.95,
+          -5.14,
+          -6.34,
+          -5.62,
+          -10.89,
+          -7.71,
+          -2.56,
+          -1.4,
+          -0.57,
+          -0.14
         ]
       },
       "rating": {
