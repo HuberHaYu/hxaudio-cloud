@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04T20:14:04Z",
+  "generated_at": "2026-10-04T20:14:30Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -282,7 +282,7 @@
       "rating": {
         "count": 7,
         "average": 4.0,
-        "weighted": 4.058,
+        "weighted": 4.014,
         "histogram": [
           1,
           0,
@@ -382,7 +382,7 @@
       "rating": {
         "count": 5,
         "average": 4.4,
-        "weighted": 4.269,
+        "weighted": 4.217,
         "histogram": [
           0,
           0,
@@ -485,7 +485,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.138,
+        "weighted": 4.033,
         "histogram": [
           0,
           0,
@@ -590,7 +590,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.384,
+        "weighted": 4.309,
         "histogram": [
           0,
           0,
@@ -692,7 +692,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.282,
+        "weighted": 4.194,
         "histogram": [
           0,
           0,
@@ -849,11 +849,11 @@
         ]
       },
       "rating": {
-        "count": 0,
-        "average": null,
-        "weighted": 4.138,
+        "count": 1,
+        "average": 1.0,
+        "weighted": 3.528,
         "histogram": [
-          0,
+          1,
           0,
           0,
           0,
@@ -969,7 +969,7 @@
       "rating": {
         "count": 2,
         "average": 1.0,
-        "weighted": 3.241,
+        "weighted": 3.166,
         "histogram": [
           2,
           0,
@@ -1159,7 +1159,7 @@
       "rating": {
         "count": 2,
         "average": 4.5,
-        "weighted": 4.241,
+        "weighted": 4.166,
         "histogram": [
           0,
           0,
@@ -1258,7 +1258,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.282,
+        "weighted": 4.194,
         "histogram": [
           0,
           0,
@@ -1427,7 +1427,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.138,
+        "weighted": 4.033,
         "histogram": [
           0,
           0,
@@ -1530,7 +1530,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.138,
+        "weighted": 4.033,
         "histogram": [
           0,
           0,
@@ -1632,7 +1632,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.948,
+        "weighted": 3.861,
         "histogram": [
           0,
           0,
@@ -1735,7 +1735,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.282,
+        "weighted": 4.194,
         "histogram": [
           0,
           0,
@@ -1833,7 +1833,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.138,
+        "weighted": 4.033,
         "histogram": [
           0,
           0,
@@ -1942,7 +1942,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.282,
+        "weighted": 4.194,
         "histogram": [
           0,
           0,
@@ -2052,7 +2052,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.948,
+        "weighted": 3.861,
         "histogram": [
           0,
           0,
@@ -2156,7 +2156,7 @@
       "rating": {
         "count": 3,
         "average": 4.33,
-        "weighted": 4.211,
+        "weighted": 4.146,
         "histogram": [
           0,
           0,
@@ -2260,7 +2260,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.384,
+        "weighted": 4.309,
         "histogram": [
           0,
           0,
