@@ -16,6 +16,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米10Pro/10S调音 | 手机外放（Mi 10S、Mi 10 Pro） | Deepseek调音适配MI10PRO和小米10s | [10pro-10s-bass.hx4](presets/10pro-10s-bass/10pro-10s-bass.hx4) |
 | 水解3拟水月雨blessing3（监听向dsp） | USB 耳机、其他设备 | 模拟blessing3向监听DSP | [3-blessing3-dsp.hx4](presets/3-blessing3-dsp/3-blessing3-dsp.hx4) |
 | DeepSeek 生成的一加 Ace 6 预设 | 手机外放（OnePlus Ace 6） | 适用于一加Ace6的均衡预设（1510+1012） | [deepseek-oneplus-ace6-hyemylover.hx4](presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4) |
+| 荣耀win监听向调音 | 手机外放（荣耀WIN） | 模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用） | [honor-win-monitor.hx4](presets/honor-win-monitor/honor-win-monitor.hx4) |
 | K80至尊版极致低频中高均衡 | 手机外放（REDMI K80 Ultra） | K80至尊版极致低频中高均衡 | [hxaudio-k80ultra.hx4](presets/hxaudio-k80ultra/hxaudio-k80ultra.hx4) |
 | Redmi K60 Pro 流行音乐 | 手机外放（Redmi K60 Pro） | 适用于Redmi K60 Pro外放，流行音乐 | [k60pro-spk-papershort.hx4](presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4) |
 | Redmi K90 Pro Max | 手机外放（Redmi K90 Pro Max） | 由 chaoer2330 投稿，适用于K90 Pro Max的外放 | [k90promax-spk-chaoer2330.hx4](presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4) |

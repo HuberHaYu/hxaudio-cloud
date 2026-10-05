@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T12:08:46Z",
+  "generated_at": "2026-10-05T12:09:12Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -699,6 +699,112 @@
           0,
           4,
           4
+        ]
+      }
+    },
+    {
+      "id": "honor-win-monitor",
+      "title": "荣耀win监听向调音",
+      "subtitle": "模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用）",
+      "description": "模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用）",
+      "author": "HXAudio 官方",
+      "tags": [
+        "监听曲线",
+        "全频段均衡",
+        "白开水"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "荣耀WIN",
+          "aliases": [
+            "Honor",
+            "WIN"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/honor-win-monitor/honor-win-monitor.hx4",
+        "sha256": "2d4d63490b67fac33fc1dbbcd8c31bef092f3e8fd716262b9ea6e01008a62e18",
+        "bytes": 4499,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 10,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 1.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.39,
+          0.54,
+          0.7,
+          0.85,
+          0.97,
+          1.06,
+          1.1,
+          1.09,
+          1.01,
+          0.89,
+          0.72,
+          0.54,
+          0.36,
+          0.23,
+          0.17,
+          0.18,
+          0.26,
+          0.4,
+          0.54,
+          0.66,
+          0.75,
+          0.77,
+          0.69,
+          0.54,
+          0.4,
+          0.34,
+          0.39,
+          0.46,
+          0.5,
+          0.47,
+          0.38
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.064,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
