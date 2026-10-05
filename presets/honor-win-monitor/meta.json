@@ -1,0 +1,25 @@
+{
+  "title": "荣耀win监听向调音",
+  "subtitle": "模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用）",
+  "description": "模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用）",
+  "author": "HXAudio 官方",
+  "tags": [
+    "监听曲线",
+    "全频段均衡",
+    "白开水"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "荣耀WIN",
+      "aliases": [
+        "Honor",
+        "WIN"
+      ]
+    }
+  ],
+  "featured": false
+}
