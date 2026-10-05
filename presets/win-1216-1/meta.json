@@ -1,0 +1,22 @@
+{
+  "title": "荣耀Win器乐解析调音",
+  "subtitle": "适用于荣耀 Win 的外放调音",
+  "description": "改善win的偏低频，增强乐器解析和分离度（不适用于喜欢两头翘风格和清晰人声的人群）",
+  "author": "愛玩原農洲戀的喜黑素食女權主義者",
+  "tags": [
+    "外放",
+    "对称式扬声器",
+    "1216"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "荣耀 WIN",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
