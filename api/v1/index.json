@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T06:10:04Z",
+  "generated_at": "2026-10-05T06:10:59Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -503,7 +503,6 @@
       "author": "huanyan",
       "tags": [
         "Harman",
-        "外放",
         "均衡"
       ],
       "device_kinds": [
