@@ -1,0 +1,28 @@
+{
+  "title": "小米10Pro/10S调音",
+  "subtitle": "Deepseek调音适配MI10PRO和小米10s",
+  "description": "Deepseek调音适配MI10PRO和小米10s",
+  "author": "他不会走的",
+  "tags": [
+    "双1216对称式扬声器",
+    "等响补偿",
+    "低频增强",
+    "中高频均衡"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Mi 10S",
+      "aliases": []
+    },
+    {
+      "kind": "SPEAKER",
+      "name": "Mi 10 Pro",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
