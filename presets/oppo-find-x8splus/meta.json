@@ -1,0 +1,21 @@
+{
+  "title": "OPPO Find X8s Plus",
+  "subtitle": "适用于OPPO Find X8s Plus的低频增强外放",
+  "description": "适用于OPPO Find X8s Plus的低频增强外放",
+  "author": "💭\nHXAudio 云端预设投稿",
+  "tags": [
+    "外放",
+    "低频增强"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OPPO Find X8s Plus",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

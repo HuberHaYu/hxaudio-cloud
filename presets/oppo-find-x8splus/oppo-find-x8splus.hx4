@@ -1,0 +1,451 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1791178913538,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "post_eq_points": [
+      {
+        "id": "default-320",
+        "frequency_hz": 30.89,
+        "gain_db": 3.0,
+        "q": 1.1
+      },
+      {
+        "id": "7c979a70-6705-4866-953f-a568c37f2046",
+        "frequency_hz": 63.87,
+        "gain_db": 4.0,
+        "q": 1.0
+      },
+      {
+        "id": "b117d9e6-e8b8-4020-ac17-6127d22ab3db",
+        "frequency_hz": 125.27,
+        "gain_db": 4.0,
+        "q": 1.0
+      },
+      {
+        "id": "8c6f81ac-8e3e-4d88-a15e-fb6a72f3b8e3",
+        "frequency_hz": 253.59,
+        "gain_db": 4.0,
+        "q": 1.0
+      },
+      {
+        "id": "0e199303-a566-4dda-ada3-a7492a4fcfb6",
+        "frequency_hz": 506.45,
+        "gain_db": 1.5,
+        "q": 1.0
+      },
+      {
+        "id": "f1f54acf-f50f-4212-9647-77893526a7ab",
+        "frequency_hz": 1004.39,
+        "gain_db": 0.5,
+        "q": 1.0
+      },
+      {
+        "id": "default-1200",
+        "frequency_hz": 1200.0,
+        "gain_db": 0.0,
+        "q": 1.0
+      },
+      {
+        "id": "04d42e88-790e-4a29-9aa3-c88629f1e6c3",
+        "frequency_hz": 1997.1,
+        "gain_db": 0.5,
+        "q": 1.0
+      },
+      {
+        "id": "f748c59e-1ef4-47e8-aafb-b41193927da0",
+        "frequency_hz": 3995.41,
+        "gain_db": 0.0,
+        "q": 1.0
+      },
+      {
+        "id": "default-6500",
+        "frequency_hz": 6500.0,
+        "gain_db": 0.0,
+        "q": 0.9
+      },
+      {
+        "id": "7661c7c9-34c5-4cf5-9012-67d679181026",
+        "frequency_hz": 8102.26,
+        "gain_db": 0.5,
+        "q": 1.0
+      },
+      {
+        "id": "c1b168a4-dc76-4703-9458-8100aa0794c0",
+        "frequency_hz": 16251.99,
+        "gain_db": 0.5,
+        "q": 1.0
+      }
+    ],
+    "bass_boost": {
+      "enabled": true,
+      "gain_db": 4.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.4,
+      "use_dynamics_processing_gain": false
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 57.89,
+      "release_time_ms": 569.65,
+      "ratio": 20.38,
+      "threshold_db": 0.0,
+      "post_gain_db": -0.5
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 0
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": true,
+      "node_step_percent": 10,
+      "low_db": [
+        -12.0,
+        11.64,
+        4.2,
+        -0.25,
+        -3.8,
+        -9.5,
+        -12.0,
+        -12.0,
+        -12.0,
+        -12.0,
+        -12.0
+      ],
+      "mid_db": [
+        -12.0,
+        6.21,
+        3.72,
+        -0.11,
+        -2.31,
+        -6.5,
+        -8.56,
+        -10.78,
+        -12.0,
+        -12.0,
+        -12.0
+      ],
+      "high_db": [
+        -12.0,
+        5.81,
+        3.89,
+        0.0,
+        -2.46,
+        -6.0,
+        -9.16,
+        -12.0,
+        -12.0,
+        -12.0,
+        -12.0
+      ],
+      "curve": {
+        "interpolation": "monotone_cubic",
+        "low": [
+          {
+            "volume_percent": 0,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 6,
+            "gain_db": 12.0
+          },
+          {
+            "volume_percent": 13,
+            "gain_db": 11.0
+          },
+          {
+            "volume_percent": 19,
+            "gain_db": 5.0
+          },
+          {
+            "volume_percent": 25,
+            "gain_db": 1.0
+          },
+          {
+            "volume_percent": 31,
+            "gain_db": -0.5
+          },
+          {
+            "volume_percent": 38,
+            "gain_db": -2.5
+          },
+          {
+            "volume_percent": 44,
+            "gain_db": -7.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": -9.5
+          },
+          {
+            "volume_percent": 56,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 63,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 69,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 75,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 81,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 85,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 88,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 94,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -12.0
+          }
+        ],
+        "mid": [
+          {
+            "volume_percent": 0,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 6,
+            "gain_db": 5.0
+          },
+          {
+            "volume_percent": 13,
+            "gain_db": 6.5
+          },
+          {
+            "volume_percent": 19,
+            "gain_db": 4.0
+          },
+          {
+            "volume_percent": 25,
+            "gain_db": 2.5
+          },
+          {
+            "volume_percent": 31,
+            "gain_db": -0.5
+          },
+          {
+            "volume_percent": 38,
+            "gain_db": -2.0
+          },
+          {
+            "volume_percent": 44,
+            "gain_db": -3.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": -6.5
+          },
+          {
+            "volume_percent": 56,
+            "gain_db": -8.0
+          },
+          {
+            "volume_percent": 63,
+            "gain_db": -9.0
+          },
+          {
+            "volume_percent": 69,
+            "gain_db": -10.5
+          },
+          {
+            "volume_percent": 75,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 94,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -12.0
+          }
+        ],
+        "high": [
+          {
+            "volume_percent": 0,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 6,
+            "gain_db": 5.0
+          },
+          {
+            "volume_percent": 13,
+            "gain_db": 6.0
+          },
+          {
+            "volume_percent": 19,
+            "gain_db": 4.0
+          },
+          {
+            "volume_percent": 25,
+            "gain_db": 3.5
+          },
+          {
+            "volume_percent": 31,
+            "gain_db": -0.5
+          },
+          {
+            "volume_percent": 38,
+            "gain_db": -2.0
+          },
+          {
+            "volume_percent": 44,
+            "gain_db": -3.5
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": -6.0
+          },
+          {
+            "volume_percent": 56,
+            "gain_db": -8.5
+          },
+          {
+            "volume_percent": 63,
+            "gain_db": -9.5
+          },
+          {
+            "volume_percent": 69,
+            "gain_db": -10.0
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 75,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 81,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 85,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 88,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 94,
+            "gain_db": -12.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -12.0
+          }
+        ]
+      }
+    }
+  }
+}
