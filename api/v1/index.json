@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T06:07:32Z",
+  "generated_at": "2026-10-05T06:10:04Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -498,13 +498,40 @@
     {
       "id": "hxaudio-xiaomi12x-final-v6",
       "title": "小米12X/12/12S 外放 · 哈曼卡顿双扬",
-      "subtitle": "",
-      "description": "1. 响度：同一媒体音量档位下比原厂更响、更靠前，人声与鼓点有实体感，\n而不是单纯变吵。\n2. 鼓点：有推背感、不发闷。该机型出厂低频比同级别机型低约 23%，\n本配置把浪费在超低频上的功放余量收回给 125–250 Hz。\n3. 人声：不刺耳。DJ / 舞曲类素材中的齿音与人声锐度被压制，长时间听不疲劳。\n4. 保护：大音量长时间外放不破音，游戏场景下扬声器不过载。",
-      "author": "HXAudio 官方",
-      "tags": [],
-      "device_kinds": [],
-      "target_devices": [],
-      "featured": false,
+      "subtitle": "适用于小米12系列的哈曼卡顿调音",
+      "description": "【使用前提】\n1. 系统侧音效请全部关闭：设置 → 声音与振动 → 音质音效，\n哈曼卡顿 / 杜比音效设为「标准」或关闭，避免两级调音叠加破坏减法 EQ。\n2. 建议开启 App 内「频响 Pro」。\n3. 首次导入前先退出 App 再重进，避免 Pro 通道数据缓存不刷新。",
+      "author": "huanyan",
+      "tags": [
+        "Harman",
+        "外放",
+        "均衡"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 12",
+          "aliases": []
+        },
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 12X",
+          "aliases": []
+        },
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 12s",
+          "aliases": []
+        },
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 12s Pro",
+          "aliases": []
+        }
+      ],
+      "featured": true,
       "revision": 1,
       "created": "2026-10-05",
       "updated": "2026-10-05",
