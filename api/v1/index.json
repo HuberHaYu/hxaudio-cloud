@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T05:28:56Z",
+  "generated_at": "2026-10-05T05:33:09Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -1740,6 +1740,109 @@
           0,
           0,
           1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "win-1216-1",
+      "title": "荣耀Win器乐解析调音",
+      "subtitle": "适用于荣耀 Win 的外放调音",
+      "description": "改善win的偏低频，增强乐器解析和分离度（不适用于喜欢两头翘风格和清晰人声的人群）",
+      "author": "愛玩原農洲戀的喜黑素食女權主義者",
+      "tags": [
+        "外放",
+        "对称式扬声器",
+        "1216"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "荣耀 WIN",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/win-1216-1/win-1216-1.hx4",
+        "sha256": "82153d7b2246d4b322992dd8b08b69ce64552394b8287793272f7c18ab96d127",
+        "bytes": 4506,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 10,
+        "post_eq_pro": false,
+        "bass_boost_db": 3.0,
+        "input_gain_db": 1.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.5,
+          2.0,
+          2.5,
+          0.5,
+          -1.0,
+          -0.5,
+          -0.5,
+          -1.5,
+          1.5,
+          2.5,
+          2.0,
+          1.0
+        ],
+        "post_eq_db": [
+          1.54,
+          2.14,
+          2.77,
+          3.34,
+          3.79,
+          4.06,
+          4.11,
+          3.93,
+          3.52,
+          2.87,
+          2.06,
+          1.17,
+          0.34,
+          -0.33,
+          -0.81,
+          -1.1,
+          -1.21,
+          -1.2,
+          -1.15,
+          -1.19,
+          -1.28,
+          -1.22,
+          -0.69,
+          0.39,
+          1.76,
+          2.99,
+          3.76,
+          3.96,
+          3.6,
+          2.86,
+          1.99
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.0,
+        "histogram": [
+          0,
+          0,
+          0,
           0,
           0
         ]
