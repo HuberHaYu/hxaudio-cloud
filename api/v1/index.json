@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T11:34:04Z",
+  "generated_at": "2026-10-05T11:36:40Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -883,6 +883,109 @@
           0,
           0,
           2
+        ]
+      }
+    },
+    {
+      "id": "md2u",
+      "title": "水月雨 SPACE TRAVEL 2 ULTRA",
+      "subtitle": "低频、人声增强",
+      "description": "适用于水月雨 SPACE TRAVEL 2 ULTRA 的低频、人声增强",
+      "author": "zachary",
+      "tags": [
+        "低频增强",
+        "人声",
+        "水月雨"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "SPACE TRAVEL 2 ULTRA",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/md2u/md2u.hx4",
+        "sha256": "2ba0eff98b287ee8b61bf05da69b74eb99e019ab06b1c6057d77c87d103970ac",
+        "bytes": 3300,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 8,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          3.5,
+          3.0,
+          2.0,
+          0.5,
+          0.0,
+          0.0,
+          1.5,
+          1.0,
+          -0.5,
+          0.5,
+          1.5,
+          1.5
+        ],
+        "post_eq_db": [
+          0.64,
+          0.94,
+          1.29,
+          1.67,
+          2.01,
+          2.25,
+          2.35,
+          2.27,
+          2.03,
+          1.66,
+          1.22,
+          0.73,
+          0.27,
+          -0.1,
+          -0.32,
+          -0.37,
+          -0.32,
+          -0.25,
+          -0.24,
+          -0.34,
+          -0.55,
+          -0.83,
+          -1.12,
+          -1.35,
+          -1.46,
+          -1.37,
+          -1.08,
+          -0.68,
+          -0.27,
+          0.01,
+          0.15
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.07,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },

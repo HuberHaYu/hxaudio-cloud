@@ -16,6 +16,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | DeepSeek 生成的一加 Ace 6 预设 | 手机外放（OnePlus Ace 6） | 适用于一加Ace6的均衡预设（1510+1012） | [deepseek-oneplus-ace6-hyemylover.hx4](presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4) |
 | Redmi K60 Pro 流行音乐 | 手机外放（Redmi K60 Pro） | 适用于Redmi K60 Pro外放，流行音乐 | [k60pro-spk-papershort.hx4](presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4) |
 | Redmi K90 Pro Max | 手机外放（Redmi K90 Pro Max） | 由 chaoer2330 投稿，适用于K90 Pro Max的外放 | [k90promax-spk-chaoer2330.hx4](presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4) |
+| 水月雨 SPACE TRAVEL 2 ULTRA | 蓝牙耳机（SPACE TRAVEL 2 ULTRA） | 低频、人声增强 | [md2u.hx4](presets/md2u/md2u.hx4) |
 | 小米 10 Ultra - 外放特调 | 手机外放（Mi 10 Ultra） | 针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题 | [mi10ultra-spk-huber.hx4](presets/mi10ultra-spk-huber/mi10ultra-spk-huber.hx4) |
 | 一加 Ace 5 Pro 全段低频最大化 | 手机外放（OnePlus Ace 5 Pro） | 适用于一加Ace 5 Pro，全段低频调至最大化 | [oneplusace5pro-boost-max.hx4](presets/oneplusace5pro-boost-max/oneplusace5pro-boost-max.hx4) |
 | OPPO Enco Air 5 Pro 极致优化 | 蓝牙耳机 | 适用于该型号的耳机，需要在耳机app中新建值都为0的均衡器 | [oppo-enco-air-5-pro-qiqiqi.hx4](presets/oppo-enco-air-5-pro-qiqiqi/oppo-enco-air-5-pro-qiqiqi.hx4) |
