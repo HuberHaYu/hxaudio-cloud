@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T11:38:33Z",
+  "generated_at": "2026-10-05T11:43:13Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -289,6 +289,104 @@
           1,
           1,
           5
+        ]
+      }
+    },
+    {
+      "id": "3-blessing3-dsp",
+      "title": "水解3拟水月雨blessing3（监听向dsp）",
+      "subtitle": "模拟blessing3向监听DSP",
+      "description": "模拟blessing3向监听DSP",
+      "author": "愛玩原農洲戀的喜黑素食女權主義者",
+      "tags": [
+        "监听曲线",
+        "DSP",
+        "水月雨"
+      ],
+      "device_kinds": [
+        "WIRED_USB",
+        "OTHER"
+      ],
+      "target_devices": [],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/3-blessing3-dsp/3-blessing3-dsp.hx4",
+        "sha256": "e9d78f88da727177d77781bc471f46e1e717cb84b2d3744391cf05bf90928349",
+        "bytes": 2728,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          -2.0,
+          -2.5,
+          -2.0,
+          -0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          -0.26,
+          -0.48,
+          -0.8,
+          -1.19,
+          -1.59,
+          -1.89,
+          -2.01,
+          -1.92,
+          -1.67,
+          -1.37,
+          -1.12,
+          -0.93,
+          -0.76,
+          -0.57,
+          -0.37,
+          -0.19,
+          -0.08,
+          -0.02,
+          0.0,
+          0.02,
+          0.06,
+          0.13,
+          0.23,
+          0.35,
+          0.45,
+          0.5,
+          0.47,
+          0.37,
+          0.25,
+          0.15,
+          0.07
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.07,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
