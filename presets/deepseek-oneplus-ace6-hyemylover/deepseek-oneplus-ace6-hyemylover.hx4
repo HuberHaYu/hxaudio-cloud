@@ -1,0 +1,214 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1791178104765,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      1.5,
+      1.0,
+      -0.5,
+      0.5,
+      0.5,
+      1.0,
+      -1.0,
+      1.5,
+      1.0,
+      0.5,
+      0.0
+    ],
+    "post_eq_points": [
+      {
+        "id": "e0717fb2-b6e0-4787-aed4-11995a7fdf65",
+        "frequency_hz": 45.0,
+        "gain_db": 0.5,
+        "q": 0.7
+      },
+      {
+        "id": "a9f91e88-c5d7-4faf-bfd5-e91177009e25",
+        "frequency_hz": 80.0,
+        "gain_db": 1.5,
+        "q": 0.8
+      },
+      {
+        "id": "16e7d5b6-896e-488a-9418-b80066548d32",
+        "frequency_hz": 140.0,
+        "gain_db": 1.2,
+        "q": 0.9
+      },
+      {
+        "id": "afcc1bd6-5c76-458e-8f2b-e29054e17719",
+        "frequency_hz": 250.0,
+        "gain_db": 0.2,
+        "q": 1.0
+      },
+      {
+        "id": "085a0074-f0e3-4b20-acc6-4caee02b691c",
+        "frequency_hz": 500.0,
+        "gain_db": 0.3,
+        "q": 1.0
+      },
+      {
+        "id": "76efe31d-5ba8-4267-ad4b-332ec4d9af61",
+        "frequency_hz": 1200.0,
+        "gain_db": 0.5,
+        "q": 1.0
+      },
+      {
+        "id": "949eed62-578b-4f64-96a1-be63c5a15ed6",
+        "frequency_hz": 2200.0,
+        "gain_db": 0.8,
+        "q": 1.1
+      },
+      {
+        "id": "21df33cb-a0f8-4610-ac04-382fbb53a4d3",
+        "frequency_hz": 4000.0,
+        "gain_db": -0.8,
+        "q": 1.2
+      },
+      {
+        "id": "6e4d9433-0dfd-417e-9b53-bd011666e149",
+        "frequency_hz": 6500.0,
+        "gain_db": 0.3,
+        "q": 1.0
+      },
+      {
+        "id": "ddd23c6a-5c26-4656-8312-8c5e93897af8",
+        "frequency_hz": 9000.0,
+        "gain_db": 1.2,
+        "q": 0.9
+      },
+      {
+        "id": "6c9cf9a6-b0c0-4385-a153-20f1c8ac8187",
+        "frequency_hz": 13000.0,
+        "gain_db": 0.8,
+        "q": 0.8
+      },
+      {
+        "id": "37969821-8a1e-494a-84e2-58d8ed1fdf17",
+        "frequency_hz": 17000.0,
+        "gain_db": 0.3,
+        "q": 0.7
+      }
+    ],
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 6.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.0,
+      "use_dynamics_processing_gain": true
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -1.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 55
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": false,
+      "node_step_percent": 10,
+      "low_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

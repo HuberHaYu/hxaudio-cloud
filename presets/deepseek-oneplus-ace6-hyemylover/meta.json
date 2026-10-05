@@ -1,0 +1,22 @@
+{
+  "title": "DeepSeek 生成的一加 Ace 6 预设",
+  "subtitle": "适用于一加Ace6的均衡预设（1510+1012）",
+  "description": "适用于一加Ace6的均衡预设（1510+1012）",
+  "author": "Hyemylover",
+  "tags": [
+    "通用场景",
+    "外放",
+    "1510+1012"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OnePlus Ace 6",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
