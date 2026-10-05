@@ -26,6 +26,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | vivo X100s Pro 三频段均衡 | 手机外放（vivo X100s Pro） | 理论适用于vivo X100全系设备（扬声器规格一致） | [vivox100s-pro.hx4](presets/vivox100s-pro/vivox100s-pro.hx4) |
 | 荣耀Win器乐解析调音 | 手机外放（荣耀 WIN） | 适用于荣耀 Win 的外放调音 | [win-1216-1.hx4](presets/win-1216-1/win-1216-1.hx4) |
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
+| 小米 18Pro Max V形调音 | 手机外放（Xiaomi 18 Pro Max） | 小米 18Pro Max V形调音 | [xiaomi-18promax.hx4](presets/xiaomi-18promax/xiaomi-18promax.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |
 | 小米 15 Pro杜比全景哈曼卡顿音效 | 手机外放（Xiaomi 15 Pro） | 由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升 | [xiaomi15pro-ttzkyz.hx4](presets/xiaomi15pro-ttzkyz/xiaomi15pro-ttzkyz.hx4) |

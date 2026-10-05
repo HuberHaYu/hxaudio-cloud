@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T05:51:04Z",
+  "generated_at": "2026-10-05T06:06:11Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -2153,6 +2153,174 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "xiaomi-18promax",
+      "title": "小米 18Pro Max V形调音",
+      "subtitle": "小米 18Pro Max V形调音",
+      "description": "小米 18Pro Max V形调音",
+      "author": "未知",
+      "tags": [
+        "外放",
+        "V形"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 18 Pro Max",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/xiaomi-18promax/xiaomi-18promax.hx4",
+        "sha256": "24042fdbf486415cd4fc4dbd67ce073352e782fcd9a3a2586a13d29606d0419b",
+        "bytes": 3933,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": true,
+        "bass_boost_db": 3.5,
+        "input_gain_db": 0.0,
+        "limiter": true,
+        "virtual_surround_percent": 60,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          4.0,
+          3.5,
+          0.5,
+          -1.5,
+          0.0,
+          2.5,
+          3.8,
+          3.5,
+          2.5,
+          2.0,
+          1.0
+        ],
+        "post_eq_db": [
+          0.39,
+          0.72,
+          1.2,
+          1.79,
+          2.38,
+          2.83,
+          3.0,
+          2.84,
+          2.4,
+          1.82,
+          1.22,
+          0.73,
+          0.38,
+          0.14,
+          -0.04,
+          -0.2,
+          -0.35,
+          -0.45,
+          -0.45,
+          -0.29,
+          0.05,
+          0.58,
+          1.27,
+          2.05,
+          2.7,
+          2.99,
+          2.82,
+          2.25,
+          1.53,
+          0.88,
+          0.43
+        ],
+        "post_eq_left_db": [
+          0.39,
+          0.72,
+          1.2,
+          1.79,
+          2.38,
+          2.83,
+          3.0,
+          2.84,
+          2.4,
+          1.82,
+          1.22,
+          0.73,
+          0.38,
+          0.14,
+          -0.04,
+          -0.2,
+          -0.35,
+          -0.45,
+          -0.45,
+          -0.29,
+          0.05,
+          0.58,
+          1.27,
+          2.05,
+          2.7,
+          2.99,
+          2.82,
+          2.25,
+          1.53,
+          0.88,
+          0.43
+        ],
+        "post_eq_right_db": [
+          0.39,
+          0.72,
+          1.2,
+          1.79,
+          2.38,
+          2.83,
+          3.0,
+          2.84,
+          2.4,
+          1.82,
+          1.22,
+          0.73,
+          0.38,
+          0.14,
+          -0.04,
+          -0.2,
+          -0.35,
+          -0.45,
+          -0.45,
+          -0.29,
+          0.05,
+          0.58,
+          1.27,
+          2.05,
+          2.7,
+          2.99,
+          2.82,
+          2.25,
+          1.53,
+          0.88,
+          0.43
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.026,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
