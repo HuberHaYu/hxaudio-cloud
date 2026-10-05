@@ -2,39 +2,39 @@
   "format": "HXAudioPro4",
   "version": 2,
   "encrypted": false,
-  "created_at": 1790691215715,
+  "created_at": 1791177719970,
   "audio": {
     "pre_eq_gains_db": [
+      4.21,
       0.0,
-      0.0,
-      0.0,
-      0.0,
-      -0.09,
-      -0.12,
-      0.21,
-      2.2,
-      3.44,
-      4.92,
-      6.37,
-      4.58
+      -6.05,
+      -2.23,
+      -0.87,
+      -0.07,
+      0.13,
+      1.21,
+      1.97,
+      2.07,
+      2.66,
+      2.4
     ],
     "post_eq_points": [
       {
         "id": "default-80",
         "frequency_hz": 20.0,
-        "gain_db": 5.5,
-        "q": 0.75
+        "gain_db": 4.5,
+        "q": 0.55
       },
       {
         "id": "103c6a02-46ea-4595-8772-5717bb394602",
-        "frequency_hz": 69.94,
-        "gain_db": 7.5,
-        "q": 0.8
+        "frequency_hz": 65.76,
+        "gain_db": 3.5,
+        "q": 1.0
       },
       {
         "id": "ba5bd9ba-db82-46a0-ba8a-c5d75df90d96",
         "frequency_hz": 139.76,
-        "gain_db": 5.0,
+        "gain_db": 4.5,
         "q": 1.25
       },
       {
@@ -160,13 +160,13 @@
       ]
     },
     "bass_boost": {
-      "enabled": false,
-      "gain_db": 8.0
+      "enabled": true,
+      "gain_db": 2.0
     },
     "input_gain": {
       "balance_percent": 0.0,
       "total_gain_db": 0.0,
-      "use_dynamics_processing_gain": true
+      "use_dynamics_processing_gain": false
     },
     "main_limiter": {
       "enabled": false,
@@ -238,8 +238,8 @@
       "enabled": true,
       "node_step_percent": 10,
       "low_db": [
-        7.0,
-        7.0,
+        9.0,
+        8.27,
         7.0,
         6.5,
         5.5,
@@ -265,17 +265,118 @@
       ],
       "high_db": [
         5.0,
-        4.5,
-        4.0,
-        3.5,
-        2.5,
+        3.75,
+        2.59,
         1.5,
+        0.5,
         0.5,
         0.0,
         0.0,
         0.0,
+        0.0,
         0.0
-      ]
+      ],
+      "curve": {
+        "interpolation": "monotone_cubic",
+        "low": [
+          {
+            "volume_percent": 0,
+            "gain_db": 9.0
+          },
+          {
+            "volume_percent": 7,
+            "gain_db": 8.5
+          },
+          {
+            "volume_percent": 13,
+            "gain_db": 8.0
+          },
+          {
+            "volume_percent": 20,
+            "gain_db": 7.0
+          },
+          {
+            "volume_percent": 30,
+            "gain_db": 6.5
+          },
+          {
+            "volume_percent": 40,
+            "gain_db": 5.5
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": 4.0
+          },
+          {
+            "volume_percent": 60,
+            "gain_db": 2.5
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": 1.0
+          },
+          {
+            "volume_percent": 80,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 90,
+            "gain_db": -1.5
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -2.0
+          }
+        ],
+        "mid": [
+          {
+            "volume_percent": 40,
+            "gain_db": -1.5
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": -1.5
+          },
+          {
+            "volume_percent": 60,
+            "gain_db": -0.5
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": 0.0
+          }
+        ],
+        "high": [
+          {
+            "volume_percent": 0,
+            "gain_db": 5.0
+          },
+          {
+            "volume_percent": 30,
+            "gain_db": 1.5
+          },
+          {
+            "volume_percent": 40,
+            "gain_db": 0.5
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": 0.5
+          },
+          {
+            "volume_percent": 60,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": 0.0
+          }
+        ]
+      }
     }
   }
 }
