@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T05:22:15Z",
+  "generated_at": "2026-10-05T05:28:56Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -289,6 +289,109 @@
           1,
           1,
           5
+        ]
+      }
+    },
+    {
+      "id": "deepseek-oneplus-ace6-hyemylover",
+      "title": "DeepSeek 生成的一加 Ace 6 预设",
+      "subtitle": "适用于一加Ace6的均衡预设（1510+1012）",
+      "description": "适用于一加Ace6的均衡预设（1510+1012）",
+      "author": "Hyemylover",
+      "tags": [
+        "通用场景",
+        "外放",
+        "1510+1012"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OnePlus Ace 6",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4",
+        "sha256": "9f4e1d17e5f4bf5aa13d360415c29d9110a176ceb6cfd6dce4daa2e905671db2",
+        "bytes": 3874,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 12,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          1.5,
+          1.0,
+          -0.5,
+          0.5,
+          0.5,
+          1.0,
+          -1.0,
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "post_eq_db": [
+          0.42,
+          0.67,
+          1.02,
+          1.43,
+          1.89,
+          2.31,
+          2.62,
+          2.74,
+          2.62,
+          2.29,
+          1.84,
+          1.37,
+          0.99,
+          0.75,
+          0.63,
+          0.61,
+          0.67,
+          0.79,
+          0.94,
+          1.03,
+          0.96,
+          0.69,
+          0.41,
+          0.4,
+          0.8,
+          1.45,
+          2.02,
+          2.28,
+          2.19,
+          1.85,
+          1.41
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
