@@ -1,0 +1,25 @@
+{
+  "title": "真我GT8 Pro低音增强（等响补偿）",
+  "subtitle": "低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器",
+  "description": "低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器",
+  "author": "白告",
+  "tags": [
+    "等响补偿",
+    "低频增强"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "真我GT8 Pro",
+      "aliases": [
+        "Realme",
+        "GT8",
+        "Pro"
+      ]
+    }
+  ],
+  "featured": false
+}
