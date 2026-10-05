@@ -1,0 +1,22 @@
+{
+  "title": "水月雨 SPACE TRAVEL 2 ULTRA",
+  "subtitle": "低频、人声增强",
+  "description": "适用于水月雨 SPACE TRAVEL 2 ULTRA 的低频、人声增强",
+  "author": "zachary",
+  "tags": [
+    "低频增强",
+    "人声",
+    "水月雨"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "SPACE TRAVEL 2 ULTRA",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
