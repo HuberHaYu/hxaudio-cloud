@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T11:19:19Z",
+  "generated_at": "2026-10-05T11:34:04Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -985,6 +985,174 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "oneplusace5pro-boost-max",
+      "title": "一加 Ace 5 Pro 全段低频最大化",
+      "subtitle": "适用于一加Ace 5 Pro，全段低频调至最大化",
+      "description": "适用于一加Ace 5 Pro，全段低频调至最大化",
+      "author": "wutian74",
+      "tags": [
+        "低频增强",
+        "等响补偿"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OnePlus Ace 5 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/oneplusace5pro-boost-max/oneplusace5pro-boost-max.hx4",
+        "sha256": "945ed970c3eefa45bbec77ca0ca21e1a8153d3e089eead186c1e592077396571",
+        "bytes": 5434,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          -0.5,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.01,
+          -0.02,
+          -0.07,
+          -0.16,
+          -0.3,
+          -0.43,
+          -0.48,
+          -0.4,
+          -0.19,
+          0.06,
+          0.29,
+          0.45,
+          0.5,
+          0.45,
+          0.36,
+          0.3,
+          0.31,
+          0.38,
+          0.46,
+          0.5,
+          0.47,
+          0.37,
+          0.25,
+          0.15,
+          0.07
+        ],
+        "post_eq_left_db": [
+          0.0,
+          0.0,
+          0.01,
+          0.05,
+          0.21,
+          0.63,
+          1.36,
+          2.14,
+          2.43,
+          1.95,
+          1.0,
+          0.15,
+          -0.29,
+          -0.35,
+          -0.19,
+          0.06,
+          0.29,
+          0.44,
+          0.48,
+          0.41,
+          0.25,
+          0.05,
+          -0.14,
+          -0.31,
+          -0.44,
+          -0.5,
+          -0.47,
+          -0.37,
+          -0.25,
+          -0.15,
+          -0.07
+        ],
+        "post_eq_right_db": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.01,
+          -0.02,
+          -0.07,
+          -0.16,
+          -0.3,
+          -0.43,
+          -0.48,
+          -0.4,
+          -0.19,
+          0.06,
+          0.29,
+          0.45,
+          0.5,
+          0.45,
+          0.36,
+          0.3,
+          0.31,
+          0.38,
+          0.46,
+          0.5,
+          0.47,
+          0.37,
+          0.25,
+          0.15,
+          0.07
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.07,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
