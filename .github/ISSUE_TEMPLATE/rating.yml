@@ -13,6 +13,7 @@ body:
       label: 预设
       options:
         - "1014-1115 · 1014 / 1115喇叭单元调教"
+        - "10pro-10s-bass · 小米10Pro/10S调音"
         - "3-blessing3-dsp · 水解3拟水月雨blessing3（监听向dsp）"
         - "deepseek-oneplus-ace6-hyemylover · DeepSeek 生成的一加 Ace 6 预设"
         - "dync-bass-hxofficial · HX通用调音 - 动态低频补偿"

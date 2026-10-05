@@ -13,6 +13,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 专业模式 - 超强动态低频 | 手机外放（Xiaomi 14、Xiaomi 14 Pro、Xiaomi 15、Xiaomi 15 Pro、Xiaomi 15 Ultra） | 使用时务必激活“专业音频”，具体适配机型可见详情 | [powerful-dyncbass.hx4](presets/powerful-dyncbass/powerful-dyncbass.hx4) |
 | 小米14 - HX官方曲线优化 | 手机外放（Xiaomi 14、Xiaomi 14 Pro） | 特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向 | [xiaomi14-spk-huberlab-hires.hx4](presets/xiaomi14-spk-huberlab-hires/xiaomi14-spk-huberlab-hires.hx4) |
 | 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
+| 小米10Pro/10S调音 | 手机外放（Mi 10S、Mi 10 Pro） | Deepseek调音适配MI10PRO和小米10s | [10pro-10s-bass.hx4](presets/10pro-10s-bass/10pro-10s-bass.hx4) |
 | 水解3拟水月雨blessing3（监听向dsp） | USB 耳机、其他设备 | 模拟blessing3向监听DSP | [3-blessing3-dsp.hx4](presets/3-blessing3-dsp/3-blessing3-dsp.hx4) |
 | DeepSeek 生成的一加 Ace 6 预设 | 手机外放（OnePlus Ace 6） | 适用于一加Ace6的均衡预设（1510+1012） | [deepseek-oneplus-ace6-hyemylover.hx4](presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4) |
 | K80至尊版极致低频中高均衡 | 手机外放（REDMI K80 Ultra） | K80至尊版极致低频中高均衡 | [hxaudio-k80ultra.hx4](presets/hxaudio-k80ultra/hxaudio-k80ultra.hx4) |
