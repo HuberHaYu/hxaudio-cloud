@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T05:42:08Z",
+  "generated_at": "2026-10-05T05:49:35Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -2678,6 +2678,109 @@
           0,
           0,
           2
+        ]
+      }
+    },
+    {
+      "id": "xiaomi17-pro-bose",
+      "title": "小米 17 Pro BOSE调音",
+      "subtitle": "适用于小米 17 Pro的BOSE调音",
+      "description": "适用于小米 17 Pro的BOSE调音",
+      "author": "未知",
+      "tags": [
+        "外放",
+        "BOSE",
+        "重低音"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 17 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/xiaomi17-pro-bose/xiaomi17-pro-bose.hx4",
+        "sha256": "e01d468b23c555d1db429e44ba25a462de921d7fbd56d8e053f9a0d70edea945",
+        "bytes": 3589,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 10,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          3.0,
+          3.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.5,
+          -1.0,
+          -1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "post_eq_db": [
+          1.01,
+          1.53,
+          2.2,
+          2.99,
+          3.87,
+          4.73,
+          5.42,
+          5.78,
+          5.68,
+          5.09,
+          4.14,
+          3.05,
+          2.04,
+          1.22,
+          0.64,
+          0.26,
+          -0.03,
+          -0.33,
+          -0.73,
+          -1.2,
+          -1.66,
+          -2.02,
+          -2.2,
+          -2.17,
+          -1.86,
+          -1.29,
+          -0.55,
+          0.17,
+          0.74,
+          1.06,
+          1.12
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.0,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     }
