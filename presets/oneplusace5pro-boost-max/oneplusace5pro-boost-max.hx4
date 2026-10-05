@@ -1,0 +1,280 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1791200028314,
+  "audio": {
+    "pre_eq_gains_db": [
+      -0.5,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "post_eq_points": [
+      {
+        "id": "6d576477-19af-44c5-9d52-f6a485af19cb",
+        "frequency_hz": 80.0,
+        "gain_db": 0.0,
+        "q": 0.75
+      },
+      {
+        "id": "ccc10ca9-2b91-499b-9243-0f1f94b6c908",
+        "frequency_hz": 320.0,
+        "gain_db": -0.5,
+        "q": 1.1
+      },
+      {
+        "id": "6534a066-8cd3-4389-964b-3770c6ce908b",
+        "frequency_hz": 1200.0,
+        "gain_db": 0.5,
+        "q": 1.0
+      },
+      {
+        "id": "3761124c-5410-4176-96d4-36b429b0b37c",
+        "frequency_hz": 6500.0,
+        "gain_db": 0.5,
+        "q": 0.9
+      }
+    ],
+    "post_eq_channels": {
+      "pro_enabled": true,
+      "left_points": [
+        {
+          "id": "08699ccd-7f67-4912-aeae-53a00d4fa195",
+          "frequency_hz": 125.11,
+          "gain_db": 2.5,
+          "q": 1.25
+        },
+        {
+          "id": "left-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "8c678a63-d022-4051-8122-e11bc1ce588d",
+          "frequency_hz": 862.33,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "left-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "left-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": -1.0,
+          "q": 0.9
+        }
+      ],
+      "right_points": [
+        {
+          "id": "right-default-80",
+          "frequency_hz": 80.0,
+          "gain_db": 0.0,
+          "q": 0.75
+        },
+        {
+          "id": "right-default-320",
+          "frequency_hz": 320.0,
+          "gain_db": 0.0,
+          "q": 1.1
+        },
+        {
+          "id": "right-default-1200",
+          "frequency_hz": 1200.0,
+          "gain_db": 0.0,
+          "q": 1.0
+        },
+        {
+          "id": "right-default-6500",
+          "frequency_hz": 6500.0,
+          "gain_db": 0.0,
+          "q": 0.9
+        }
+      ]
+    },
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 6.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.0,
+      "use_dynamics_processing_gain": false
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 1,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -2.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 38
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "b2c4c2c7-2c2d-4fca-9028-298826abe7a7",
+      "impulse_name": "哈曼卡顿脉冲反馈2.0.irs",
+      "pre_eq_db": [
+        -9.0,
+        2.314,
+        2.1185,
+        1.85,
+        1.8389,
+        1.881,
+        1.8843,
+        1.8471,
+        1.7106,
+        1.3192,
+        0.2332,
+        -2.4502
+      ],
+      "post_eq_db": [
+        -8.092,
+        -8.709,
+        -7.5209,
+        1.6348,
+        8.6101,
+        0.2132,
+        0.2815,
+        0.2291,
+        0.0071,
+        -0.0528,
+        0.0691,
+        0.0198,
+        -0.0243,
+        -0.0236,
+        -0.0123,
+        0.0104,
+        -0.0131,
+        -0.002,
+        0.005,
+        0.0035,
+        0.0029,
+        -0.0014,
+        -0.0089,
+        0.0141,
+        -0.0088,
+        -0.0467,
+        0.0276,
+        -0.0845,
+        0.0629,
+        0.4716,
+        -1.4344
+      ]
+    },
+    "volume_compensation": {
+      "enabled": true,
+      "node_step_percent": 10,
+      "low_db": [
+        9.0,
+        8.27,
+        7.37,
+        6.34,
+        5.21,
+        4.0,
+        2.43,
+        1.0,
+        0.1,
+        -0.62,
+        -1.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.7,
+        -2.1,
+        -3.5
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.22,
+        -1.2,
+        -2.5
+      ],
+      "curve": {
+        "interpolation": "monotone_cubic",
+        "low": [
+          {
+            "volume_percent": 0,
+            "gain_db": 9.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": 4.0
+          },
+          {
+            "volume_percent": 70,
+            "gain_db": 1.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -1.0
+          }
+        ],
+        "mid": [
+          {
+            "volume_percent": 75,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -3.5
+          }
+        ],
+        "high": [
+          {
+            "volume_percent": 0,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 50,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 75,
+            "gain_db": 0.0
+          },
+          {
+            "volume_percent": 88,
+            "gain_db": -1.0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -2.5
+          }
+        ]
+      }
+    }
+  }
+}
