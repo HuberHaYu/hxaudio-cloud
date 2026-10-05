@@ -1,0 +1,17 @@
+{
+  "title": "水解3拟水月雨blessing3（监听向dsp）",
+  "subtitle": "模拟blessing3向监听DSP",
+  "description": "模拟blessing3向监听DSP",
+  "author": "愛玩原農洲戀的喜黑素食女權主義者",
+  "tags": [
+    "监听曲线",
+    "DSP",
+    "水月雨"
+  ],
+  "device_kinds": [
+    "WIRED_USB",
+    "OTHER"
+  ],
+  "target_devices": [],
+  "featured": false
+}
