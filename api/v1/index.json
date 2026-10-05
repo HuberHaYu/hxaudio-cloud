@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T11:43:13Z",
+  "generated_at": "2026-10-05T11:45:23Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -2026,6 +2026,112 @@
           0,
           1,
           3
+        ]
+      }
+    },
+    {
+      "id": "realme-gt8pro-20261005-163635",
+      "title": "真我GT8 Pro低音增强（等响补偿）",
+      "subtitle": "低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器",
+      "description": "低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器",
+      "author": "白告",
+      "tags": [
+        "等响补偿",
+        "低频增强"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "真我GT8 Pro",
+          "aliases": [
+            "Realme",
+            "GT8",
+            "Pro"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "file": {
+        "path": "presets/realme-gt8pro-20261005-163635/realme-gt8pro-20261005-163635.hx4",
+        "sha256": "e90dd01a017867074a1213d07c10003d902fa32d078af9d1947997cf3438b85a",
+        "bytes": 3678,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.01,
+          -0.03,
+          -0.1,
+          -0.3,
+          -0.71,
+          -1.38,
+          -2.18,
+          -2.83,
+          -3.01,
+          -2.65,
+          -2.01,
+          -1.44,
+          -1.18,
+          -1.23,
+          -1.42,
+          -1.51,
+          -1.41,
+          -1.12,
+          -0.76,
+          -0.44,
+          -0.22
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.07,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },

@@ -24,6 +24,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | OPPO Enco Air 5 Pro 极致优化 | 蓝牙耳机 | 适用于该型号的耳机，需要在耳机app中新建值都为0的均衡器 | [oppo-enco-air-5-pro-qiqiqi.hx4](presets/oppo-enco-air-5-pro-qiqiqi/oppo-enco-air-5-pro-qiqiqi.hx4) |
 | OPPO Enco Air4 Pro三星经典调音 | 蓝牙耳机（Oppo Enco X3、Oppo 4 Free、Oppo Air 4 Pro、Oppo Enco Air4 Pro） | 来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声 | [oppo-enco-air4-pro.hx4](presets/oppo-enco-air4-pro/oppo-enco-air4-pro.hx4) |
 | OPPO Find X8s Plus | 手机外放（OPPO Find X8s Plus） | 适用于OPPO Find X8s Plus的低频增强外放 | [oppo-find-x8splus.hx4](presets/oppo-find-x8splus/oppo-find-x8splus.hx4) |
+| 真我GT8 Pro低音增强（等响补偿） | 手机外放（真我GT8 Pro） | 低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器 | [realme-gt8pro-20261005-163635.hx4](presets/realme-gt8pro-20261005-163635/realme-gt8pro-20261005-163635.hx4) |
 | Redmi Buds6 Pro | 蓝牙耳机 | Redmi Buds6 Pro耳机高频细节调教 | [redmi-buds6-pro.hx4](presets/redmi-buds6-pro/redmi-buds6-pro.hx4) |
 | Redmi K100 胖头鱼3.1全局接管特化版 | 手机外放（REDMI K100 Pro Max） | 由深海胖头鱼上传，适用于Redmi K100PM 外放，适合全局接管模式的改版 | [redmi-k100promax-os4-deepfish.hx4](presets/redmi-k100promax-os4-deepfish/redmi-k100promax-os4-deepfish.hx4) |
 | Redmi K90 - V形调音 | 手机外放（REDMI K90） | 由yingjiang240619上传，适用于Redmi K90外放的V形调音 | [redmik90-yingjiang240619.hx4](presets/redmik90-yingjiang240619/redmik90-yingjiang240619.hx4) |
