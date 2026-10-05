@@ -1,0 +1,22 @@
+{
+  "title": "V2307A 扬声器预设",
+  "subtitle": "适用于 V2307A 扬声器外放",
+  "description": "适用于 V2307A 扬声器外放",
+  "author": "未知",
+  "tags": [
+    "外放",
+    "均衡低频"
+  ],
+  "device_kinds": [
+    "SPEAKER",
+    "OTHER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "V2307A",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,166 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1791178536704,
+  "audio": {
+    "pre_eq_gains_db": [
+      0.0,
+      2.5,
+      3.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -2.0,
+      -3.0,
+      -2.0,
+      -1.0,
+      -0.5
+    ],
+    "post_eq_points": [
+      {
+        "id": "b1b5d667-82d1-446c-92e0-c0ae7de071a1",
+        "frequency_hz": 80.0,
+        "gain_db": 2.0,
+        "q": 0.8
+      },
+      {
+        "id": "d5a775c0-ff18-4178-9e63-ad1043bb85bd",
+        "frequency_hz": 320.0,
+        "gain_db": -1.5,
+        "q": 1.1
+      },
+      {
+        "id": "63ea8395-0a46-4b56-a2fb-5d125abd83e1",
+        "frequency_hz": 1200.0,
+        "gain_db": 0.0,
+        "q": 1.0
+      },
+      {
+        "id": "53c05e80-ecbb-4649-ba18-ca2783d7737a",
+        "frequency_hz": 6500.0,
+        "gain_db": -1.5,
+        "q": 0.9
+      }
+    ],
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 6.0
+    },
+    "input_gain": {
+      "balance_percent": 0.0,
+      "total_gain_db": 0.0,
+      "use_dynamics_processing_gain": true
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1.0,
+      "release_time_ms": 60.0,
+      "ratio": 10.0,
+      "threshold_db": -1.0,
+      "post_gain_db": 0.0
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 55
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "post_eq_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": false,
+      "node_step_percent": 10,
+      "low_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mid_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "high_db": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
