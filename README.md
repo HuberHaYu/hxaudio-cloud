@@ -14,6 +14,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米14 - HX官方曲线优化 | 手机外放（Xiaomi 14、Xiaomi 14 Pro） | 特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向 | [xiaomi14-spk-huberlab-hires.hx4](presets/xiaomi14-spk-huberlab-hires/xiaomi14-spk-huberlab-hires.hx4) |
 | 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
 | DeepSeek 生成的一加 Ace 6 预设 | 手机外放（OnePlus Ace 6） | 适用于一加Ace6的均衡预设（1510+1012） | [deepseek-oneplus-ace6-hyemylover.hx4](presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4) |
+| K80至尊版极致低频中高均衡 | 手机外放（REDMI K80 Ultra） | K80至尊版极致低频中高均衡 | [hxaudio-k80ultra.hx4](presets/hxaudio-k80ultra/hxaudio-k80ultra.hx4) |
 | Redmi K60 Pro 流行音乐 | 手机外放（Redmi K60 Pro） | 适用于Redmi K60 Pro外放，流行音乐 | [k60pro-spk-papershort.hx4](presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4) |
 | Redmi K90 Pro Max | 手机外放（Redmi K90 Pro Max） | 由 chaoer2330 投稿，适用于K90 Pro Max的外放 | [k90promax-spk-chaoer2330.hx4](presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4) |
 | 水月雨 SPACE TRAVEL 2 ULTRA | 蓝牙耳机（SPACE TRAVEL 2 ULTRA） | 低频、人声增强 | [md2u.hx4](presets/md2u/md2u.hx4) |
