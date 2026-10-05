@@ -1,7 +1,7 @@
 {
   "$comment": "云端目录的全局配置。改完推送即可，Actions 会重新生成并签名 api/v1/manifest.json。mirrors 是 App 的下载线路：顺序即初始优先级，App 会按每台手机的实际速度自动调整；kind 为 raw 的线路直连 GitHub（内容最新），cdn 有缓存。停用某条线路把 enabled 改为 false。",
   "name": "HXAudio Pro 云端预设",
-  "notice": "",
+  "notice": "公告测试",
   "min_app_version_code": 400000001,
   "rating": {
     "submit_endpoint": "",
