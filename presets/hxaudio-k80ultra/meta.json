@@ -1,0 +1,22 @@
+{
+  "title": "K80至尊版极致低频中高均衡",
+  "subtitle": "K80至尊版极致低频中高均衡",
+  "description": "K80至尊版极致低频中高均衡",
+  "author": "未知",
+  "tags": [
+    "重低音",
+    "高频段均衡",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "REDMI K80 Ultra",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
