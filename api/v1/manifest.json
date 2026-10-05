@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T05:33:09Z",
+  "generated_at": "2026-10-05T05:35:52Z",
   "name": "HXAudio Pro 云端预设",
   "notice": "",
   "min_app_version_code": 400000001,
@@ -10,8 +10,8 @@
   ],
   "index": {
     "path": "api/v1/index.json",
-    "sha256": "6974e87752193264fabba4c8a6624453dd9cba786d4d8b0e695b96d18009e955",
-    "preset_count": 20
+    "sha256": "1084ab26f5b10901a177d4140aabbfff2fda17b7e72489ab8cca23169af33649",
+    "preset_count": 21
   },
   "rating": {
     "min": 1,

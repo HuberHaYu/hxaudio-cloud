@@ -21,6 +21,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | Redmi Buds6 Pro | 蓝牙耳机 | Redmi Buds6 Pro耳机高频细节调教 | [redmi-buds6-pro.hx4](presets/redmi-buds6-pro/redmi-buds6-pro.hx4) |
 | Redmi K100 胖头鱼3.1全局接管特化版 | 手机外放（REDMI K100 Pro Max） | 由深海胖头鱼上传，适用于Redmi K100PM 外放，适合全局接管模式的改版 | [redmi-k100promax-os4-deepfish.hx4](presets/redmi-k100promax-os4-deepfish/redmi-k100promax-os4-deepfish.hx4) |
 | Redmi K90 - V形调音 | 手机外放（REDMI K90） | 由yingjiang240619上传，适用于Redmi K90外放的V形调音 | [redmik90-yingjiang240619.hx4](presets/redmik90-yingjiang240619/redmik90-yingjiang240619.hx4) |
+| V2307A 扬声器预设 | 手机外放、其他设备（V2307A） | 适用于 V2307A 扬声器外放 | [v2307a-spk.hx4](presets/v2307a-spk/v2307a-spk.hx4) |
 | vivo X100s Pro 三频段均衡 | 手机外放（vivo X100s Pro） | 理论适用于vivo X100全系设备（扬声器规格一致） | [vivox100s-pro.hx4](presets/vivox100s-pro/vivox100s-pro.hx4) |
 | 荣耀Win器乐解析调音 | 手机外放（荣耀 WIN） | 适用于荣耀 Win 的外放调音 | [win-1216-1.hx4](presets/win-1216-1/win-1216-1.hx4) |
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
