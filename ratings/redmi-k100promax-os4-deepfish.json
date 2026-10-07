@@ -1,6 +1,12 @@
 {
   "preset_id": "redmi-k100promax-os4-deepfish",
   "votes": {
+    "2e5373e4a7b0a4b5": {
+      "score": 5,
+      "rev": 2,
+      "via": "gh",
+      "at": "2026-10-07T15:02:28Z"
+    },
     "70a1431257fd099a": {
       "score": 5,
       "rev": 1,
