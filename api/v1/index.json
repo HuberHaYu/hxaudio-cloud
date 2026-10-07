@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-07T15:02:28Z",
+  "generated_at": "2026-10-07T19:17:20Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -391,7 +391,7 @@
       "rating": {
         "count": 2,
         "average": 4.5,
-        "weighted": 4.224,
+        "weighted": 4.222,
         "histogram": [
           0,
           0,
@@ -489,7 +489,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.261,
+        "weighted": 4.259,
         "histogram": [
           0,
           0,
@@ -592,7 +592,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -690,14 +690,14 @@
         ]
       },
       "rating": {
-        "count": 12,
-        "average": 4.33,
-        "weighted": 4.269,
+        "count": 13,
+        "average": 4.31,
+        "weighted": 4.253,
         "histogram": [
           0,
           1,
           0,
-          5,
+          6,
           6
         ]
       }
@@ -798,7 +798,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.366,
+        "weighted": 4.365,
         "histogram": [
           0,
           0,
@@ -901,7 +901,7 @@
       "rating": {
         "count": 2,
         "average": 2.5,
-        "weighted": 3.652,
+        "weighted": 3.651,
         "histogram": [
           1,
           0,
@@ -1084,7 +1084,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -1187,7 +1187,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -1292,7 +1292,7 @@
       "rating": {
         "count": 3,
         "average": 5.0,
-        "weighted": 4.446,
+        "weighted": 4.444,
         "histogram": [
           0,
           0,
@@ -1395,7 +1395,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -1497,7 +1497,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.261,
+        "weighted": 4.259,
         "histogram": [
           0,
           0,
@@ -1665,7 +1665,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -1824,7 +1824,7 @@
       "rating": {
         "count": 1,
         "average": 1.0,
-        "weighted": 3.594,
+        "weighted": 3.592,
         "histogram": [
           1,
           0,
@@ -1942,7 +1942,7 @@
       "rating": {
         "count": 4,
         "average": 1.0,
-        "weighted": 2.729,
+        "weighted": 2.728,
         "histogram": [
           4,
           0,
@@ -2044,7 +2044,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -2234,7 +2234,7 @@
       "rating": {
         "count": 6,
         "average": 4.17,
-        "weighted": 4.142,
+        "weighted": 4.141,
         "histogram": [
           0,
           1,
@@ -2340,7 +2340,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -2439,7 +2439,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.261,
+        "weighted": 4.259,
         "histogram": [
           0,
           0,
@@ -2608,7 +2608,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.366,
+        "weighted": 4.365,
         "histogram": [
           0,
           0,
@@ -2711,7 +2711,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -2814,7 +2814,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -2916,7 +2916,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.928,
+        "weighted": 3.926,
         "histogram": [
           0,
           0,
@@ -3019,7 +3019,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.366,
+        "weighted": 4.365,
         "histogram": [
           0,
           0,
@@ -3122,7 +3122,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.261,
+        "weighted": 4.259,
         "histogram": [
           0,
           0,
@@ -3290,7 +3290,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.261,
+        "weighted": 4.259,
         "histogram": [
           0,
           0,
@@ -3388,7 +3388,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
@@ -3497,7 +3497,7 @@
       "rating": {
         "count": 5,
         "average": 4.4,
-        "weighted": 4.256,
+        "weighted": 4.255,
         "histogram": [
           0,
           0,
@@ -3607,7 +3607,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.928,
+        "weighted": 3.926,
         "histogram": [
           0,
           0,
@@ -3711,7 +3711,7 @@
       "rating": {
         "count": 3,
         "average": 4.33,
-        "weighted": 4.196,
+        "weighted": 4.194,
         "histogram": [
           0,
           0,
@@ -3918,7 +3918,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.113,
+        "weighted": 4.111,
         "histogram": [
           0,
           0,
