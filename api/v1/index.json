@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T06:18:34Z",
+  "generated_at": "2026-10-09T11:11:39Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -1945,6 +1945,108 @@
         "weighted": 2.708,
         "histogram": [
           4,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oppo-find-x10-pro-max",
+      "title": "OPPO Find X10 Pro Max",
+      "subtitle": "增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。",
+      "description": "增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。建议在系统音效设置中将预设切换为“自定义”后再使用此音效。",
+      "author": "BaiTangCN",
+      "tags": [
+        "全频段优化",
+        "等响补偿"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OPPO Find X10 Pro Max",
+          "aliases": []
+        }
+      ],
+      "featured": true,
+      "revision": 1,
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "file": {
+        "path": "presets/oppo-find-x10-pro-max/oppo-find-x10-pro-max.hx4",
+        "sha256": "94efd57b75e80d1792f653ea677381041380fcb801cef600771696fcc9af442e",
+        "bytes": 4289,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 9,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 2.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          3.0,
+          1.0,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          -0.5,
+          1.0,
+          1.5,
+          1.5,
+          1.0
+        ],
+        "post_eq_db": [
+          1.67,
+          2.32,
+          2.96,
+          3.51,
+          3.87,
+          3.97,
+          3.78,
+          3.33,
+          2.72,
+          2.09,
+          1.54,
+          1.14,
+          0.89,
+          0.74,
+          0.63,
+          0.5,
+          0.35,
+          0.21,
+          0.12,
+          0.09,
+          0.14,
+          0.3,
+          0.59,
+          1.03,
+          1.59,
+          2.21,
+          2.74,
+          3.08,
+          3.14,
+          2.92,
+          2.48
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.075,
+        "histogram": [
+          0,
           0,
           0,
           0,
