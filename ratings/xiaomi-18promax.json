@@ -1,6 +1,12 @@
 {
   "preset_id": "xiaomi-18promax",
   "votes": {
+    "09b2dc8295923733": {
+      "score": 4,
+      "rev": 1,
+      "via": "gh",
+      "at": "2026-10-09T02:42:45Z"
+    },
     "ec00b1462965efb4": {
       "score": 5,
       "rev": 1,
