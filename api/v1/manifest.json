@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T11:26:15Z",
+  "generated_at": "2026-10-09T13:38:04Z",
   "name": "HXAudio Pro 云端预设",
   "notice": "近期投稿人数较多，正在逐一分析筛选合适的调音，投稿时务必填写自己的昵称，便于展示",
   "min_app_version_code": 400000001,
@@ -10,14 +10,14 @@
   ],
   "index": {
     "path": "api/v1/index.json",
-    "sha256": "41b03358832f66f30acd80ba86abcc48baa2f5daff57fd400026734322fd4991",
+    "sha256": "bfee0c01a0f28f10284fcb9328f7732777222121c8d745c534610be3a5838a88",
     "preset_count": 37
   },
   "rating": {
     "min": 1,
     "max": 5,
-    "total_votes": 80,
-    "global_mean": 4.075,
+    "total_votes": 81,
+    "global_mean": 4.086,
     "prior_weight": 5,
     "submit_endpoint": null,
     "github_client_id": "Iv23liUcbHth1Mq21VY2",
