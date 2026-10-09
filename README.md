@@ -12,6 +12,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米12X/12/12S 外放 · 哈曼卡顿双扬 | 手机外放（Xiaomi 12、Xiaomi 12X、Xiaomi 12s、Xiaomi 12s Pro） | 适用于小米12系列的哈曼卡顿调音 | [hxaudio-xiaomi12x-final-v6.hx4](presets/hxaudio-xiaomi12x-final-v6/hxaudio-xiaomi12x-final-v6.hx4) |
 | OPPO Find X10 Pro Max | 手机外放（OPPO Find X10 Pro Max） | 增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。 | [oppo-find-x10-pro-max.hx4](presets/oppo-find-x10-pro-max/oppo-find-x10-pro-max.hx4) |
 | 专业模式 - 超强动态低频 | 手机外放（Xiaomi 14、Xiaomi 14 Pro、Xiaomi 15、Xiaomi 15 Pro、Xiaomi 15 Ultra） | 使用时务必激活“专业音频”，具体适配机型可见详情 | [powerful-dyncbass.hx4](presets/powerful-dyncbass/powerful-dyncbass.hx4) |
+| Vivo X300 Ultra | 手机外放（V2547A） | 精准补偿1697与1151的硬件差异，实现人声贴耳与低频弹性。 | [vivox300ultra.hx4](presets/vivox300ultra/vivox300ultra.hx4) |
 | 小米14 - HX官方曲线优化 | 手机外放（Xiaomi 14、Xiaomi 14 Pro） | 特调曲线，由 HXAudio 实验室严格提供，针对 HiRes 调音方向 | [xiaomi14-spk-huberlab-hires.hx4](presets/xiaomi14-spk-huberlab-hires/xiaomi14-spk-huberlab-hires.hx4) |
 | 小米 15 Pro 浑厚人声 | 手机外放（Xiaomi 15 Pro） | 由 hxj 投稿，适用于小米15 Pro外放，人声 | [xiaomi15pro-spk-hxj.hx4](presets/xiaomi15pro-spk-hxj/xiaomi15pro-spk-hxj.hx4) |
 | 小米平板8 Pro | 手机外放（Xiaomi Pad 8 Pro） | 适用于小米平板8 Pro的外放，超重低音 | [xiaomipad-8pro.hx4](presets/xiaomipad-8pro/xiaomipad-8pro.hx4) |
