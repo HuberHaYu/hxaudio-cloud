@@ -1,0 +1,23 @@
+{
+  "title": "一加 15 低音炮",
+  "subtitle": "低音炮足，空间感补充",
+  "description": "低音炮足，空间感补充",
+  "author": "p17",
+  "tags": [
+    "低音炮"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "一加 15",
+      "aliases": [
+        "OnePlus",
+        "15"
+      ]
+    }
+  ],
+  "featured": false
+}
