@@ -1,0 +1,21 @@
+{
+  "title": "Vivo X300 Ultra",
+  "subtitle": "精准补偿1697与1151的硬件差异，实现人声贴耳与低频弹性。",
+  "description": "精准补偿1697与1151的硬件差异，实现人声贴耳与低频弹性。整体温和安全，关闭混响环绕，利用限制器防爆音，最终呈现干净紧致、高频通透的听感。",
+  "author": "未知",
+  "tags": [
+    "精确补偿",
+    "全频段提升"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "V2547A",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
