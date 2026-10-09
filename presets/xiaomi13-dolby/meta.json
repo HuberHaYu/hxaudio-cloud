@@ -1,0 +1,21 @@
+{
+  "title": "小米13 Dolby Atmos框架内弥补",
+  "subtitle": "小米13系统Dolby Atmos框架内弥补外放扬声器",
+  "description": "小米13系统Dolby Atmos框架内弥补外放扬声器",
+  "author": "ttzkyz",
+  "tags": [
+    "全频段优化",
+    "杜比全景声"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi 13",
+      "aliases": []
+    }
+  ],
+  "featured": false
+}
