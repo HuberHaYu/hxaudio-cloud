@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T11:20:33Z",
+  "generated_at": "2026-10-09T11:22:34Z",
   "name": "HXAudio Pro 云端预设",
-  "notice": "近期投稿人数较多，正在逐一分析筛选合适的调音..",
+  "notice": "近期投稿人数较多，正在逐一分析筛选合适的调音，投稿时务必填写自己的昵称，便于展示",
   "min_app_version_code": 400000001,
   "hx4_versions": [
     1,
