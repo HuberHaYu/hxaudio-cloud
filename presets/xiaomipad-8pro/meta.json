@@ -1,0 +1,22 @@
+{
+  "title": "小米平板8 Pro",
+  "subtitle": "适用于小米平板8 Pro的外放，超重低音",
+  "description": "适用于小米平板8 Pro的外放，超重低音",
+  "author": "莫無殇",
+  "tags": [
+    "平板",
+    "超重低音",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "Xiaomi Pad 8 Pro",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
