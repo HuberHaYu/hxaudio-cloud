@@ -1,0 +1,21 @@
+{
+  "title": "OPPO Find X10 Pro Max",
+  "subtitle": "增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。",
+  "description": "增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。建议在系统音效设置中将预设切换为“自定义”后再使用此音效。",
+  "author": "BaiTangCN",
+  "tags": [
+    "全频段优化",
+    "等响补偿"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OPPO Find X10 Pro Max",
+      "aliases": []
+    }
+  ],
+  "featured": true
+}
