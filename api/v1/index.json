@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T11:11:39Z",
+  "generated_at": "2026-10-09T11:14:47Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -3485,6 +3485,174 @@
           0.41,
           0.3,
           0.18
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.075,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "xiaomi13-dolby",
+      "title": "小米13 Dolby Atmos框架内弥补",
+      "subtitle": "小米13系统Dolby Atmos框架内弥补外放扬声器",
+      "description": "小米13系统Dolby Atmos框架内弥补外放扬声器",
+      "author": "ttzkyz",
+      "tags": [
+        "全频段优化",
+        "杜比全景声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 13",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "file": {
+        "path": "presets/xiaomi13-dolby/xiaomi13-dolby.hx4",
+        "sha256": "514b9e2323a43ca9ed5135367299028a16c5dcf704fd3b3fe735ad2470c35d1d",
+        "bytes": 4364,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 7,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0.0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.0,
+          2.0,
+          3.0,
+          2.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.5,
+          1.0,
+          0.5
+        ],
+        "post_eq_db": [
+          0.35,
+          0.61,
+          0.96,
+          1.36,
+          1.78,
+          2.21,
+          2.66,
+          3.11,
+          3.46,
+          3.59,
+          3.39,
+          2.91,
+          2.27,
+          1.61,
+          1.04,
+          0.6,
+          0.25,
+          -0.04,
+          -0.31,
+          -0.56,
+          -0.75,
+          -0.84,
+          -0.77,
+          -0.49,
+          -0.04,
+          0.53,
+          1.1,
+          1.56,
+          1.78,
+          1.71,
+          1.4
+        ],
+        "post_eq_left_db": [
+          0.35,
+          0.61,
+          0.96,
+          1.36,
+          1.78,
+          2.21,
+          2.66,
+          3.11,
+          3.46,
+          3.59,
+          3.39,
+          2.91,
+          2.27,
+          1.61,
+          1.04,
+          0.6,
+          0.25,
+          -0.04,
+          -0.31,
+          -0.56,
+          -0.75,
+          -0.84,
+          -0.77,
+          -0.49,
+          -0.04,
+          0.53,
+          1.1,
+          1.56,
+          1.78,
+          1.71,
+          1.4
+        ],
+        "post_eq_right_db": [
+          0.35,
+          0.61,
+          0.96,
+          1.36,
+          1.78,
+          2.21,
+          2.66,
+          3.11,
+          3.46,
+          3.59,
+          3.39,
+          2.91,
+          2.27,
+          1.61,
+          1.04,
+          0.6,
+          0.25,
+          -0.04,
+          -0.31,
+          -0.56,
+          -0.75,
+          -0.84,
+          -0.77,
+          -0.49,
+          -0.04,
+          0.53,
+          1.1,
+          1.56,
+          1.78,
+          1.71,
+          1.4
         ]
       },
       "rating": {

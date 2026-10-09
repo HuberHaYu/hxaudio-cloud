@@ -37,6 +37,7 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 | 小米 18Pro Max V形调音 | 手机外放（Xiaomi 18 Pro Max） | 小米 18Pro Max V形调音 | [xiaomi-18promax.hx4](presets/xiaomi-18promax/xiaomi-18promax.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
+| 小米13 Dolby Atmos框架内弥补 | 手机外放（Xiaomi 13） | 小米13系统Dolby Atmos框架内弥补外放扬声器 | [xiaomi13-dolby.hx4](presets/xiaomi13-dolby/xiaomi13-dolby.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |
 | 小米 15 Pro杜比全景哈曼卡顿音效 | 手机外放（Xiaomi 15 Pro） | 由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升 | [xiaomi15pro-ttzkyz.hx4](presets/xiaomi15pro-ttzkyz/xiaomi15pro-ttzkyz.hx4) |
 | 小米 17 Pro BOSE调音 | 手机外放（Xiaomi 17 Pro） | 适用于小米 17 Pro的BOSE调音 | [xiaomi17-pro-bose.hx4](presets/xiaomi17-pro-bose/xiaomi17-pro-bose.hx4) |
