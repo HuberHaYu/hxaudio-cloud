@@ -47,6 +47,7 @@ body:
         - "xiaomi15pro-spk-hxj · 小米 15 Pro 浑厚人声"
         - "xiaomi15pro-ttzkyz · 小米 15 Pro杜比全景哈曼卡顿音效"
         - "xiaomi17-pro-bose · 小米 17 Pro BOSE调音"
+        - "xiaomipad-8pro · 小米平板8 Pro"
     validations:
       required: true
   - type: dropdown
