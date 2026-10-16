@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-15T07:25:45Z",
+  "generated_at": "2026-10-16T12:30:13Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -282,7 +282,7 @@
       "rating": {
         "count": 15,
         "average": 4.0,
-        "weighted": 4.04,
+        "weighted": 4.034,
         "histogram": [
           2,
           0,
@@ -391,7 +391,7 @@
       "rating": {
         "count": 2,
         "average": 3.0,
-        "weighted": 3.827,
+        "weighted": 3.811,
         "histogram": [
           0,
           1,
@@ -489,7 +489,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.298,
+        "weighted": 4.279,
         "histogram": [
           0,
           0,
@@ -592,7 +592,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -692,7 +692,7 @@
       "rating": {
         "count": 15,
         "average": 4.2,
-        "weighted": 4.19,
+        "weighted": 4.184,
         "histogram": [
           0,
           2,
@@ -798,7 +798,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.399,
+        "weighted": 4.382,
         "histogram": [
           0,
           0,
@@ -901,7 +901,7 @@
       "rating": {
         "count": 2,
         "average": 2.5,
-        "weighted": 3.684,
+        "weighted": 3.668,
         "histogram": [
           1,
           0,
@@ -1084,7 +1084,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -1187,7 +1187,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -1292,7 +1292,7 @@
       "rating": {
         "count": 5,
         "average": 5.0,
-        "weighted": 4.579,
+        "weighted": 4.567,
         "histogram": [
           0,
           0,
@@ -1395,7 +1395,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -1497,7 +1497,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.298,
+        "weighted": 4.279,
         "histogram": [
           0,
           0,
@@ -1601,7 +1601,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -1769,7 +1769,7 @@
       "rating": {
         "count": 2,
         "average": 4.5,
-        "weighted": 4.256,
+        "weighted": 4.239,
         "histogram": [
           0,
           0,
@@ -1928,7 +1928,7 @@
       "rating": {
         "count": 3,
         "average": 2.33,
-        "weighted": 3.474,
+        "weighted": 3.459,
         "histogram": [
           2,
           0,
@@ -2044,12 +2044,12 @@
         ]
       },
       "rating": {
-        "count": 4,
-        "average": 1.0,
-        "weighted": 2.754,
+        "count": 5,
+        "average": 1.2,
+        "weighted": 2.667,
         "histogram": [
           4,
-          0,
+          1,
           0,
           0,
           0
@@ -2148,7 +2148,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -2250,7 +2250,7 @@
       "rating": {
         "count": 2,
         "average": 4.5,
-        "weighted": 4.256,
+        "weighted": 4.239,
         "histogram": [
           0,
           0,
@@ -2440,7 +2440,7 @@
       "rating": {
         "count": 8,
         "average": 4.25,
-        "weighted": 4.215,
+        "weighted": 4.206,
         "histogram": [
           0,
           1,
@@ -2546,7 +2546,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -2645,7 +2645,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.298,
+        "weighted": 4.279,
         "histogram": [
           0,
           0,
@@ -2814,7 +2814,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.399,
+        "weighted": 4.382,
         "histogram": [
           0,
           0,
@@ -2917,7 +2917,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.298,
+        "weighted": 4.279,
         "histogram": [
           0,
           0,
@@ -3020,7 +3020,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -3122,7 +3122,7 @@
       "rating": {
         "count": 2,
         "average": 3.5,
-        "weighted": 3.97,
+        "weighted": 3.954,
         "histogram": [
           0,
           0,
@@ -3290,7 +3290,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -3393,7 +3393,7 @@
       "rating": {
         "count": 2,
         "average": 5.0,
-        "weighted": 4.399,
+        "weighted": 4.382,
         "histogram": [
           0,
           0,
@@ -3496,7 +3496,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.298,
+        "weighted": 4.279,
         "histogram": [
           0,
           0,
@@ -3664,7 +3664,7 @@
       "rating": {
         "count": 2,
         "average": 4.5,
-        "weighted": 4.256,
+        "weighted": 4.239,
         "histogram": [
           0,
           0,
@@ -3762,7 +3762,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -3930,7 +3930,7 @@
       "rating": {
         "count": 3,
         "average": 5.0,
-        "weighted": 4.474,
+        "weighted": 4.459,
         "histogram": [
           0,
           0,
@@ -4039,7 +4039,7 @@
       "rating": {
         "count": 6,
         "average": 4.33,
-        "weighted": 4.254,
+        "weighted": 4.243,
         "histogram": [
           0,
           0,
@@ -4149,7 +4149,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.965,
+        "weighted": 3.946,
         "histogram": [
           0,
           0,
@@ -4253,7 +4253,7 @@
       "rating": {
         "count": 3,
         "average": 4.33,
-        "weighted": 4.224,
+        "weighted": 4.209,
         "histogram": [
           0,
           0,
@@ -4357,7 +4357,7 @@
       "rating": {
         "count": 9,
         "average": 5.0,
-        "weighted": 4.699,
+        "weighted": 4.691,
         "histogram": [
           0,
           0,
@@ -4460,7 +4460,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
@@ -4629,7 +4629,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.158,
+        "weighted": 4.135,
         "histogram": [
           0,
           0,
