@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T11:02:59Z",
+  "generated_at": "2026-10-21T16:40:02Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -391,7 +391,7 @@
       "rating": {
         "count": 2,
         "average": 3.0,
-        "weighted": 3.803,
+        "weighted": 3.802,
         "histogram": [
           0,
           1,
@@ -489,7 +489,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -592,7 +592,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -1084,7 +1084,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -1187,7 +1187,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -1395,7 +1395,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -1497,7 +1497,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -2148,7 +2148,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -2440,7 +2440,7 @@
       "rating": {
         "count": 9,
         "average": 4.33,
-        "weighted": 4.259,
+        "weighted": 4.258,
         "histogram": [
           0,
           1,
@@ -2546,7 +2546,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -2645,7 +2645,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -2917,7 +2917,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -3020,7 +3020,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -3122,7 +3122,7 @@
       "rating": {
         "count": 2,
         "average": 3.5,
-        "weighted": 3.946,
+        "weighted": 3.945,
         "histogram": [
           0,
           0,
@@ -3290,7 +3290,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -3496,7 +3496,7 @@
       "rating": {
         "count": 1,
         "average": 5.0,
-        "weighted": 4.27,
+        "weighted": 4.269,
         "histogram": [
           0,
           0,
@@ -3662,14 +3662,14 @@
         ]
       },
       "rating": {
-        "count": 2,
-        "average": 4.5,
-        "weighted": 4.231,
+        "count": 3,
+        "average": 4.33,
+        "weighted": 4.202,
         "histogram": [
           0,
           0,
           0,
-          1,
+          2,
           1
         ]
       }
@@ -3762,7 +3762,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -4039,7 +4039,7 @@
       "rating": {
         "count": 7,
         "average": 4.0,
-        "weighted": 4.052,
+        "weighted": 4.051,
         "histogram": [
           0,
           1,
@@ -4149,7 +4149,7 @@
       "rating": {
         "count": 1,
         "average": 3.0,
-        "weighted": 3.937,
+        "weighted": 3.936,
         "histogram": [
           0,
           0,
@@ -4460,7 +4460,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
@@ -4629,7 +4629,7 @@
       "rating": {
         "count": 0,
         "average": null,
-        "weighted": 4.124,
+        "weighted": 4.123,
         "histogram": [
           0,
           0,
