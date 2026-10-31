@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T10:50:17Z",
+  "generated_at": "2026-10-31T13:12:30Z",
   "frequencies": {
     "pre_eq_hz": [
       31,
@@ -699,6 +699,110 @@
           0,
           7,
           7
+        ]
+      }
+    },
+    {
+      "id": "hifiman-svanar-le-yongb",
+      "title": "中天鹅 SVANAR LE 均衡",
+      "subtitle": "",
+      "description": "适用于 HIFIMAN SVANAR WIRELESS LE，均衡、耐听，高频适度调整。",
+      "author": "yongb",
+      "tags": [
+        "均衡",
+        "耐听"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "HIFIMAN SVANAR WIRELESS LE",
+          "aliases": [
+            "HIFIMAN SVANAR WIRELESS"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/hifiman-svanar-le-yongb/hifiman-svanar-le-yongb.hx4",
+        "sha256": "f89e4af3b63a90073587fdc87fd398c50bdebc3104af29547efd41ef1465ed9f",
+        "bytes": 5020,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 12,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": -1.5,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.2,
+          0.39,
+          0.6,
+          0.74,
+          0.77,
+          0.72,
+          0.61,
+          0.31,
+          -0.27,
+          -1.03,
+          -1.68,
+          -1.93,
+          -1.68,
+          -1.05,
+          -0.26,
+          0.46,
+          1.07,
+          1.65,
+          2.33,
+          3.03,
+          3.41,
+          3.09,
+          2.0,
+          0.48,
+          -0.71,
+          -1.37,
+          -1.09,
+          1.23,
+          1.78,
+          1.59,
+          1.12
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
@@ -1508,6 +1612,177 @@
       }
     },
     {
+      "id": "oneplus-ace5-ultra-wisely-leo",
+      "title": "一加 ACE5 至尊版中频整形",
+      "subtitle": "",
+      "description": "适用于一加 ACE5 至尊版外放，人声清晰，中低频饱满。",
+      "author": "Wisely_Leo",
+      "tags": [
+        "外放",
+        "人声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OnePlus Ace 5 Ultra",
+          "aliases": [
+            "PLC110",
+            "一加ACE5至尊版"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/oneplus-ace5-ultra-wisely-leo/oneplus-ace5-ultra-wisely-leo.hx4",
+        "sha256": "50cb655b5f21916e84cee9c35d2d3cc76dbc310ef83cdd282a01ebd7600ceb32",
+        "bytes": 7341,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 9,
+        "post_eq_pro": true,
+        "bass_boost_db": 3.5,
+        "input_gain_db": -2.5,
+        "limiter": true,
+        "virtual_surround_percent": 35,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          1.0,
+          1.5,
+          2.0,
+          1.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -1.0,
+          -0.5,
+          -0.5
+        ],
+        "post_eq_db": [
+          0.0,
+          0.0,
+          0.01,
+          0.04,
+          0.13,
+          0.36,
+          0.79,
+          1.33,
+          1.68,
+          1.46,
+          0.56,
+          -0.64,
+          -1.5,
+          -1.7,
+          -1.49,
+          -1.3,
+          -1.28,
+          -1.26,
+          -1.09,
+          -0.79,
+          -0.69,
+          -1.04,
+          -0.43,
+          0.87,
+          1.35,
+          1.4,
+          1.39,
+          1.37,
+          1.31,
+          1.15,
+          0.92
+        ],
+        "post_eq_left_db": [
+          -0.26,
+          -0.48,
+          -0.79,
+          -1.16,
+          -1.46,
+          -1.53,
+          -1.21,
+          -0.56,
+          0.12,
+          0.39,
+          0.07,
+          -0.52,
+          -0.86,
+          -0.77,
+          -0.54,
+          -0.48,
+          -0.59,
+          -0.64,
+          -0.54,
+          -0.35,
+          -0.38,
+          -0.86,
+          -0.34,
+          0.9,
+          1.36,
+          1.4,
+          1.39,
+          1.37,
+          1.31,
+          1.15,
+          0.92
+        ],
+        "post_eq_right_db": [
+          0.06,
+          0.12,
+          0.21,
+          0.34,
+          0.56,
+          0.92,
+          1.49,
+          2.14,
+          2.55,
+          2.26,
+          1.18,
+          -0.25,
+          -1.29,
+          -1.61,
+          -1.46,
+          -1.29,
+          -1.28,
+          -1.25,
+          -1.07,
+          -0.76,
+          -0.61,
+          -0.87,
+          -0.09,
+          1.42,
+          2.11,
+          2.31,
+          2.33,
+          2.22,
+          2.0,
+          1.67,
+          1.29
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
       "id": "oneplus15-bassboost",
       "title": "一加 15 低音炮",
       "subtitle": "低音炮足，空间感补充",
@@ -2057,6 +2332,176 @@
       }
     },
     {
+      "id": "oppo-enco-free4-dongxu",
+      "title": "OPPO Enco Free4 日常调音",
+      "subtitle": "",
+      "description": "适用于 OPPO Enco Free4 系列，兼顾追剧与听歌。",
+      "author": "Dongxu",
+      "tags": [
+        "耳机",
+        "日常"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "OPPO Enco Free4",
+          "aliases": [
+            "OPPO Enco Free4 丹拿版"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/oppo-enco-free4-dongxu/oppo-enco-free4-dongxu.hx4",
+        "sha256": "0a2916e6b40499c3bb45aca86a76dab38c39b4c8accacc1307de4eca17ccdcf0",
+        "bytes": 5190,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 10,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": 100,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.5,
+          0.5,
+          0.0,
+          -0.5,
+          -0.5,
+          -0.5,
+          0.5,
+          1.0,
+          1.5,
+          1.0,
+          0.5
+        ],
+        "post_eq_db": [
+          0.01,
+          0.02,
+          0.04,
+          0.1,
+          0.2,
+          0.35,
+          0.58,
+          0.93,
+          1.51,
+          2.26,
+          2.62,
+          2.12,
+          1.11,
+          0.19,
+          -0.42,
+          -0.71,
+          -0.71,
+          -0.55,
+          -0.41,
+          -0.45,
+          -0.69,
+          -0.95,
+          -0.88,
+          -0.22,
+          0.94,
+          2.21,
+          3.18,
+          3.6,
+          3.46,
+          2.87,
+          2.09
+        ],
+        "post_eq_left_db": [
+          0.01,
+          0.02,
+          0.04,
+          0.1,
+          0.2,
+          0.35,
+          0.58,
+          0.93,
+          1.51,
+          2.26,
+          2.62,
+          2.12,
+          1.11,
+          0.19,
+          -0.42,
+          -0.71,
+          -0.71,
+          -0.55,
+          -0.41,
+          -0.45,
+          -0.69,
+          -0.95,
+          -0.88,
+          -0.22,
+          0.94,
+          2.21,
+          3.18,
+          3.6,
+          3.46,
+          2.87,
+          2.09
+        ],
+        "post_eq_right_db": [
+          0.01,
+          0.02,
+          0.04,
+          0.1,
+          0.2,
+          0.35,
+          0.58,
+          0.93,
+          1.51,
+          2.26,
+          2.62,
+          2.12,
+          1.11,
+          0.19,
+          -0.42,
+          -0.71,
+          -0.71,
+          -0.55,
+          -0.41,
+          -0.45,
+          -0.69,
+          -0.95,
+          -0.88,
+          -0.22,
+          0.94,
+          2.21,
+          3.18,
+          3.6,
+          3.46,
+          2.87,
+          2.09
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
       "id": "oppo-find-x10-pro-max",
       "title": "OPPO Find X10 Pro Max",
       "subtitle": "增强低频下潜，小音量下适当补偿低频；高音轻微提升，让整体听感更通透、声场更开阔。",
@@ -2155,6 +2600,381 @@
           0,
           1,
           1
+        ]
+      }
+    },
+    {
+      "id": "oppo-find-x6-pro-balanced",
+      "title": "OPPO Find X6 Pro 均衡",
+      "subtitle": "",
+      "description": "针对 OPPO Find X6 Pro 外放，低频有厚度，人声清楚，高频细节适度提升。",
+      "author": "未署名投稿",
+      "tags": [
+        "外放",
+        "均衡"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OPPO Find X6 Pro",
+          "aliases": [
+            "PGEM10"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/oppo-find-x6-pro-balanced/oppo-find-x6-pro-balanced.hx4",
+        "sha256": "708c15d03ce7d0370768606da24efb67b1abb35c4fc2433a3de2b9232cee5095",
+        "bytes": 5199,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 13,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          2.5,
+          2.0,
+          1.0,
+          -0.5,
+          -1.0,
+          1.5,
+          -0.5,
+          1.0,
+          2.0,
+          1.5,
+          1.0
+        ],
+        "post_eq_db": [
+          0.15,
+          0.32,
+          0.6,
+          0.97,
+          1.37,
+          1.71,
+          1.91,
+          1.95,
+          1.85,
+          1.65,
+          1.36,
+          1.0,
+          0.56,
+          0.09,
+          -0.34,
+          -0.7,
+          -0.94,
+          -1.04,
+          -1.01,
+          -0.9,
+          -0.75,
+          -0.54,
+          -0.21,
+          0.32,
+          1.06,
+          1.9,
+          2.63,
+          3.08,
+          3.18,
+          2.96,
+          2.49
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oppo-find-x8-danshenghua",
+      "title": "OPPO Find X8 外放稳健调音",
+      "subtitle": "",
+      "description": "适用于 OPPO Find X8 外放，调节幅度温和。",
+      "author": "旦生花",
+      "tags": [
+        "外放",
+        "均衡"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OPPO Find X8",
+          "aliases": [
+            "PKB110"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/oppo-find-x8-danshenghua/oppo-find-x8-danshenghua.hx4",
+        "sha256": "1e254d9ad2a5d3224e62f9e216cce8dd45ecb15b39adf19fec67e2db68ca7837",
+        "bytes": 3925,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          -1.5,
+          0.0,
+          1.0,
+          1.5,
+          1.0,
+          0.5,
+          1.0,
+          1.5,
+          1.0,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.1,
+          0.2,
+          0.35,
+          0.56,
+          0.77,
+          0.94,
+          1.01,
+          0.96,
+          0.85,
+          0.73,
+          0.66,
+          0.65,
+          0.62,
+          0.54,
+          0.45,
+          0.41,
+          0.44,
+          0.5,
+          0.52,
+          0.48,
+          0.42,
+          0.43,
+          0.54,
+          0.73,
+          0.91,
+          1.0,
+          0.94,
+          0.75,
+          0.51,
+          0.29,
+          0.14
+        ],
+        "post_eq_left_db": [
+          0.1,
+          0.2,
+          0.35,
+          0.56,
+          0.77,
+          0.94,
+          1.01,
+          0.96,
+          0.85,
+          0.73,
+          0.66,
+          0.65,
+          0.62,
+          0.54,
+          0.45,
+          0.41,
+          0.44,
+          0.5,
+          0.52,
+          0.48,
+          0.42,
+          0.43,
+          0.54,
+          0.73,
+          0.91,
+          1.0,
+          0.94,
+          0.75,
+          0.51,
+          0.29,
+          0.14
+        ],
+        "post_eq_right_db": [
+          0.1,
+          0.2,
+          0.35,
+          0.56,
+          0.77,
+          0.94,
+          1.01,
+          0.96,
+          0.85,
+          0.73,
+          0.66,
+          0.65,
+          0.62,
+          0.54,
+          0.45,
+          0.41,
+          0.44,
+          0.5,
+          0.52,
+          0.48,
+          0.42,
+          0.43,
+          0.54,
+          0.73,
+          0.91,
+          1.0,
+          0.94,
+          0.75,
+          0.51,
+          0.29,
+          0.14
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oppo-find-x8-ultra-your-god",
+      "title": "OPPO Find X8 Ultra 外放",
+      "subtitle": "",
+      "description": "适用于 OPPO Find X8 Ultra 外放。",
+      "author": "Your God",
+      "tags": [
+        "外放"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "OPPO Find X8 Ultra",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/oppo-find-x8-ultra-your-god/oppo-find-x8-ultra-your-god.hx4",
+        "sha256": "9e223dcc35b9e7b3c97369ad88fc0a6ade4379e14b9c702b5d589fbcac255d23",
+        "bytes": 4902,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 11,
+        "post_eq_pro": false,
+        "bass_boost_db": 2,
+        "input_gain_db": 0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          1.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.16,
+          0.24,
+          0.32,
+          0.37,
+          0.36,
+          0.27,
+          0.1,
+          -0.12,
+          -0.35,
+          -0.55,
+          -0.66,
+          -0.64,
+          -0.44,
+          -0.07,
+          0.46,
+          1.1,
+          1.84,
+          2.62,
+          3.36,
+          3.95,
+          4.23,
+          4.14,
+          3.76,
+          3.19,
+          2.59,
+          2.03,
+          1.57,
+          1.19,
+          0.87,
+          0.6,
+          0.38
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
@@ -2557,6 +3377,277 @@
       }
     },
     {
+      "id": "realme-neo8-speaker",
+      "title": "真我 neo8 外放增强",
+      "subtitle": "",
+      "description": "增强全音量低频，调整高音量下的人声与中频。",
+      "author": "未署名投稿",
+      "tags": [
+        "外放",
+        "低频"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "realme neo8",
+          "aliases": [
+            "真我neo8"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/realme-neo8-speaker/realme-neo8-speaker.hx4",
+        "sha256": "7814dd08ca8609e875ca53471eddb469f139322125b1109179a294d6eb239471",
+        "bytes": 6295,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 9,
+        "post_eq_pro": true,
+        "bass_boost_db": 2.5,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": 20,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          -0.57,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.85,
+          0.0,
+          -1.14,
+          0.7,
+          -0.6
+        ],
+        "post_eq_db": [
+          1.01,
+          0.59,
+          1.57,
+          3.34,
+          3.18,
+          3.5,
+          3.04,
+          1.21,
+          -0.02,
+          -0.75,
+          -1.62,
+          -2.37,
+          -2.41,
+          -1.81,
+          -1.47,
+          -1.26,
+          -0.76,
+          -2.07,
+          -1.88,
+          -0.42,
+          -0.92,
+          -1.89,
+          -1.8,
+          -1.16,
+          -1.63,
+          -2.35,
+          -0.93,
+          0.95,
+          0.63,
+          0.09,
+          0.0
+        ],
+        "post_eq_left_db": [
+          1.01,
+          0.59,
+          1.57,
+          3.34,
+          3.18,
+          3.5,
+          3.04,
+          1.21,
+          -0.02,
+          -0.75,
+          -1.62,
+          -2.37,
+          -2.41,
+          -1.81,
+          -1.47,
+          -1.26,
+          -0.76,
+          -2.07,
+          -1.88,
+          -0.42,
+          -0.92,
+          -1.89,
+          -1.8,
+          -1.16,
+          -1.63,
+          -2.35,
+          -0.93,
+          0.95,
+          0.63,
+          0.09,
+          0.0
+        ],
+        "post_eq_right_db": [
+          1.01,
+          0.59,
+          1.57,
+          3.34,
+          3.18,
+          3.5,
+          3.04,
+          1.21,
+          -0.02,
+          -0.75,
+          -1.62,
+          -2.37,
+          -2.41,
+          -1.81,
+          -1.47,
+          -1.26,
+          -0.76,
+          -2.07,
+          -1.88,
+          -0.42,
+          -0.92,
+          -1.89,
+          -1.8,
+          -1.16,
+          -1.63,
+          -2.35,
+          -0.93,
+          0.95,
+          0.63,
+          0.09,
+          0.0
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "redmi-buds4-pro-balanced",
+      "title": "Redmi Buds 4 Pro 均衡",
+      "subtitle": "",
+      "description": "适用于 Redmi Buds 4 Pro 的耳机调音。",
+      "author": "未署名投稿",
+      "tags": [
+        "耳机"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "Redmi Buds 4 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/redmi-buds4-pro-balanced/redmi-buds4-pro-balanced.hx4",
+        "sha256": "99daac16e5ddf365e44c01b365580de323c8df9c7328fc5ce8454c25e721aff2",
+        "bytes": 5480,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 15,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": -2,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.5,
+          2.5,
+          1.5,
+          0.0,
+          -0.5,
+          0.0,
+          0.5,
+          0.5,
+          1.0,
+          1.5,
+          0.5,
+          -0.5
+        ],
+        "post_eq_db": [
+          2.6,
+          3.29,
+          3.87,
+          4.26,
+          4.41,
+          4.33,
+          4.05,
+          3.6,
+          2.98,
+          2.22,
+          1.34,
+          0.46,
+          -0.26,
+          -0.7,
+          -0.83,
+          -0.74,
+          -0.54,
+          -0.31,
+          -0.03,
+          0.34,
+          0.81,
+          1.25,
+          1.51,
+          1.53,
+          1.44,
+          1.5,
+          1.79,
+          2.11,
+          2.19,
+          1.92,
+          1.41
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
       "id": "redmi-buds6-pro",
       "title": "Redmi Buds6 Pro",
       "subtitle": "Redmi Buds6 Pro耳机高频细节调教",
@@ -2652,6 +3743,174 @@
           0,
           0,
           1
+        ]
+      }
+    },
+    {
+      "id": "redmi-buds8-pro-mowushang",
+      "title": "REDMI Buds 8 Pro 立体饱满",
+      "subtitle": "",
+      "description": "适用于 REDMI Buds 8 Pro，听感立体饱满。",
+      "author": "莫無殇",
+      "tags": [
+        "耳机",
+        "立体"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "REDMI Buds 8 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/redmi-buds8-pro-mowushang/redmi-buds8-pro-mowushang.hx4",
+        "sha256": "67ade7eacf18c1377346c117c8e66caebfd947d8fe16ac1d4c8258505eff96e5",
+        "bytes": 6025,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 18,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": true,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.5,
+          -1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.01,
+          0.05,
+          0.13,
+          0.29,
+          0.53,
+          0.77,
+          0.92,
+          0.87,
+          0.66,
+          0.38,
+          0.16,
+          -0.0,
+          -0.15,
+          -0.31,
+          -0.46,
+          -0.5,
+          -0.4,
+          -0.25,
+          -0.12,
+          -0.09,
+          -0.18,
+          -0.47,
+          -1.05,
+          -1.89,
+          -2.59,
+          -2.64,
+          -1.99,
+          -1.1,
+          -0.46,
+          -0.14,
+          -0.03
+        ],
+        "post_eq_left_db": [
+          0.01,
+          0.05,
+          0.13,
+          0.29,
+          0.53,
+          0.77,
+          0.92,
+          0.87,
+          0.66,
+          0.38,
+          0.16,
+          -0.0,
+          -0.15,
+          -0.31,
+          -0.46,
+          -0.5,
+          -0.4,
+          -0.25,
+          -0.12,
+          -0.09,
+          -0.18,
+          -0.47,
+          -1.05,
+          -1.89,
+          -2.59,
+          -2.64,
+          -1.99,
+          -1.1,
+          -0.46,
+          -0.14,
+          -0.03
+        ],
+        "post_eq_right_db": [
+          0.01,
+          0.05,
+          0.13,
+          0.29,
+          0.53,
+          0.77,
+          0.92,
+          0.87,
+          0.66,
+          0.38,
+          0.16,
+          -0.0,
+          -0.15,
+          -0.31,
+          -0.46,
+          -0.5,
+          -0.4,
+          -0.25,
+          -0.12,
+          -0.09,
+          -0.18,
+          -0.47,
+          -1.05,
+          -1.89,
+          -2.59,
+          -2.64,
+          -1.99,
+          -1.1,
+          -0.46,
+          -0.14,
+          -0.03
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
@@ -2821,6 +4080,110 @@
           1,
           0,
           3
+        ]
+      }
+    },
+    {
+      "id": "redmi-k80-ultra-heruo-vocal",
+      "title": "悔恨之泪·醇厚人声",
+      "subtitle": "",
+      "description": "适用于 REDMI K80 Ultra，低频收敛有弹性，人声厚实靠前。",
+      "author": "赫萝的梦",
+      "tags": [
+        "外放",
+        "人声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "REDMI K80 Ultra",
+          "aliases": [
+            "25060RK16C"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/redmi-k80-ultra-heruo-vocal/redmi-k80-ultra-heruo-vocal.hx4",
+        "sha256": "71d2633884f604889711db7c6657938f92e17551fbefa490da8279dbaa81feb7",
+        "bytes": 8124,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 20,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          0.5,
+          1.0,
+          -0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "post_eq_db": [
+          -2.63,
+          -1.95,
+          -0.7,
+          0.73,
+          2.0,
+          3.0,
+          3.67,
+          4.0,
+          4.07,
+          4.01,
+          3.91,
+          3.78,
+          3.54,
+          3.12,
+          2.62,
+          2.22,
+          2.07,
+          2.16,
+          2.35,
+          2.41,
+          2.16,
+          1.61,
+          1.08,
+          0.98,
+          1.47,
+          2.24,
+          2.71,
+          2.46,
+          1.5,
+          0.27,
+          -0.67
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },
@@ -3015,6 +4378,314 @@
           -0.76,
           -0.44,
           -0.22
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "v2507a-soft-vocal",
+      "title": "V2507A 柔和人声",
+      "subtitle": "",
+      "description": "适用于 V2507A 扬声器外放，柔和人声。",
+      "author": "V2507A",
+      "tags": [
+        "外放",
+        "人声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "V2507A",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/v2507a-soft-vocal/v2507a-soft-vocal.hx4",
+        "sha256": "febb2b0b9ab2ccb737c138f008a94b2ae4ea91ee2ed9c342960d59d65b5d4a73",
+        "bytes": 8751,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 15,
+        "post_eq_pro": false,
+        "bass_boost_db": 0.2,
+        "input_gain_db": 0,
+        "limiter": true,
+        "virtual_surround_percent": 55,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4,
+          0.2,
+          0.2,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "post_eq_db": [
+          0.14,
+          0.23,
+          0.35,
+          0.5,
+          0.67,
+          0.83,
+          0.95,
+          1.0,
+          0.93,
+          0.76,
+          0.56,
+          0.5,
+          0.74,
+          1.28,
+          1.96,
+          2.52,
+          2.78,
+          2.73,
+          2.47,
+          2.16,
+          1.91,
+          1.79,
+          1.84,
+          2.08,
+          2.54,
+          3.11,
+          3.62,
+          3.82,
+          3.63,
+          3.09,
+          2.37
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "vivo-x200-pro-sweet-vocal",
+      "title": "vivo X200 Pro 饱满人声",
+      "subtitle": "",
+      "description": "适用于 vivo X200 Pro，投稿人描述为低音饱满、人声甜美。",
+      "author": "未署名投稿",
+      "tags": [
+        "外放",
+        "人声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "vivo X200 Pro",
+          "aliases": []
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/vivo-x200-pro-sweet-vocal/vivo-x200-pro-sweet-vocal.hx4",
+        "sha256": "64cb2837ae6978d4688201639254f71a3ad2973c8886510a99e6e86124d47129",
+        "bytes": 8007,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 11,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": true,
+        "virtual_surround_percent": 38,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.0,
+          2.5,
+          2.5,
+          0.5,
+          0.5,
+          1.5,
+          1.0,
+          1.0,
+          1.5,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.8,
+          1.26,
+          1.89,
+          2.67,
+          3.54,
+          4.38,
+          5.01,
+          5.26,
+          5.03,
+          4.37,
+          3.48,
+          2.59,
+          1.93,
+          1.58,
+          1.53,
+          1.71,
+          1.96,
+          2.15,
+          2.21,
+          2.15,
+          2.06,
+          2.01,
+          2.06,
+          2.27,
+          2.67,
+          3.22,
+          3.78,
+          4.11,
+          3.98,
+          3.36,
+          2.44
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "vivo-y300t-satosi",
+      "title": "vivo Y300t 扬声器优化",
+      "subtitle": "",
+      "description": "增强低频与人声，减少刺耳感。",
+      "author": "Satosi",
+      "tags": [
+        "外放",
+        "人声"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "vivo Y300t",
+          "aliases": [
+            "V2445EA"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/vivo-y300t-satosi/vivo-y300t-satosi.hx4",
+        "sha256": "319e55167109adc1354778d392c002e15f62bf1074f5da99c0c4d5def64dc739",
+        "bytes": 3895,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 4,
+        "post_eq_pro": false,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          3.53,
+          5.01,
+          3.45,
+          1.53,
+          -1.54,
+          -3.44,
+          -2.49,
+          -0.55,
+          0.0,
+          1.53,
+          1.97
+        ],
+        "post_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "rating": {
@@ -3773,6 +5444,176 @@
       }
     },
     {
+      "id": "xiaomi-bt-speaker-pro-hang1250",
+      "title": "小米蓝牙音箱 Pro 中高频优化",
+      "subtitle": "",
+      "description": "改善中频人声与高频刺耳感；投稿人建议关闭音箱的 BASS 增强模式。",
+      "author": "hang1250",
+      "tags": [
+        "音箱",
+        "人声"
+      ],
+      "device_kinds": [
+        "BLUETOOTH"
+      ],
+      "target_devices": [
+        {
+          "kind": "BLUETOOTH",
+          "name": "Xiaomi 蓝牙音箱 Pro",
+          "aliases": [
+            "Xiaomi Sound Party"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/xiaomi-bt-speaker-pro-hang1250/xiaomi-bt-speaker-pro-hang1250.hx4",
+        "sha256": "e6410c1b2128d46f5687f912438ec5835c34ce810c4449babee4078d6b5ad702",
+        "bytes": 4589,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 9,
+        "post_eq_pro": true,
+        "bass_boost_db": null,
+        "input_gain_db": 0,
+        "limiter": false,
+        "virtual_surround_percent": null,
+        "volume_compensation": false,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          1.47,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01,
+          0.03,
+          0.09,
+          0.24,
+          0.53,
+          0.97,
+          1.54,
+          2.17,
+          2.81,
+          3.38,
+          3.82,
+          4.06,
+          4.0,
+          3.65,
+          3.1,
+          2.45,
+          1.8,
+          1.12,
+          0.33,
+          -0.62,
+          -1.61,
+          -2.35,
+          -2.51,
+          -2.04,
+          -1.23
+        ],
+        "post_eq_left_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01,
+          0.03,
+          0.09,
+          0.24,
+          0.53,
+          0.97,
+          1.54,
+          2.17,
+          2.81,
+          3.38,
+          3.82,
+          4.06,
+          4.0,
+          3.65,
+          3.1,
+          2.45,
+          1.8,
+          1.12,
+          0.33,
+          -0.62,
+          -1.61,
+          -2.35,
+          -2.51,
+          -2.04,
+          -1.23
+        ],
+        "post_eq_right_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01,
+          0.03,
+          0.09,
+          0.24,
+          0.53,
+          0.97,
+          1.54,
+          2.17,
+          2.81,
+          3.38,
+          3.82,
+          4.06,
+          4.0,
+          3.65,
+          3.1,
+          2.45,
+          1.8,
+          1.12,
+          0.33,
+          -0.62,
+          -1.61,
+          -2.35,
+          -2.51,
+          -2.04,
+          -1.23
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
       "id": "xiaomi13-dolby",
       "title": "小米13 Dolby Atmos框架内弥补",
       "subtitle": "小米13系统Dolby Atmos框架内弥补外放扬声器",
@@ -4046,6 +5887,109 @@
           1,
           4,
           3
+        ]
+      }
+    },
+    {
+      "id": "xiaomi14pro-guqiao",
+      "title": "Xiaomi 14 Pro 类10Pro",
+      "subtitle": "",
+      "description": "适用于 Xiaomi 14 Pro 外放，投稿人描述为类 10 Pro 听感。",
+      "author": "古桥",
+      "tags": [
+        "外放"
+      ],
+      "device_kinds": [
+        "SPEAKER"
+      ],
+      "target_devices": [
+        {
+          "kind": "SPEAKER",
+          "name": "Xiaomi 14 Pro",
+          "aliases": [
+            "23116PN5BC"
+          ]
+        }
+      ],
+      "featured": false,
+      "revision": 1,
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "file": {
+        "path": "presets/xiaomi14pro-guqiao/xiaomi14pro-guqiao.hx4",
+        "sha256": "270b2349cc8544507632eb1d0eb4636a22ac18068e1d8d59d354b29e12727f67",
+        "bytes": 9126,
+        "hx4_version": 2
+      },
+      "features": {
+        "post_eq_points": 11,
+        "post_eq_pro": false,
+        "bass_boost_db": 1.8,
+        "input_gain_db": 3.4,
+        "limiter": true,
+        "virtual_surround_percent": 24,
+        "volume_compensation": true,
+        "eq_pulse": false
+      },
+      "preview": {
+        "pre_eq_db": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "post_eq_db": [
+          0.19,
+          0.37,
+          0.64,
+          1.05,
+          1.61,
+          2.31,
+          3.0,
+          3.47,
+          3.51,
+          3.06,
+          2.21,
+          1.16,
+          0.14,
+          -0.63,
+          -0.94,
+          -0.75,
+          -0.18,
+          0.5,
+          1.01,
+          1.14,
+          0.81,
+          0.13,
+          -0.61,
+          -1.09,
+          -1.17,
+          -0.77,
+          0.07,
+          0.89,
+          1.22,
+          1.05,
+          0.68
+        ]
+      },
+      "rating": {
+        "count": 0,
+        "average": null,
+        "weighted": 4.016,
+        "histogram": [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       }
     },

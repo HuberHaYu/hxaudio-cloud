@@ -19,28 +19,43 @@ HXAudio Pro 的云端预设库。每个预设都是一份完整的音效配置�
 | 小米10Pro/10S调音 | 手机外放（Mi 10S、Mi 10 Pro） | Deepseek调音适配MI10PRO和小米10s | [10pro-10s-bass.hx4](presets/10pro-10s-bass/10pro-10s-bass.hx4) |
 | 水解3拟水月雨blessing3（监听向dsp） | USB 耳机、其他设备 | 模拟blessing3向监听DSP | [3-blessing3-dsp.hx4](presets/3-blessing3-dsp/3-blessing3-dsp.hx4) |
 | DeepSeek 生成的一加 Ace 6 预设 | 手机外放（OnePlus Ace 6） | 适用于一加Ace6的均衡预设（1510+1012） | [deepseek-oneplus-ace6-hyemylover.hx4](presets/deepseek-oneplus-ace6-hyemylover/deepseek-oneplus-ace6-hyemylover.hx4) |
+| 中天鹅 SVANAR LE 均衡 | 蓝牙耳机（HIFIMAN SVANAR WIRELESS LE） | 适用于 HIFIMAN SVANAR WIRELESS LE，均衡、耐听，高频适度调整 | [hifiman-svanar-le-yongb.hx4](presets/hifiman-svanar-le-yongb/hifiman-svanar-le-yongb.hx4) |
 | 荣耀win监听向调音 | 手机外放（荣耀WIN） | 模拟真力8331监听向风格，极致的解析体验（低频量非常少喜欢低频的慎用） | [honor-win-monitor.hx4](presets/honor-win-monitor/honor-win-monitor.hx4) |
 | K80至尊版极致低频中高均衡 | 手机外放（REDMI K80 Ultra） | K80至尊版极致低频中高均衡 | [hxaudio-k80ultra.hx4](presets/hxaudio-k80ultra/hxaudio-k80ultra.hx4) |
 | Redmi K60 Pro 流行音乐 | 手机外放（Redmi K60 Pro） | 适用于Redmi K60 Pro外放，流行音乐 | [k60pro-spk-papershort.hx4](presets/k60pro-spk-papershort/k60pro-spk-papershort.hx4) |
 | Redmi K90 Pro Max | 手机外放（Redmi K90 Pro Max） | 由 chaoer2330 投稿，适用于K90 Pro Max的外放 | [k90promax-spk-chaoer2330.hx4](presets/k90promax-spk-chaoer2330/k90promax-spk-chaoer2330.hx4) |
 | 水月雨 SPACE TRAVEL 2 ULTRA | 蓝牙耳机（SPACE TRAVEL 2 ULTRA） | 低频、人声增强 | [md2u.hx4](presets/md2u/md2u.hx4) |
 | 小米 10 Ultra - 外放特调 | 手机外放（Mi 10 Ultra） | 针对小米 10 Ultra的外放特调，修复中高频发糊、低频不浑厚的问题 | [mi10ultra-spk-huber.hx4](presets/mi10ultra-spk-huber/mi10ultra-spk-huber.hx4) |
+| 一加 ACE5 至尊版中频整形 | 手机外放（OnePlus Ace 5 Ultra） | 适用于一加 ACE5 至尊版外放，人声清晰，中低频饱满 | [oneplus-ace5-ultra-wisely-leo.hx4](presets/oneplus-ace5-ultra-wisely-leo/oneplus-ace5-ultra-wisely-leo.hx4) |
 | 一加 15 低音炮 | 手机外放（一加 15） | 低音炮足，空间感补充 | [oneplus15-bassboost.hx4](presets/oneplus15-bassboost/oneplus15-bassboost.hx4) |
 | 一加 Ace 5 Pro 全段低频最大化 | 手机外放（OnePlus Ace 5 Pro） | 适用于一加Ace 5 Pro，全段低频调至最大化 | [oneplusace5pro-boost-max.hx4](presets/oneplusace5pro-boost-max/oneplusace5pro-boost-max.hx4) |
 | OPPO Enco Air 5 Pro 极致优化 | 蓝牙耳机 | 适用于该型号的耳机，需要在耳机app中新建值都为0的均衡器 | [oppo-enco-air-5-pro-qiqiqi.hx4](presets/oppo-enco-air-5-pro-qiqiqi/oppo-enco-air-5-pro-qiqiqi.hx4) |
 | OPPO Enco Air4 Pro三星经典调音 | 蓝牙耳机（Oppo Enco X3、Oppo 4 Free、Oppo Air 4 Pro、Oppo Enco Air4 Pro） | 来自 凉城Starfall ，需在欢律切换成悠扬人声音效，不适用于纯粹原声 | [oppo-enco-air4-pro.hx4](presets/oppo-enco-air4-pro/oppo-enco-air4-pro.hx4) |
+| OPPO Enco Free4 日常调音 | 蓝牙耳机（OPPO Enco Free4） | 适用于 OPPO Enco Free4 系列，兼顾追剧与听歌 | [oppo-enco-free4-dongxu.hx4](presets/oppo-enco-free4-dongxu/oppo-enco-free4-dongxu.hx4) |
+| OPPO Find X6 Pro 均衡 | 手机外放（OPPO Find X6 Pro） | 针对 OPPO Find X6 Pro 外放，低频有厚度，人声清楚，高频细节适度提升 | [oppo-find-x6-pro-balanced.hx4](presets/oppo-find-x6-pro-balanced/oppo-find-x6-pro-balanced.hx4) |
+| OPPO Find X8 外放稳健调音 | 手机外放（OPPO Find X8） | 适用于 OPPO Find X8 外放，调节幅度温和 | [oppo-find-x8-danshenghua.hx4](presets/oppo-find-x8-danshenghua/oppo-find-x8-danshenghua.hx4) |
+| OPPO Find X8 Ultra 外放 | 手机外放（OPPO Find X8 Ultra） | 适用于 OPPO Find X8 Ultra 外放 | [oppo-find-x8-ultra-your-god.hx4](presets/oppo-find-x8-ultra-your-god/oppo-find-x8-ultra-your-god.hx4) |
 | OPPO Find X8s Plus | 手机外放（OPPO Find X8s Plus） | 适用于OPPO Find X8s Plus的低频增强外放 | [oppo-find-x8splus.hx4](presets/oppo-find-x8splus/oppo-find-x8splus.hx4) |
 | 真我GT8 Pro低音增强（等响补偿） | 手机外放（真我GT8 Pro） | 低音增强，全音量不破音，需关闭系统扬声器音效增强和均衡器 | [realme-gt8pro-20261005-163635.hx4](presets/realme-gt8pro-20261005-163635/realme-gt8pro-20261005-163635.hx4) |
+| 真我 neo8 外放增强 | 手机外放（realme neo8） | 增强全音量低频，调整高音量下的人声与中频 | [realme-neo8-speaker.hx4](presets/realme-neo8-speaker/realme-neo8-speaker.hx4) |
+| Redmi Buds 4 Pro 均衡 | 蓝牙耳机（Redmi Buds 4 Pro） | 适用于 Redmi Buds 4 Pro 的耳机调音 | [redmi-buds4-pro-balanced.hx4](presets/redmi-buds4-pro-balanced/redmi-buds4-pro-balanced.hx4) |
 | Redmi Buds6 Pro | 蓝牙耳机 | Redmi Buds6 Pro耳机高频细节调教 | [redmi-buds6-pro.hx4](presets/redmi-buds6-pro/redmi-buds6-pro.hx4) |
+| REDMI Buds 8 Pro 立体饱满 | 蓝牙耳机（REDMI Buds 8 Pro） | 适用于 REDMI Buds 8 Pro，听感立体饱满 | [redmi-buds8-pro-mowushang.hx4](presets/redmi-buds8-pro-mowushang/redmi-buds8-pro-mowushang.hx4) |
 | Redmi K100 胖头鱼3.1全局接管特化版 | 手机外放（REDMI K100 Pro Max） | 由深海胖头鱼上传，适用于Redmi K100PM 外放，适合全局接管模式的改版 | [redmi-k100promax-os4-deepfish.hx4](presets/redmi-k100promax-os4-deepfish/redmi-k100promax-os4-deepfish.hx4) |
+| 悔恨之泪·醇厚人声 | 手机外放（REDMI K80 Ultra） | 适用于 REDMI K80 Ultra，低频收敛有弹性，人声厚实靠前 | [redmi-k80-ultra-heruo-vocal.hx4](presets/redmi-k80-ultra-heruo-vocal/redmi-k80-ultra-heruo-vocal.hx4) |
 | Redmi K90 - V形调音 | 手机外放（REDMI K90） | 由yingjiang240619上传，适用于Redmi K90外放的V形调音 | [redmik90-yingjiang240619.hx4](presets/redmik90-yingjiang240619/redmik90-yingjiang240619.hx4) |
 | V2307A 扬声器预设 | 手机外放、其他设备（V2307A） | 适用于 V2307A 扬声器外放 | [v2307a-spk.hx4](presets/v2307a-spk/v2307a-spk.hx4) |
+| V2507A 柔和人声 | 手机外放（V2507A） | 适用于 V2507A 扬声器外放，柔和人声 | [v2507a-soft-vocal.hx4](presets/v2507a-soft-vocal/v2507a-soft-vocal.hx4) |
+| vivo X200 Pro 饱满人声 | 手机外放（vivo X200 Pro） | 适用于 vivo X200 Pro，投稿人描述为低音饱满、人声甜美 | [vivo-x200-pro-sweet-vocal.hx4](presets/vivo-x200-pro-sweet-vocal/vivo-x200-pro-sweet-vocal.hx4) |
+| vivo Y300t 扬声器优化 | 手机外放（vivo Y300t） | 增强低频与人声，减少刺耳感 | [vivo-y300t-satosi.hx4](presets/vivo-y300t-satosi/vivo-y300t-satosi.hx4) |
 | vivo X100s Pro 三频段均衡 | 手机外放（vivo X100s Pro） | 理论适用于vivo X100全系设备（扬声器规格一致） | [vivox100s-pro.hx4](presets/vivox100s-pro/vivox100s-pro.hx4) |
 | 荣耀Win器乐解析调音 | 手机外放（荣耀 WIN） | 适用于荣耀 Win 的外放调音 | [win-1216-1.hx4](presets/win-1216-1/win-1216-1.hx4) |
 | 小米14（Xiaomi 14） | 手机外放（Xiaomi 14） | 小米14外放配置 | [xiaomi-14-spk.hx4](presets/xiaomi-14-spk/xiaomi-14-spk.hx4) |
 | 小米 18Pro Max V形调音 | 手机外放（Xiaomi 18 Pro Max） | 小米 18Pro Max V形调音 | [xiaomi-18promax.hx4](presets/xiaomi-18promax/xiaomi-18promax.hx4) |
 | 小米随身音箱 | 其他设备 | 小米随身音箱，低频优化 | [xiaomi-bt-pocket-spk.hx4](presets/xiaomi-bt-pocket-spk/xiaomi-bt-pocket-spk.hx4) |
+| 小米蓝牙音箱 Pro 中高频优化 | 蓝牙耳机（Xiaomi 蓝牙音箱 Pro） | 改善中频人声与高频刺耳感；投稿人建议关闭音箱的 BASS 增强模式 | [xiaomi-bt-speaker-pro-hang1250.hx4](presets/xiaomi-bt-speaker-pro-hang1250/xiaomi-bt-speaker-pro-hang1250.hx4) |
 | 小米13 Dolby Atmos框架内弥补 | 手机外放（Xiaomi 13） | 小米13系统Dolby Atmos框架内弥补外放扬声器 | [xiaomi13-dolby.hx4](presets/xiaomi13-dolby/xiaomi13-dolby.hx4) |
+| Xiaomi 14 Pro 类10Pro | 手机外放（Xiaomi 14 Pro） | 适用于 Xiaomi 14 Pro 外放，投稿人描述为类 10 Pro 听感 | [xiaomi14pro-guqiao.hx4](presets/xiaomi14pro-guqiao/xiaomi14pro-guqiao.hx4) |
 | 小米15/15Pro | 手机外放（Xiaomi 15、Xiaomi 15 Pro） | 小米15/15Pro，全频段优化 | [xiaomi15-se-spk.hx4](presets/xiaomi15-se-spk/xiaomi15-se-spk.hx4) |
 | 小米 15 Pro杜比全景哈曼卡顿音效 | 手机外放（Xiaomi 15 Pro） | 由 ttzkyz 上传，适用于小米 15 Pro外放，饱满低频，全频段优化提升 | [xiaomi15pro-ttzkyz.hx4](presets/xiaomi15pro-ttzkyz/xiaomi15pro-ttzkyz.hx4) |
 | 小米 17 Pro BOSE调音 | 手机外放（Xiaomi 17 Pro） | 适用于小米 17 Pro的BOSE调音 | [xiaomi17-pro-bose.hx4](presets/xiaomi17-pro-bose/xiaomi17-pro-bose.hx4) |
