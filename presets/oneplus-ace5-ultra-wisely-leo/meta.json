@@ -1,0 +1,24 @@
+{
+  "title": "一加 ACE5 至尊版中频整形",
+  "author": "Wisely_Leo",
+  "description": "适用于一加 ACE5 至尊版外放，人声清晰，中低频饱满。",
+  "tags": [
+    "外放",
+    "人声"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OnePlus Ace 5 Ultra",
+      "aliases": [
+        "PLC110",
+        "一加ACE5至尊版"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

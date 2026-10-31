@@ -1,0 +1,20 @@
+{
+  "title": "Redmi Buds 4 Pro 均衡",
+  "author": "未署名投稿",
+  "description": "适用于 Redmi Buds 4 Pro 的耳机调音。",
+  "tags": [
+    "耳机"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "Redmi Buds 4 Pro",
+      "aliases": []
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

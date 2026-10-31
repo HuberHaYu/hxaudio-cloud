@@ -1,0 +1,23 @@
+{
+  "title": "OPPO Enco Free4 日常调音",
+  "author": "Dongxu",
+  "description": "适用于 OPPO Enco Free4 系列，兼顾追剧与听歌。",
+  "tags": [
+    "耳机",
+    "日常"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "OPPO Enco Free4",
+      "aliases": [
+        "OPPO Enco Free4 丹拿版"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

@@ -1,0 +1,23 @@
+{
+  "title": "真我 neo8 外放增强",
+  "author": "未署名投稿",
+  "description": "增强全音量低频，调整高音量下的人声与中频。",
+  "tags": [
+    "外放",
+    "低频"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "realme neo8",
+      "aliases": [
+        "真我neo8"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

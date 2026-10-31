@@ -1,0 +1,23 @@
+{
+  "title": "OPPO Find X6 Pro 均衡",
+  "author": "未署名投稿",
+  "description": "针对 OPPO Find X6 Pro 外放，低频有厚度，人声清楚，高频细节适度提升。",
+  "tags": [
+    "外放",
+    "均衡"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OPPO Find X6 Pro",
+      "aliases": [
+        "PGEM10"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

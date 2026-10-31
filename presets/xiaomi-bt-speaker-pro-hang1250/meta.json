@@ -1,0 +1,23 @@
+{
+  "title": "小米蓝牙音箱 Pro 中高频优化",
+  "author": "hang1250",
+  "description": "改善中频人声与高频刺耳感；投稿人建议关闭音箱的 BASS 增强模式。",
+  "tags": [
+    "音箱",
+    "人声"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "Xiaomi 蓝牙音箱 Pro",
+      "aliases": [
+        "Xiaomi Sound Party"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

@@ -1,0 +1,21 @@
+{
+  "title": "V2507A 柔和人声",
+  "author": "V2507A",
+  "description": "适用于 V2507A 扬声器外放，柔和人声。",
+  "tags": [
+    "外放",
+    "人声"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "V2507A",
+      "aliases": []
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

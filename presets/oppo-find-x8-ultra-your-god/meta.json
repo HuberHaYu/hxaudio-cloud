@@ -1,0 +1,20 @@
+{
+  "title": "OPPO Find X8 Ultra 外放",
+  "author": "Your God",
+  "description": "适用于 OPPO Find X8 Ultra 外放。",
+  "tags": [
+    "外放"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OPPO Find X8 Ultra",
+      "aliases": []
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

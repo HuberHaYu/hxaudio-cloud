@@ -1,0 +1,419 @@
+{
+  "format": "HXAudioPro4",
+  "version": 2,
+  "encrypted": false,
+  "created_at": 1792467681440,
+  "audio": {
+    "pre_eq_gains_db": [
+      0,
+      1,
+      1,
+      1,
+      0.5,
+      0.5,
+      1,
+      -0.5,
+      0.5,
+      1,
+      0.5,
+      0
+    ],
+    "post_eq_points": [
+      {
+        "id": "7b12cda9-f308-452d-85d1-6f9228bce3bb",
+        "frequency_hz": 20,
+        "gain_db": -3,
+        "q": 1
+      },
+      {
+        "id": "d9eecf43-a3b5-42ae-87a1-d6a28ffd6a5f",
+        "frequency_hz": 35,
+        "gain_db": 0.5,
+        "q": 1.2
+      },
+      {
+        "id": "8bcf7b54-d66f-410a-9c9a-edd089cb45e1",
+        "frequency_hz": 60,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "b2eebb59-bfd1-4524-b22d-22ec6408cbca",
+        "frequency_hz": 95,
+        "gain_db": 2,
+        "q": 1.1
+      },
+      {
+        "id": "a445a120-b670-49fc-98eb-4809df114712",
+        "frequency_hz": 150,
+        "gain_db": 1,
+        "q": 1.2
+      },
+      {
+        "id": "e3f0664a-89df-47b6-bebf-3b56e6fcc53c",
+        "frequency_hz": 240,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "c34dd1a9-2ddf-4f04-858d-83d3400cbb2c",
+        "frequency_hz": 330,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "7b3c24cc-0b43-43e7-9c1e-38e883e5f6da",
+        "frequency_hz": 500,
+        "gain_db": 0.5,
+        "q": 1
+      },
+      {
+        "id": "ec5e6b8e-add8-4ff7-8bf1-fab03d63e730",
+        "frequency_hz": 800,
+        "gain_db": 0.5,
+        "q": 1
+      },
+      {
+        "id": "b5604256-2ecb-454a-a3f4-f29c775addb5",
+        "frequency_hz": 1200,
+        "gain_db": 0.5,
+        "q": 1.1
+      },
+      {
+        "id": "de4ce563-3c8c-4cdd-bce7-7e5ee77b7c7c",
+        "frequency_hz": 1800,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "4d206d33-350d-425e-8844-d2004d3201d8",
+        "frequency_hz": 2600,
+        "gain_db": 1,
+        "q": 1.1
+      },
+      {
+        "id": "ce2febc2-647a-418a-8198-b700f048657b",
+        "frequency_hz": 3400,
+        "gain_db": -1,
+        "q": 1.1
+      },
+      {
+        "id": "ab6ebaaa-9a06-4199-b159-f6b54d5af9a4",
+        "frequency_hz": 4600,
+        "gain_db": -0.5,
+        "q": 1
+      },
+      {
+        "id": "771b7dcd-4abf-4871-bc7e-7b01080fd664",
+        "frequency_hz": 6000,
+        "gain_db": 0.5,
+        "q": 1
+      },
+      {
+        "id": "50082e12-056e-42aa-a579-d319c5a3afd1",
+        "frequency_hz": 8000,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "1ec7c70d-717f-44a6-a7c0-45720e02f744",
+        "frequency_hz": 10000,
+        "gain_db": 1.5,
+        "q": 1
+      },
+      {
+        "id": "a8c0088c-e40b-4861-9661-c8bdd02ff6ae",
+        "frequency_hz": 13000,
+        "gain_db": 0.5,
+        "q": 1
+      },
+      {
+        "id": "3c8af067-c3a9-490d-b791-52d53a9b0dab",
+        "frequency_hz": 16000,
+        "gain_db": -0.5,
+        "q": 1
+      },
+      {
+        "id": "5cf6d32c-adb1-454e-beb4-13aad57cb54d",
+        "frequency_hz": 20000,
+        "gain_db": -1.5,
+        "q": 1
+      }
+    ],
+    "post_eq_channels": {
+      "pro_enabled": false,
+      "left_points": [
+        {
+          "id": "left-default-80",
+          "frequency_hz": 80,
+          "gain_db": 0,
+          "q": 0.75
+        },
+        {
+          "id": "left-default-320",
+          "frequency_hz": 320,
+          "gain_db": 0,
+          "q": 1.1
+        },
+        {
+          "id": "left-default-1200",
+          "frequency_hz": 1200,
+          "gain_db": 0,
+          "q": 1
+        },
+        {
+          "id": "left-default-6500",
+          "frequency_hz": 6500,
+          "gain_db": 0,
+          "q": 0.9
+        }
+      ],
+      "right_points": [
+        {
+          "id": "right-default-80",
+          "frequency_hz": 80,
+          "gain_db": 0,
+          "q": 0.75
+        },
+        {
+          "id": "right-default-320",
+          "frequency_hz": 320,
+          "gain_db": 0,
+          "q": 1.1
+        },
+        {
+          "id": "right-default-1200",
+          "frequency_hz": 1200,
+          "gain_db": 0,
+          "q": 1
+        },
+        {
+          "id": "right-default-6500",
+          "frequency_hz": 6500,
+          "gain_db": 0,
+          "q": 0.9
+        }
+      ]
+    },
+    "bass_boost": {
+      "enabled": false,
+      "gain_db": 0
+    },
+    "input_gain": {
+      "balance_percent": 0,
+      "total_gain_db": 0,
+      "use_dynamics_processing_gain": true
+    },
+    "main_limiter": {
+      "enabled": false,
+      "link_group": 0,
+      "attack_time_ms": 1,
+      "release_time_ms": 80,
+      "ratio": 20,
+      "threshold_db": -1.5,
+      "post_gain_db": 0
+    },
+    "virtual_surround": {
+      "enabled": false,
+      "width_percent": 55
+    },
+    "eq_pulse": {
+      "enabled": false,
+      "strength_percent": 100,
+      "impulse_id": "",
+      "impulse_name": "",
+      "pre_eq_db": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "post_eq_db": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "volume_compensation": {
+      "enabled": false,
+      "node_step_percent": 10,
+      "low_db": [
+        12,
+        4,
+        -1.11,
+        -3.37,
+        -2.63,
+        0.52,
+        3.17,
+        3.76,
+        0.79,
+        -2.23,
+        -4.5
+      ],
+      "mid_db": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "high_db": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "curve": {
+        "interpolation": "monotone_cubic",
+        "low": [
+          {
+            "volume_percent": 0,
+            "gain_db": 12
+          },
+          {
+            "volume_percent": 33,
+            "gain_db": -3.5
+          },
+          {
+            "volume_percent": 43,
+            "gain_db": -2
+          },
+          {
+            "volume_percent": 53,
+            "gain_db": 1.5
+          },
+          {
+            "volume_percent": 67,
+            "gain_db": 4
+          },
+          {
+            "volume_percent": 87,
+            "gain_db": -1.5
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": -4.5
+          }
+        ],
+        "mid": [
+          {
+            "volume_percent": 0,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 33,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 43,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 53,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 67,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 87,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": 0
+          }
+        ],
+        "high": [
+          {
+            "volume_percent": 0,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 33,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 43,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 53,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 67,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 87,
+            "gain_db": 0
+          },
+          {
+            "volume_percent": 100,
+            "gain_db": 0
+          }
+        ]
+      }
+    },
+    "reverb": {
+      "enabled": false,
+      "mix_percent": 60,
+      "decay_time_ms": 2200,
+      "room_size_percent": 85,
+      "diffusion_percent": 100,
+      "high_decay_ratio": 0.7,
+      "high_level_db": -7
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "中天鹅 SVANAR LE 均衡",
+  "author": "yongb",
+  "description": "适用于 HIFIMAN SVANAR WIRELESS LE，均衡、耐听，高频适度调整。",
+  "tags": [
+    "均衡",
+    "耐听"
+  ],
+  "device_kinds": [
+    "BLUETOOTH"
+  ],
+  "target_devices": [
+    {
+      "kind": "BLUETOOTH",
+      "name": "HIFIMAN SVANAR WIRELESS LE",
+      "aliases": [
+        "HIFIMAN SVANAR WIRELESS"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

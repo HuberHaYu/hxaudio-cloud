@@ -1,0 +1,23 @@
+{
+  "title": "vivo Y300t 扬声器优化",
+  "author": "Satosi",
+  "description": "增强低频与人声，减少刺耳感。",
+  "tags": [
+    "外放",
+    "人声"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "vivo Y300t",
+      "aliases": [
+        "V2445EA"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}

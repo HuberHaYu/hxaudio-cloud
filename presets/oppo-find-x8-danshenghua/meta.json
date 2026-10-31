@@ -1,0 +1,23 @@
+{
+  "title": "OPPO Find X8 外放稳健调音",
+  "author": "旦生花",
+  "description": "适用于 OPPO Find X8 外放，调节幅度温和。",
+  "tags": [
+    "外放",
+    "均衡"
+  ],
+  "device_kinds": [
+    "SPEAKER"
+  ],
+  "target_devices": [
+    {
+      "kind": "SPEAKER",
+      "name": "OPPO Find X8",
+      "aliases": [
+        "PKB110"
+      ]
+    }
+  ],
+  "subtitle": "",
+  "featured": false
+}
